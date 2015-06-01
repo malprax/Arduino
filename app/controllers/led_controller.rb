@@ -1,5 +1,5 @@
 class LedController < ApplicationController
-  before_filter :set_up_led, only: [:on, :off]
+  before_action :set_up_led, only: [:on, :off]
   def index
   end
   
@@ -15,6 +15,7 @@ class LedController < ApplicationController
   
   private
   def set_up_led
-    @led = Dino::Components::Led.new(pin: 12, board: DinoRails::Application.config.board)
+    board = Arduino::Application.config.board
+    @led = Dino::Components::Led.new(pin: 2, board: board )
   end
 end

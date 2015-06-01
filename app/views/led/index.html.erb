@@ -4,3 +4,22 @@
 <button id="off">
   Off
 </button>
+
+<script>
+  
+  $('#on').click(function(){
+    $.get('/on')
+  });
+  $('#off').click(function(){
+    $.get('/off')
+  });
+  var pusher = new Pusher('#{Pusher.key}');
+  var channel = pusher.subscribe('button');
+  channel.bind('down', function(data) {
+    $('body').css({background: 'red'})
+  });
+  channel.bind('up', function(data) {
+    $('body').css({background: 'white'})
+  });
+
+</script>
