@@ -45,4 +45,5 @@ end
 
 gem 'pusher'
 gem 'dino'
+gem 'figaro'
 
