@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'led/index'
+  match '/on' => 'led#on'
+  match '/off' => 'led#off'
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
