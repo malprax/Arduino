@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'led/index'
-  match '/on' => 'led#on'
-  match '/off' => 'led#off'
+
+  match'/on' => 'led#on', via: :get
+  match '/off' => 'led#off', via: :get
   
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   # match '/on' => 'led#on'
   # match '/off' => 'led#off'
 
-  # root 'led#index'
+  root 'led#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
