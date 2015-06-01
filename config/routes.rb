@@ -4,7 +4,10 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  match '/on' => 'led#on'
+  match '/off' => 'led#off'
 
+  root to: 'led#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
