@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
@@ -48,7 +48,17 @@ group :development, :test do
   gem 'spring'
 end
 
+#use library
 gem 'pusher'
+
+#use arduino
 gem 'dino'
+
+#hidden access key
 gem 'figaro'
+
+#deploy to heroku
+gem 'rails_12factor', group: :production
+
+
 
