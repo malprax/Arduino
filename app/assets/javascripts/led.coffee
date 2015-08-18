@@ -3,11 +3,11 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 main = ->
-  $('#on').click ->
-    $.get '/on'
+  $('#angkat_portal').click ->
+    $.get '/angkat_portal'
     return
-  $('#off').click ->
-    $.get '/off'
+  $('#turunkan_portal').click ->
+    $.get '/turunkan_portal'
     return
   pusher = new Pusher('#{Pusher.key}')
   channel = pusher.subscribe('button')

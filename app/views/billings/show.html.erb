@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @billing.user %>
+</p>
+
+<p>
+  <strong>Time in:</strong>
+  <%= @billing.time_in %>
+</p>
+
+<p>
+  <strong>Time out:</strong>
+  <%= @billing.time_out %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @billing.duration %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @billing.price %>
+</p>
+
+<%= link_to 'Edit', edit_billing_path(@billing) %> |
+<%= link_to 'Back', billings_path %>

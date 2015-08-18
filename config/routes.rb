@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  match'/on' => 'led#on', via: :get
-  match '/off' => 'led#off', via: :get
+  resources :billings
+
+  match'/angkat_portal' => 'led#angkat_portal', via: :get
+  match '/turunkan_portal' => 'led#turunkan_portal', via: :get
   
 
   # The priority is based upon order of creation: first created -> highest priority.

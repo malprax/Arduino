@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  time_in: 2015-08-18 10:54:12
+  time_out: 2015-08-18 10:54:12
+  duration: 2015-08-18 10:54:12
+  price: 9.99
+
+two:
+  user: MyString
+  time_in: 2015-08-18 10:54:12
+  time_out: 2015-08-18 10:54:12
+  duration: 2015-08-18 10:54:12
+  price: 9.99
