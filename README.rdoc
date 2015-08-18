@@ -5,3 +5,5 @@
 #Progress Riset Parkir Cerdas
 1. Koneksi Arduino Dengan Led
 2. Koneksi Arduino Dengan Servo Posisi
+3. Aplikasi Billing Dengan Skenario:
+   1.  Pada saat bar scanner mendeteksi member, maka pintu terangkat
