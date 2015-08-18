@@ -3,11 +3,14 @@
 
 
 #Progress Riset Parkir Cerdas
-1. Koneksi Arduino Dengan Led
-2. Koneksi Arduino Dengan Servo Posisi
+1. Riset Komunikasi Serial Arduino Dengan Output Led, dengan bahasa Ruby
+2. Riset Komunikasi Serial Arduino Dengan Aplikasi Database dengan Rails
+2. Riset Komunikasi Serial Arduino Dengan Output Servo Posisi(Dijadikan Portal), dan Database Rails 
 3. Aplikasi Billing Dengan Skenario:
    1.  Pada saat bar scanner mendeteksi kartu member, maka pintu terangkat, mendeteksi tempat parkir yang sudah ditinggal pemilik sebelumnya dan tempat parkir yang masih kosong, nomor parkir terbuat selama 10 detik
    2.  Setelah itu username, waktu masuk terinput ke database
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
    
-4. Report Jumlah Pelanggan, dalam harian, bulanan dan sediakan tombol print out
+4. Pembuatan Report Biling yang mencantumkan: Jumlah Pelanggan, Total Pemasukan, dalam harian, bulanan dan sediakan tombol print out
+
+5. Buat dua authentication priority, member dan nonmember, perlu didiskusikan perbedaannya
