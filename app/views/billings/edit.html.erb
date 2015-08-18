@@ -1,9 +1,8 @@
-<div class="container">
+
 	<h3>Edit Billing</h1>
 
 	<%= render 'form' %>
-
-	<%= link_to 'Show', @billing %> |
-	<%= link_to 'Back', billings_path %>
 	
-</div>
+	<%= link_to 'Lihat', @billing, class:'btn btn-default' %> 
+	<%= link_to 'Kembali', billings_path, class:'btn btn-primary' %>
+

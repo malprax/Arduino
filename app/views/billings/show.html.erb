@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -25,5 +26,5 @@
   <%= @billing.price %>
 </p>
 
-<%= link_to 'Edit', edit_billing_path(@billing) %> |
-<%= link_to 'Back', billings_path %>
+<%= link_to 'Edit', edit_billing_path(@billing), class:'btn btn-default' %> 
+<%= link_to 'Kembali', billings_path, class:'btn btn-success' %>
