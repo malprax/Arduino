@@ -6,4 +6,8 @@
 1. Koneksi Arduino Dengan Led
 2. Koneksi Arduino Dengan Servo Posisi
 3. Aplikasi Billing Dengan Skenario:
-   1.  Pada saat bar scanner mendeteksi member, maka pintu terangkat
+   1.  Pada saat bar scanner mendeteksi kartu member, maka pintu terangkat, mendeteksi tempat parkir yang sudah ditinggal pemilik sebelumnya dan tempat parkir yang masih kosong, nomor parkir terbuat selama 10 detik
+   2.  Setelah itu username, waktu masuk terinput ke database
+   3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
+   
+4. Report Pemasukan
