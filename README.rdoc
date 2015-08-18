@@ -10,4 +10,4 @@
    2.  Setelah itu username, waktu masuk terinput ke database
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
    
-4. Report Pemasukan
+4. Report Jumlah Pelanggan, dalam harian, bulanan dan sediakan tombol print out
