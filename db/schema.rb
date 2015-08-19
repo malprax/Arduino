@@ -18,10 +18,10 @@ ActiveRecord::Schema.define(version: 20150818025412) do
 
   create_table "billings", force: :cascade do |t|
     t.string   "user"
-    t.time     "time_in"
-    t.time     "time_out"
-    t.time     "duration"
+    t.datetime "time_in"
+    t.datetime "time_out"
     t.decimal  "price"
+    t.string   "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
