@@ -17,8 +17,8 @@
 	    <% @billings.each do |billing| %>
 	      <tr>
 	        <td><%= billing.user %></td>
-	        <td><%= billing.time_in %></td>
-	        <td><%= billing.time_out %></td>
+	        <td><%= billing.time_in.to_s %></td>
+	        <td><%= billing.time_out.to_s %></td>
 			<% unless billing.time_out.nil? %>
 			<% lama = ((billing.time_out - billing.time_in)/3600) %>
 	        <td><%= number_with_precision(lama, precision: 2) %></td>

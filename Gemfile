@@ -71,5 +71,8 @@ gem 'figaro'
 #deploy to heroku
 gem 'rails_12factor', group: :production
 
+#time zones each users
+gem 'browser-timezone-rails'
+
 
 
