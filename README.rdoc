@@ -16,7 +16,37 @@
 5. Buat dua authentication priority, member dan nonmember, perlu didiskusikan perbedaannya
 
 
-
+Aplikasi Billing Dengan Skenario:
+   1.  Pada saat bar scanner mendeteksi kartu member, maka pintu terangkat, mendeteksi tempat parkir yang sudah ditinggal pemilik sebelumnya dan tempat parkir yang masih kosong, nomor parkir terbuat selama 10 detik
+   2.  Setelah itu username, waktu masuk terinput ke database
+   3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
+   
+   
 #progres hari ini
-tidak bisa mencek hanya dapat membuat satu billing, sudah bisa
-buat fungsi stop
+coba desain front end web dengan bootstrap
+coba buat sebuah tombol dengan interface web untuk mengendalikan output led
+coba buat validasi user untuk satu event billing
+coba buat fungsi timer
+coba buat fungsi stop, sudah bisa
+coba buat presisi pembulatan waktu ke atas sehingga kalu lebih dari beberapa detik selalu dijadikan satu menit
+coba buat rumus untuk mengkonversi pengurangan waktu keluar dan masuk ke menit
+coba buat komunikasi serial dengan output led
+
+
+
+#progres buat besok
+coba ubah waktu UTC nya menjadi waktu local
+coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
+coba buat nomor parkirnya dan mengecek beberapa parameternya
+coba buat member dan nonmember
+coba buat report pendapatan secara harian dan bulanan
+coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
+coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
+coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
+coba buat tabel user dengan generate barcode nya
+coba buat model miniatur parkiran
+coba riset scanner untuk membaca barcode
+
+
+
+

@@ -10,8 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require bootstrap-sprockets
+
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_self
@@ -20,15 +21,15 @@
 	
 $(function(){
 	setInterval(function(){
-		$.get('/billings/current', function(data){
-			$('#status').html(data);
-			if ($('.time')) document.title = $('.time').html() + '- Work Timer';
-		});
-	}, 30000);
+	    $.get('/billings/current', function(data) {
+	      $('#status').html(data);
+	      if ($('.time')) document.title = $('.time').html()+ '- Arduino';
+	    });
+	  }, 3000);
 	if ($('#flash').length > 0){
 		setTimeout(function(){
 			$('#flash').slideUp();
-		}, 10000);
+		}, 5000);
 	}
 });
 

@@ -60,6 +60,23 @@ class BillingsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def stop
+    @billing = Billing.find(params[:id])
+    if @billing.stop!
+      respond_to do |format|
+        format.html {redirect_to(billings_url, notice: 'Billing stopped')}
+      end
+    else
+      respond_to do |format|
+        format.html {redirect_to(billings_url, notice: 'Billing was already stopped')}
+      end
+    end
+  end
+  
+  def current
+    render partial: 'billings/current', current_billings: current_billings
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

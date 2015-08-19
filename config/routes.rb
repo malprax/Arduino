@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :billings
+  resources :billings do
+    collection do
+      get 'current'
+    end
+    
+    member do
+      patch 'stop'
+    end
+  end
 
   match'/angkat_portal' => 'led#angkat_portal', via: :get
   match '/turunkan_portal' => 'led#turunkan_portal', via: :get
