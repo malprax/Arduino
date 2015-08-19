@@ -14,3 +14,9 @@
 4. Pembuatan Report Biling yang mencantumkan: Jumlah Pelanggan, Total Pemasukan, dalam harian, bulanan dan sediakan tombol print out
 
 5. Buat dua authentication priority, member dan nonmember, perlu didiskusikan perbedaannya
+
+
+
+#progres hari ini
+tidak bisa mencek hanya dapat membuat satu billing, sudah bisa
+buat fungsi stop

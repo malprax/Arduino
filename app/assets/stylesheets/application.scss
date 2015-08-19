@@ -17,6 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.panel{
-	margin-top: 200px;
+.form-horizontal .control-label{
+/*	margin-top: 200px;*/
+	padding-top: 20px;
 }

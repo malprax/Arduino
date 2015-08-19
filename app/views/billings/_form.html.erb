@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="col-sm-8 col-md-8">
+  <div class="col-sm-12 col-md-12">
   <%= form_for(@billing, :html => { class:"form-horizontal", role:"form"}) do |f| %>
     <% if @billing.errors.any? %>
       <div id="error_explanation">
-        <h2><%= pluralize(@billing.errors.count, "error") %> prohibited this donatur from being saved:</h2>
+        <h4><%= @billing.errors.count %> Kesalahan, Tidak Dapat Menyimpan Billing Yang Dibuat Karena:</h4>
 
         <ul>
         <% @billing.errors.full_messages.each do |message| %>
@@ -20,17 +20,18 @@
 	
     <div class="form-group">
       <%= f.label :time_in, "Waktu Masuk", for: "inputText3", class:"col-sm-3 col-md-3 control-label weight" %><br>
-      <div class="col-sm-8 col-md-4"><%= f.time_select :time_in, class:"form-control weight", id:"inputText3"%></div>
+      <div class="col-sm-8 col-md-4"><%= f.datetime_select :time_in, class:"form-control weight", id:"inputText3", include_seconds: true %></div>
     </div>
-	
+	<% if !@billing.new_record? %>
     <div class="form-group">
       <%= f.label :time_out, "Waktu Keluar", for: "inputText3", class:"col-sm-3 col-md-3 control-label weight" %><br>
-      <div class="col-sm-8 col-md-4"><%= f.time_select :time_out, class:"form-control weight", id:"inputText3" %></div>
+      <div class="col-sm-8 col-md-4"><%= f.datetime_select :time_out, class:"form-control weight", id:"inputText3", include_seconds: true %></div>
     </div>
+	<% end %>
     
     <div class="form-group">
-      <%= f.label :duration, "Lama", for: "inputText3", class:"col-sm-3 col-md-3 control-label weight" %><br>
-      <div class="col-sm-8 col-md-4"><%= f.time_select :duration, class:"form-control weight", id:"inputText3" %></div>
+      <%= f.label :comment, "Komentar", for: "inputText3", class:"col-sm-3 col-md-3 control-label weight" %><br>
+      <div class="col-sm-8 col-md-4"><%= f.text_field :comment, class:"form-control weight", id:"inputText3" %></div>
     </div>
 	
 	
