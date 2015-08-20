@@ -22,7 +22,7 @@ Aplikasi Billing Dengan Skenario:
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
    
    
-#progres hari ini
+#progres hari rabu, 19 agustus 2015
 coba desain front end web dengan bootstrap
 coba buat sebuah tombol dengan interface web untuk mengendalikan output led
 coba buat validasi user untuk satu event billing
@@ -34,8 +34,10 @@ coba buat komunikasi serial dengan output led
 
 
 
-#progres buat besok
+#progres hari ini kamis 20 agustus 2015
 coba ubah waktu UTC nya menjadi waktu local
+
+#progres besok
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat member dan nonmember
