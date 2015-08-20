@@ -1,5 +1,5 @@
 <div class="container">
-	<h4>Billings <%= Time.now.strftime("%d %B %Y") %></h4>
+	<h4>Billings <%= Time.now.strftime("%d %B %Y") %> </h4>
 
 	<table class="table table-bordered table-striped">
 	  <thead>
@@ -26,11 +26,14 @@
 	        <td>Rp <%= number_with_precision(lama, precision: 2).to_i * 1000 %></td>
 			<% else %>
 			<td></td>
-			<td class="active"><div class="time"><%= number_with_precision((Time.now - billing.time_in) / 3600, precision: 2) %></div></td>
+			<td><%= number_with_precision((Time.now - current_billings.first.time_in) / 3600, precision: 2, class:'time') %></td>
 			<td></td>
 			<% end %>
 
-	        <td><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch if billing.time_out.nil? %>
+	        <td><% if billing.time_out.nil? %> 
+				<div class="time"><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %> </div>
+				
+				<% end %>
 			</td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>

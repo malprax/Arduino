@@ -47,6 +47,7 @@ GEM
       sass (>= 3.3.0)
     bootstrap-will_paginate (0.0.10)
       will_paginate
+    bootstrap_form (2.3.0)
     browser-timezone-rails (0.0.8)
       jquery-rails
       rails (>= 3.1)
@@ -180,6 +181,7 @@ DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.5)
   bootstrap-will_paginate
+  bootstrap_form
   browser-timezone-rails
   byebug
   coffee-rails (~> 4.1.0)

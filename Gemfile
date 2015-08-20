@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 gem 'bootstrap-will_paginate'
 gem 'will_paginate'
+gem 'bootstrap_form'
 
 #nice terminal
 gem 'quiet_assets', group: :development
