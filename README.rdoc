@@ -37,13 +37,16 @@ coba buat komunikasi serial dengan output led
 #progres hari ini kamis 20 agustus 2015
 coba ubah waktu UTC nya menjadi waktu local
 
-#progres besok
+Progress hari ini jumat 21 agustus 2015
+priority:
+coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
+
+
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat member dan nonmember
 coba buat report pendapatan secara harian dan bulanan
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
-coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
 coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
 coba buat tabel user dengan generate barcode nya
 coba buat model miniatur parkiran
@@ -51,6 +54,3 @@ coba riset scanner untuk membaca barcode
 
 
 
-back to progress
-priority:
-coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
