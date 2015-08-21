@@ -52,3 +52,5 @@ coba riset scanner untuk membaca barcode
 
 
 back to progress
+priority:
+coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
