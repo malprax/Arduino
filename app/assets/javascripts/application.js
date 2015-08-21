@@ -32,13 +32,13 @@ $(function(){
 	      if ($('.time')) document.title = $('.time').html()+ '- Arduino';
 	    });
 	  }, 3000);
-	  
+
   	setInterval(function(){
   	    $.get('/billings/', function(data) {
   	      $('.time');
   	    });
   	  }, 3000);
-	
+
 	if ($('#flash').length > 0){
 		setTimeout(function(){
 			$('#flash').slideUp();

@@ -9,6 +9,7 @@
 	      <th>Jam Keluar</th>
 	      <th>Lama</th>
 	      <th>Biaya</th>
+		  <th>Portal</th>
 	      <th colspan="3"></th>
 	    </tr>
 	  </thead>
@@ -35,6 +36,10 @@
 				
 				<% end %>
 			</td>
+			<td><ul class="nav nav-pills">
+						  <li role="presentation" class="active"><button id="angkat_portal", class="btn btn-default">Angkat Portal</button></li>
+						  <li role="presentation"><button id="turunkan_portal", class="btn btn-success">Turunkan Portal</button></li>
+						</ul></td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	      </tr>

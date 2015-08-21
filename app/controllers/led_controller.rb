@@ -18,7 +18,7 @@ class LedController < ApplicationController
   private
   def set_up_led
     board = Arduino::Application.config.board
-    @led = Dino::Components::Led.new(pin: 2, board: board )
+    @led = Dino::Components::Led.new(pin: 12, board: board )
     # @led2 = Dino::Components::Led.new(pin: 12, board: board )
   end
 end

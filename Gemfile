@@ -41,6 +41,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 gem 'unicorn'
 
+# barcode rqr
+gem 'rqrcode_png'
+gem 'rqrcode-with-patches', '~> 0.5.4'
+
 #bootstrap
 # gem 'bootstrap-sass'
 # gem 'autoprefixer-rails'
