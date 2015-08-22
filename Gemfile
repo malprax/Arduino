@@ -41,7 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 gem 'unicorn'
 
-# barcode rqr
+# barcode
 gem 'rqrcode'
 # gem 'rqrcode_png'
 gem 'rqrcode-with-patches', '~> 0.5.4'
@@ -49,7 +49,7 @@ gem 'rqrcode-with-patches', '~> 0.5.4'
 #barcode 1D
 gem 'barby'
 
-#for type picture
+#for image processing
 gem 'rmagick'
 
 #bootstrap

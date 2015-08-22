@@ -1,3 +1,4 @@
+require 'chunky_png'
 require 'RMagick'
 require 'rqrcode'
 require 'barby'
@@ -13,12 +14,13 @@ class TryCodesController < ApplicationController
     # barcode = Barby::QrCode.new("aulia")
      barcode = Barby::Code128B.new('0123456789')
     # @barcode_for = Barby::HtmlOutputter.new(@barcode).to_html
-    @barcode_for = Barby::RmagickOutputter.new(barcode).to_image
-    
-    # @outputter = Barby::PngOutputter.new(barcode)
+    #@barcode_for = Barby::RmagickOutputter.new(barcode).to_image
     
     
-    # File.open('barcode.png', 'w'){|f| f.write @barcode_for }
+    @outputter = Barby::PngOutputter.new(barcode).to_png
+    
+    
+    File.open('barcode.png', 'w'){|f| f.write @outputter }
     
     
     #@trycode.to_html
