@@ -1,0 +1,5 @@
+<%= @trycodes.each do |trycode| %>
+	<%= trycode.text %>	
+<% end %>
+
+<%= link_to "PRINT", '#', onclick: "printpage()" %>

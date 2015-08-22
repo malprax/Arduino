@@ -46,6 +46,12 @@ $(function(){
 	}
 });
 
+
+function printpage()
+{
+   window.print()
+}
+
 $(document).on('click', '#exclude', function(){
 	$('#report').find('.no_data').toggle();
 });

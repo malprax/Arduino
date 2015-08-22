@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :try_codes, only: [:new, :create, :index]
+
+  resources :qr_codes
+
   resources :users
 
   resources :billings do
