@@ -44,6 +44,7 @@ Progress hari ini sabtu 22 agustus 2015
 berhasil buat barcode 2d tapi terkendala di mahalnya scanner
 berhasil buat barcode 1d tapi hanya versi html
 
+Progress hari ini minggu 23 agustus 2015
 priority:
 coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
 coba buat tabel user dengan generate barcode nya

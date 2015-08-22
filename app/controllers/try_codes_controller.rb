@@ -17,10 +17,10 @@ class TryCodesController < ApplicationController
     #@barcode_for = Barby::RmagickOutputter.new(barcode).to_image
     
     
-    @outputter = Barby::PngOutputter.new(barcode).to_png
+    @outputter = Barby::PngOutputter.new(barcode)
     
     
-    File.open('barcode.png', 'w'){|f| f.write @outputter }
+    File.open('barcode.png', 'w'){|f| f.write barcode.to_png }
     
     
     #@trycode.to_html
