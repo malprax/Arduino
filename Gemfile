@@ -42,8 +42,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
 
 # barcode rqr
-gem 'rqrcode_png'
+gem 'rqrcode'
+# gem 'rqrcode_png'
 gem 'rqrcode-with-patches', '~> 0.5.4'
+
+#barcode 1D
+gem 'barby'
+
+#for type picture
+gem 'rmagick'
 
 #bootstrap
 # gem 'bootstrap-sass'
