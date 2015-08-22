@@ -1,13 +1,13 @@
 class TryCodesController < ApplicationController
-  def index
-    @trycodes = Trycode.all
-    
-  end
+  # def index
+#     @trycodes = Trycode.all
+#
+#   end
   def new
   end
 
   def create
-    @trycode = RQRCode::QRCode.new(try_code_params[:text], size: 4)
+    @trycodes = RQRCode::QRCode.new(try_code_params[:text], size: 4)
   end
   
   
