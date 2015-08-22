@@ -41,6 +41,7 @@ GEM
       execjs
       json
     barby (0.6.2)
+    barcode (0.2)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.3.5.1)
@@ -187,6 +188,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   barby
+  barcode (~> 0.2)
   bootstrap-sass (~> 3.3.5)
   bootstrap-will_paginate
   bootstrap_form

@@ -1,9 +1,10 @@
 
 <%#= @barcode_for %>
+<!-- <img src="<%#= "#{barcode_output}" %>"></img> -->
 
-<%#= @outputter.to_png %>
+<%#= raw (@barcode_for.to_ascii) %>
 
-<%= image_tag('barcode.png') %>
+<%= image_tag(@barcode) %>
 <%#= image_tag(url_for({:controller => 'try_codes', :action => 'index', :format => 'png' }) ) %>
 
 <%#= link_to "New QR Code", new_try_code_path %>

@@ -23,7 +23,7 @@ module Arduino
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     # cannot read file string versi utf8
-    config.middleware.use 'Utf8Sanitizer'
+    # config.middleware.use 'Utf8Sanitizer'
     
     config.active_record.raise_in_transactional_callbacks = true
     
