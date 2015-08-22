@@ -22,7 +22,12 @@ module Arduino
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+    # cannot read file string versi utf8
+    config.middleware.use 'Utf8Sanitizer'
+    
     config.active_record.raise_in_transactional_callbacks = true
+    
+    # for print with javascript
     config.assets.precompile += %w(print.css)
   end
 end
