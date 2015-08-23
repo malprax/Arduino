@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Listing Members</h1>
 
-<table>
+<table class="table table-hover table-stripped">
   <thead>
     <tr>
       <th>Name</th>
@@ -16,11 +14,12 @@
   <tbody>
     <% @members.each do |member| %>
       <tr>
+		<% member.barcode %>  
         <td><%= member.name %></td>
         <td><%= member.address %></td>
         <td><%= member.phone %></td>
-        <td><%= member.barcode %></td>
-        <td><%= link_to 'Show', member %></td>
+		<td><%= raw (@barcode_for) %></td>
+        <td><%= link_to 'Cetak Kartu', "#" %></td>
         <td><%= link_to 'Edit', edit_member_path(member) %></td>
         <td><%= link_to 'Destroy', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

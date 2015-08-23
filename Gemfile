@@ -58,6 +58,8 @@ gem 'rmagick'
 # gem 'bootstrap-sass'
 # gem 'autoprefixer-rails'
 
+#to show database column in models
+gem 'annotate'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

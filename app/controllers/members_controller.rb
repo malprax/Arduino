@@ -1,3 +1,15 @@
+require 'chunky_png'
+require 'RMagick'
+require 'barby'
+require 'barby/barcode/ean_13'
+require 'barby/barcode/code_39'
+require 'barby/barcode/code_128'
+require 'barby/barcode/qr_code'
+require 'barby/outputter/ascii_outputter'
+require 'barby/outputter/rmagick_outputter'
+require 'barby/outputter/html_outputter'
+require 'barby/outputter/png_outputter' 
+
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
 
@@ -10,6 +22,8 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.json
   def show
+    @barcode = Barby::Code128B.new(member_params[:name])
+    @barcode_for = Barby::HtmlOutputter.new(@barcode).to_html
   end
 
   # GET /members/new
@@ -25,7 +39,8 @@ class MembersController < ApplicationController
   # POST /members.json
   def create
     @member = Member.new(member_params)
-
+    
+    member_params[:barcode] = @barcode_for 
     respond_to do |format|
       if @member.save
         format.html { redirect_to @member, notice: 'Member was successfully created.' }
@@ -69,6 +84,6 @@ class MembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
-      params.require(:member).permit(:name, :address, :phone, :barcode)
+      params.require(:member).permit(:name, :address, :phone)
     end
 end

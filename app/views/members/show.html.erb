@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -17,7 +16,8 @@
 
 <p>
   <strong>Barcode:</strong>
-  <%= @member.barcode %>
+  <%#= @member.barcode %>
+  <%= raw (@barcode_for) %>
 </p>
 
 <%= link_to 'Edit', edit_member_path(@member) %> |
