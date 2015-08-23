@@ -1,11 +1,11 @@
-<h1>Listing Members</h1>
+<h3>Daftar Member</h3>
 
 <table class="table table-hover table-stripped">
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <th>Phone</th>
+      <th>Nama</th>
+      <th>Alamat</th>
+      <th>Telepon</th>
       
       <th colspan="3"></th>
     </tr>
@@ -20,8 +20,8 @@
         <td><%= member.phone %></td>
 		
         <td><%= link_to 'Cetak Kartu', "#" %></td>
-        <td><%= link_to 'Edit', edit_member_path(member) %></td>
-        <td><%= link_to 'Hapus', member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_member_path(member) %></td>
+        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Member', new_member_path %>
+<%= link_to 'Member Baru', new_member_path %>
