@@ -1,7 +1,7 @@
 
-	<h4>Billings <%= Time.now.strftime("%d %B %Y") %> </h4>
+	<h4>Billing :  <%= Time.now.strftime("%d %B %Y") %> </h4>
 
-	<table class="table table-bordered table-striped">
+	<table class="table table-hover table-striped">
 	  <thead>
 	    <tr>
 	      <th>User</th>
@@ -9,8 +9,9 @@
 	      <th>Jam Keluar</th>
 	      <th>Lama</th>
 	      <th>Biaya</th>
+		  <th>Stop</th>
 		  <th>Portal</th>
-	      <th colspan="3"></th>
+	      <th colspan="2">Option</th>
 	    </tr>
 	  </thead>
 
@@ -21,9 +22,9 @@
 	        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
 
 			<% unless billing.time_out.nil? %>
-			<% lama = ((billing.time_out - billing.time_in)/3600) %>
+			<% lama = (billing.time_out - billing.time_in) %>
 			<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
-	        <td><%= number_with_precision(lama, precision: 2) %></td>
+	        <td><%= lama  %></td>
 	        <td>Rp <%= number_with_precision(lama, precision: 2).to_i * 1000 %></td>
 			<% else %>
 			<td></td>
@@ -36,10 +37,8 @@
 				
 				<% end %>
 			</td>
-			<td><ul class="nav nav-pills">
-						  <li role="presentation" class="active"><button id="angkat_portal", class="btn btn-default">Angkat Portal</button></li>
-						  <li role="presentation"><button id="turunkan_portal", class="btn btn-success">Turunkan Portal</button></li>
-						</ul></td>
+			<td><button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+			<button id="turunkan_portal", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
 	        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 	      </tr>
