@@ -10,10 +10,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'shared/navigation' %>
 <div class="container-fluid">
-    <% if flash[:notice] %>
-      <div id="flash"><%= flash[:notice] %></div>
-    <% end %>
+	
+  <% if flash[:notice] %>
+    <div id="flash"><%= flash[:notice] %></div>
+  <% end %>
 	<div id="status">
 		<%#= render 'billings/current', current_billings: current_billings %>
 	</div>
