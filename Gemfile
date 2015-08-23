@@ -42,14 +42,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
 
 # barcode
-gem 'barcode', '~> 0.2'
-
+#barcode 1D
+gem 'barby'
+gem 'has_barcode'
+#barcode 2D
 gem 'rqrcode'
 # gem 'rqrcode_png'
 gem 'rqrcode-with-patches', '~> 0.5.4'
 
-#barcode 1D
-gem 'barby'
 
 #for image processing
 gem 'rmagick'
