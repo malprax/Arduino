@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   resources :qr_codes
 
-  resources :users
-
   resources :billings do
     collection do
       get 'current'
