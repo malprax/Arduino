@@ -22,8 +22,9 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.json
   def show
-    @barcode = Barby::Code128B.new(@member.name)
-    @barcode_for = Barby::HtmlOutputter.new(@barcode).to_html  
+    @barcode = Barby::Code128B.new(@member.id)
+    barcodex = Barby::HtmlOutputter.new(@barcode).to_html  
+    @barcode_for = barcodex
   end
 
   # GET /members/new
