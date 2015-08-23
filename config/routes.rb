@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :members
+
   resources :try_codes, only: [:new, :create, :index]
 
   resources :qr_codes
