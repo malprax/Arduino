@@ -145,8 +145,6 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
     rmagick (2.15.4)
-    rqrcode (0.7.0)
-      chunky_png
     rqrcode-with-patches (0.5.5)
       chunky_png
     sass (3.4.14)
@@ -213,7 +211,6 @@ DEPENDENCIES
   rails (= 4.2.0)
   rails_12factor
   rmagick
-  rqrcode
   rqrcode-with-patches (~> 0.5.4)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

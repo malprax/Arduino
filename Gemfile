@@ -46,9 +46,9 @@ gem 'unicorn'
 gem 'barby'
 gem 'has_barcode'
 #barcode 2D
-gem 'rqrcode'
+# gem 'rqrcode'
 # gem 'rqrcode_png'
-gem 'rqrcode-with-patches', '~> 0.5.4'
+ gem 'rqrcode-with-patches', '~> 0.5.4'
 
 
 #for image processing
