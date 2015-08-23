@@ -22,13 +22,14 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.json
   def show
-    @barcode = Barby::Code128B.new(member_params[:name])
-    @barcode_for = Barby::HtmlOutputter.new(@barcode).to_html
+    @barcode = Barby::Code128B.new(@member.name)
+    @barcode_for = Barby::HtmlOutputter.new(@barcode).to_html  
   end
 
   # GET /members/new
   def new
     @member = Member.new
+    
   end
 
   # GET /members/1/edit
@@ -39,8 +40,6 @@ class MembersController < ApplicationController
   # POST /members.json
   def create
     @member = Member.new(member_params)
-    
-    member_params[:barcode] = @barcode_for 
     respond_to do |format|
       if @member.save
         format.html { redirect_to @member, notice: 'Member was successfully created.' }
@@ -84,6 +83,6 @@ class MembersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def member_params
-      params.require(:member).permit(:name, :address, :phone)
+      params.require(:member).permit(:name, :address, :phone, :barcode)
     end
 end
