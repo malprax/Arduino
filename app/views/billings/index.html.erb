@@ -1,5 +1,14 @@
 
 	<h3>Billing :  <%= Time.now.strftime("%d %B %Y") %> </h3>
+	<%= link_to 'New Billing', new_billing_path, class: 'btn' %>
+    <%= link_to 'Portal', root_path, class: 'btn btn-default' %>
+	
+    <form class="navbar-form navbar-right" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
 
 	<table class="table table-hover table-striped">
 	  <thead>
@@ -45,10 +54,7 @@
 	    <% end %>
 	  </tbody>
 	</table>
-
 	<br>
 
-	<%= link_to 'New Billing', new_billing_path, class: 'btn' %>
-    <%= link_to 'Portal', root_path, class: 'btn btn-default' %>
-	
+	<br>
 
