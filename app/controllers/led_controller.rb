@@ -5,20 +5,20 @@ class LedController < ApplicationController
   
   
   def angkat_portal
-    @led.on
+    @led.off
     render :nothing => true
   end
   
   def turunkan_portal
-    @led.off
+    @led.on
     render :nothing => true
   end
   
   
   private
   def set_up_led
-    board = Arduino::Application.config.board
-    @led = Dino::Components::Led.new(pin: 12, board: board )
+    board = Dino::Board.new(Dino::TxRx.new)
+    @led = Dino::Components::Led.new(pin: 2, board: board )
     # @led2 = Dino::Components::Led.new(pin: 12, board: board )
   end
 end

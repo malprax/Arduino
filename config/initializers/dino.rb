@@ -6,7 +6,7 @@ Pusher.secret = pusher['secret']
 
 begin
   Arduino::Application.config.board = Dino::Board.new(Dino::TxRx.new)
-  button = Dino::Components::Button.new(pin: 13, board: Arduino::Application.config.board)
+  button = Dino::Components::Button.new(pin: 12, board: Arduino::Application.config.board)
 
   button.down do
     puts 'down'

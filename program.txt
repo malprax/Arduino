@@ -1,20 +1,14 @@
 # program servo
  #include <Servo.h> 
- 
  Servo myservo;  // create servo object to control a servo 
                  // a maximum of eight servo objects can be created 
- 
  int pos = 0;    // variable to store the servo position 
- 
  void setup() 
  { 
    myservo.attach(9);  // attaches the servo on pin 9 to the servo object 
  } 
- 
- 
  void loop() 
  { 
-  
    for(pos = 0; pos < 180; pos += 1)  // goes from 0 degrees to 180 degrees 
    {                                  // in steps of 1 degree 
      myservo.write(pos);              // tell servo to go to position in variable 'pos' 
@@ -87,4 +81,47 @@
  }
  
  
+ 
+# Program Gabungan
+#include "Dino.h"
+#include <Servo.h>
+Dino dino;
+
+//set servo
+Servo myservo;
+int pos = 0;
+
+//set input
+const int buttonPin = 2;
+int buttonState = 0;
+
+
+// Dino.h doesn't handle TXRX. Setup a function to tell it to write to Serial.
+void writeResponse(char *response) { Serial.print(response); Serial.print("\n"); }
+void (*writeCallback)(char *str) = writeResponse;
+
+void setup() {
+  Serial.begin(115200);
+  dino.setupWrite(writeCallback);
+  //  servo and button
+  myservo.attach(9); //pin 9 servo in
+  pinMode(buttonPin, INPUT);
+}
+
+void loop() {
+  while(Serial.available() > 0) dino.parse(Serial.read());
+  dino.updateListeners();
+  Serial.flush();
+   // put your main code here, to run repeatedly:
+  buttonState = digitalRead(buttonPin);
+  if(buttonState == HIGH && pos < 98){
+          myservo.write(pos++);             
+          delay(15);                        
+   }
+   else if(buttonState == LOW && pos > 0){
+          myservo.write(pos--);             
+          delay(15);                        
+   }
+}
+
  

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><% if current_billings.size > 0  %><%= number_with_precision((Time.now - current_billings.first.time_in) / 3600, precision: 2) %> - <% end %>Work Timer</title>
+  <title>Parkir Cerdas</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%=   stylesheet_link_tag 'print', :media => :print  %>
     <%#= stylesheet_link_tag    :application %>
