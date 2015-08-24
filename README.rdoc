@@ -45,19 +45,23 @@ berhasil buat barcode 2d tapi terkendala di mahalnya scanner
 berhasil buat barcode 1d tapi hanya versi html
 
 Progress hari ini minggu 23 agustus 2015
-priority:
-coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
 coba buat tabel user dengan generate barcode nya
-coba buat nomor parkirnya dan mengecek beberapa parameternya
 
+Progress hari ini senin 24 agustus 2015
+coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
+coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
+priority:
+
+
+coba buat nomor parkirnya dan mengecek beberapa parameternya
+coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
-coba buat member dan nonmember
 coba buat report pendapatan secara harian dan bulanan
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
 coba buat model miniatur parkiran
 coba riset scanner untuk membaca barcode
-coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
+
 
 Time progress
 29 oktober wisuda
