@@ -69,8 +69,8 @@ Time progress
 
 1. koneksi servo
 2. buat member card pdf
-3. buat keceradasan nomor parkir
-4. buat report harian bulanan
+3. buat report harian bulanan
+4. buat keceradasan nomor parkir
 
 
 
