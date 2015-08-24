@@ -72,7 +72,7 @@ Time progress
 15 september seminar hasil
 7 september asistensi dan pengurusan berkas
 
-1. koneksi servo
+target utama besar
 2. buat member card pdf
 3. buat report harian bulanan
 4. buat keceradasan nomor parkir
