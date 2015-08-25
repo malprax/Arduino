@@ -25,12 +25,12 @@
 	
 	
 $(function(){
-	setInterval(function(){
-	    $.get('/billings/current', function(data) {
-	      $('#status').html(data);
-	      if ($('.time')) document.title = $('.time').html()+ '- Arduino';
-	    });
-	  }, 3000);
+	// setInterval(function(){
+// 	    $.get('/billings/current', function(data) {
+// 	      $('#status').html(data);
+// 	      if ($('.time')) document.title = $('.time').html()+ '- Arduino';
+// 	    });
+// 	  }, 3000);
 
   	setInterval(function(){
   	    $.get('/billings/', function(data) {
