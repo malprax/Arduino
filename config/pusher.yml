@@ -1,14 +1,14 @@
 # create an account on http://pusher.com/
 # and put your credentials bellow.
 # Pusher.url = ENV["pusher_url"]
-app_id = '122739'
-key = '429f0dfaaec2f4d689e8'
-secret = '808cd9f52d25422d41ec'
+#app_id = '#####'
+#key = '#######'
+#secret = '######'
 #
 
-# Pusher.url = Figaro.env.pusher_url
-# Pusher.app_id = Figaro.env.pusher_app_id
-# Pusher.key = Figaro.env.pusher_key
-# Pusher.secret = Figaro.env.pusher_secret
+pusher_url = Figaro.env.pusher_url
+pusher_app_id = Figaro.env.pusher_app_id
+pusher_key = Figaro.env.pusher_key
+pusher_secret = Figaro.env.pusher_secret
 
 

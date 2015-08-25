@@ -1,5 +1,5 @@
-<% current_billings.each do |bill| %>
+<%# current_billings.each do |bill| %>
 	<div class="time">
-		<%= number_with_precision((Time.now - bill.time_in)/3600, precision: 2) %>
+		<%#= number_with_precision((Time.now - bill.time_in)/3600, precision: 2) %>
   	</div>
-<% end %>
+<%# end %>
