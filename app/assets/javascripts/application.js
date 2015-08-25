@@ -32,11 +32,11 @@ $(function(){
 // 	    });
 // 	  }, 3000);
 
-  	setInterval(function(){
-  	    $.get('/billings/', function(data) {
-  	      $('.time');
-  	    });
-  	  }, 3000);
+  	// setInterval(function(){
+	//   	    $.get('/billings/', function(data) {
+	//   	      $('.time');
+	//   	    });
+	//   	  }, 3000);
 
 	if ($('#flash').length > 0){
 		setTimeout(function(){
