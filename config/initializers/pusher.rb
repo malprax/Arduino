@@ -1,11 +1,5 @@
 # config/initializers/pusher.rb
 require 'pusher'
 
-Pusher.url = Figaro.env.pusher_url
+Pusher.url = "https://429f0dfaaec2f4d689e8:808cd9f52d25422d41ec@api.pusherapp.com/apps/122739"
 Pusher.logger = Rails.logger
-Pusher.app_id = Figaro.env.pusher_app_id
-Pusher.key = Figaro.env.pusher_key
-Pusher.secret = Figaro.env.pusher_secret
-
-
-
