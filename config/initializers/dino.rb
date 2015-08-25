@@ -1,16 +1,14 @@
 pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
-Pusher.app_id = Figaro.env.pusher_app_id
-Pusher.key = Figaro.env.pusher_key
-Pusher.secret = Figaro.env.pusher_secret
-
-
+Pusher.app_id = pusher['app_id']
+Pusher.key = pusher['key']
+Pusher.secret = pusher['secret']
 
 
 
 begin
-  Arduino::Application.config.board = Dino::Board.new(Dino::TxRx.new)
-  button = Dino::Components::Button.new(pin: 12, board: Arduino::Application.config.board)
+  DinoRails::Application.config.board = Dino::Board.new(Dino::TxRx.new)
+  button = Dino::Components::Button.new(pin: 2, board: DinoRails::Application.config.board)
 
   button.down do
     puts 'down'
