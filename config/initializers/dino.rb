@@ -1,8 +1,8 @@
 pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
-Pusher.app_id = pusher['app_id']
-Pusher.key = pusher['key']
-Pusher.secret = pusher['secret']
+Pusher.app_id = ENV["app_id"]
+Pusher.key = ENV["key"]
+Pusher.secret = ENV["secret"]
 
 begin
   Arduino::Application.config.board = Dino::Board.new(Dino::TxRx.new)
