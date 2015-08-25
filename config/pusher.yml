@@ -1,6 +1,6 @@
 # create an account on http://pusher.com/
 # and put your credentials bellow.
-
+Pusher.url = ENV["url"]
 Pusher.app_id = ENV["app_id"]
 Pusher.key = ENV["key"]
 
