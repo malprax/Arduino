@@ -12,7 +12,7 @@
 //
 
 //= require jquery
-	
+//= require jquery.min	
 //= require jquery.cookie
 //= require jstz
 //= require browser_timezone_rails/set_time_zone
@@ -24,7 +24,7 @@
 
 	
 	
-$(function(){
+// $(function(){
 	// setInterval(function(){
 // 	    $.get('/billings/current', function(data) {
 // 	      $('#status').html(data);
@@ -38,22 +38,22 @@ $(function(){
 	//   	    });
 	//   	  }, 3000);
 
-	if ($('#flash').length > 0){
-		setTimeout(function(){
-			$('#flash').slideUp();
-		}, 5000);
-	}
-});
-
-
-function printpage()
-{
-   window.print()
-}
-
-$(document).on('click', '#exclude', function(){
-	$('#report').find('.no_data').toggle();
-});
+// 	if ($('#flash').length > 0){
+// 		setTimeout(function(){
+// 			$('#flash').slideUp();
+// 		}, 5000);
+// 	}
+// });
+//
+//
+// function printpage()
+// {
+//    window.print()
+// }
+//
+// $(document).on('click', '#exclude', function(){
+// 	$('#report').find('.no_data').toggle();
+// });
 
 $(function(){
 	$('#angkat_portal').click(function(){
