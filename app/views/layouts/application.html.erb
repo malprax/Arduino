@@ -6,23 +6,8 @@
   <%=   stylesheet_link_tag 'print', :media => :print  %>
    
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" %>
   <%= javascript_include_tag "https://js.pusher.com/2.2/pusher.min.js" %>
-    <script>
-      // Enable pusher logging - don't include this in production
-      Pusher.log = function(message) {
-        if (window.console && window.console.log) {
-          window.console.log(message);
-        }
-      };
-
-      var pusher = new Pusher('429f0dfaaec2f4d689e8', {
-        encrypted: true
-      });
-      var channel = pusher.subscribe('test_channel');
-      channel.bind('my_event', function(data) {
-        alert(data.message);
-      });
-    </script>
   <%= csrf_meta_tags %>
 </head>
 
