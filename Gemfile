@@ -17,7 +17,7 @@ gem 'will_paginate'
 gem 'bootstrap_form'
 
 #nice terminal
-gem 'quiet_assets', group: :development
+gem 'quiet_assets'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

@@ -51,7 +51,7 @@ Progress hari ini senin 24 agustus 2015
 coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
 coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
 
-Progress hari besok
+Progress hari ini selasa 25 agustus 2015
 priority:
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
