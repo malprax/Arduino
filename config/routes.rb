@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   resources :qr_codes
 
   resources :billings do
-    collection do
-      get 'current'
-    end
+    # collection do
+#       get 'current'
+#     end
     
     member do
       patch 'stop'

@@ -1,8 +1,12 @@
 pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
-Pusher.app_id = ENV["app_id"]
-Pusher.key = ENV["key"]
-Pusher.secret = ENV["secret"]
+Pusher.app_id = Figaro.env.pusher_app_id
+Pusher.key = Figaro.env.pusher_key
+Pusher.secret = Figaro.env.pusher_secret
+
+
+
+
 
 begin
   Arduino::Application.config.board = Dino::Board.new(Dino::TxRx.new)

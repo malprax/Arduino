@@ -74,9 +74,9 @@ class BillingsController < ApplicationController
     end
   end
   
-  def current
-    render partial: 'billings/current', current_billings: current_billings
-  end
+  # def current
+#     render partial: 'billings/current', current_billings: current_billings
+#   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
