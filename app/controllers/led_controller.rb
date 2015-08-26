@@ -18,7 +18,7 @@ class LedController < ApplicationController
   
   private
   def set_up_led
-    board = Dino::Board.new(Dino::TxRx.new)
+    board = Dino::Board.new(Dino::TxRx::Serial.new)
     @led = Dino::Components::Led.new(pin: 2, board: board )
     # @led2 = Dino::Components::Led.new(pin: 12, board: board )
   end
