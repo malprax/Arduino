@@ -1,8 +1,8 @@
 pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
-Pusher.app_id = pusher['pusher_app_id']
-Pusher.key = pusher['pusher_key']
-Pusher.secret = pusher['pusher_secret']
+Pusher.app_id = pusher['app_id']
+Pusher.key = pusher['key']
+Pusher.secret = pusher['secret']
 
 
 
