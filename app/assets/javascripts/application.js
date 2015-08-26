@@ -12,10 +12,6 @@
 //
 
 //= require jquery
-//= require jquery.min	
-//= require jquery.cookie
-//= require jstz
-//= require browser_timezone_rails/set_time_zone
 	
 //= require bootstrap-sprockets
 //= require jquery_ujs
