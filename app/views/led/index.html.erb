@@ -12,10 +12,10 @@
 		});
 		 var pusher = new Pusher('429f0dfaaec2f4d689e8');
 		 var channel = pusher.subscribe('button');
-		 channel.bind('angkat_portal', function(data) {
+		 channel.bind('down', function(data) {
 		   $('body').css({background: 'red'})
 		 });
-		 channel.bind('turunkan_portal', function(data) {
+		 channel.bind('up', function(data) {
 		   $('body').css({background: 'white'})
 		 });
 </script>

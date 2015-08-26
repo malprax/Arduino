@@ -1,4 +1,4 @@
-require 'dino'
+
 class LedController < ApplicationController
   before_action :set_up_led, only: [:angkat_portal, :turunkan_portal]
   def index
@@ -18,8 +18,8 @@ class LedController < ApplicationController
   
   private
   def set_up_led
-    board = Dino::Board.new(Dino::TxRx::Serial.new)
-    @led = Dino::Components::Led.new(pin: 2, board: board )
+    board = Arduino::Aplication.config.board
+    @led = Dino::Components::Led.new(pin: 12, board: board )
     # @led2 = Dino::Components::Led.new(pin: 12, board: board )
   end
 end
