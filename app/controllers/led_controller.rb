@@ -1,3 +1,4 @@
+require 'dino'
 class LedController < ApplicationController
   before_action :set_up_led, only: [:angkat_portal, :turunkan_portal]
   def index
