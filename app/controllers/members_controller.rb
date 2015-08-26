@@ -1,5 +1,5 @@
 require 'chunky_png'
-require 'RMagick'
+require 'rmagick'
 require 'barby'
 require 'barby/barcode/ean_13'
 require 'barby/barcode/code_39'
