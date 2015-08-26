@@ -55,24 +55,24 @@
 // 	$('#report').find('.no_data').toggle();
 // });
 
-$(function(){
-	$('#angkat_portal').click(function(){
-	   $.get('/angkat_portal')
-	 });
- 
-	$('#turunkan_portal').click(function(){
-	   $.get('/turunkan_portal')
-	});
-	 var pusher = new Pusher('#{Pusher.key}');
-	 var channel = pusher.subscribe('button');
-	 channel.bind('angkat_portal', function(data) {
-	   $('body').css({background: 'red'})
-	 });
-	 channel.bind('turunkan_portal', function(data) {
-	   $('body').css({background: 'white'})
-	 });
+// $(function(){
+	// $('#angkat_portal').click(function(){
+// 	   $.get('/angkat_portal')
+// 	 });
+//
+// 	$('#turunkan_portal').click(function(){
+// 	   $.get('/turunkan_portal')
+// 	});
+// 	 var pusher = new Pusher('#{Pusher.key}');
+// 	 var channel = pusher.subscribe('button');
+// 	 channel.bind('angkat_portal', function(data) {
+// 	   $('body').css({background: 'red'})
+// 	 });
+// 	 channel.bind('turunkan_portal', function(data) {
+// 	   $('body').css({background: 'white'})
+// 	 });
 	
-});
+// });
 
 		
 
