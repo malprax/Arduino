@@ -4,16 +4,14 @@
 #app_id = '#####'
 #key = '#######'
 #secret = '######'
-#
-
-url = ENV["PUSHER_URL"]
-
-app_id = ENV["PUSHER_APP_ID"]
-key = ENV["PUSHER_KEY"]
-secret = ENV["PUSHER_SECRET"]
-
 # pusher_app_id = Figaro.env.pusher_app_id
 # pusher_key = Figaro.env.pusher_key
 # pusher_secret = Figaro.env.pusher_secret
+#
+
+url = ENV["PUSHER_URL"]
+app_id = ENV["PUSHER_APP_ID"]
+key = ENV["PUSHER_KEY"]
+secret = ENV["PUSHER_SECRET"]
 
 
