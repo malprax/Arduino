@@ -6,7 +6,7 @@
 #secret = '######'
 #
 
-pusher_url = Figaro.env.pusher_url
+
 pusher_app_id = Figaro.env.pusher_app_id
 pusher_key = Figaro.env.pusher_key
 pusher_secret = Figaro.env.pusher_secret
