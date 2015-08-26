@@ -83,7 +83,8 @@ end
 gem 'pusher'
 
 #use arduino
-gem 'dino', :git => 'git://github.com/austinbv/dino.git'
+# gem 'dino', :git => 'git://github.com/austinbv/dino.git'
+ gem 'dino'
 
 # gem 'redcarpet', :git => 'git://github.com/tanoku/redcarpet.git'
 #hidden access key
