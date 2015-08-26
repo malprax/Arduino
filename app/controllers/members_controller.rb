@@ -25,6 +25,16 @@ class MembersController < ApplicationController
     @barcode = Barby::Code128B.new(@member.id)
     barcodex = Barby::HtmlOutputter.new(@barcode).to_html  
     @barcode_for = barcodex
+    respond_to do |format|
+      format.html
+      format.pdf do
+        pdf = RegisterPdf.new(@member)
+        send_data pdf.render,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "Form_#{@member.name}.pdf"
+      end
+    end
   end
 
   # GET /members/new

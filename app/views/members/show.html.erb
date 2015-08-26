@@ -1,24 +1,20 @@
+<div class="col-sm-6 col-md-4 col-lg-4">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Member Parkir</h3>
+	  </div>
+ 
+	  <ul class="list-group">
+	    <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.name.titleize %></li>
+	    <li class="list-group-item"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.address.titleize %></li>
+	    <li class="list-group-item"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.phone %></li>
+	    <li class="list-group-item"><%= raw (@barcode_for) %></li>
+	  </ul>
 
-<p>
-  <strong>Nama:</strong>
-  <%= @member.name %>
-</p>
-
-<p>
-  <strong>Alamat:</strong>
-  <%= @member.address %>
-</p>
-
-<p>
-  <strong>Telepon:</strong>
-  <%= @member.phone %>
-</p>
-
-<p>
-  <strong>Barcode:</strong>
-  <%#= @member.barcode %>
-  <%= raw (@barcode_for) %>
-</p>
-
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= link_to 'Kembali', members_path %>
+	  <div class="panel-footer">
+		  <%= link_to 'Edit', edit_member_path(@member), class: 'btn btn-default' %> 
+		  <%= link_to 'Kembali', members_path, class: 'btn btn-success' %>
+	  </div>
+	</div>
+	
+</div>
