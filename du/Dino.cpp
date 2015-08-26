@@ -254,4 +254,3 @@ void Dino::setHeartRate() {
     Serial.print("Heart rate set to "); Serial.print(heartRate); Serial.println(" microseconds");
   #endif
 }
-
