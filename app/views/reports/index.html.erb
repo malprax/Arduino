@@ -35,8 +35,8 @@
 			    <% @reports.each do |report| %>
 			      <tr>
 					  <td><%= report.date %></td>
+			        <td><%= report.billing%></td>
 			        <td><%= report.billing %></td>
-			        <td><%= report.billing.time_in %></td>
 			        <td><%= report.time_out %></td>
 					<td><%= report.duration %></td>
 					<td><%= report.price %></td>
