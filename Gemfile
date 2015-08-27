@@ -102,3 +102,6 @@ gem "kaminari", '0.16.1'
 #convert to pdf
 gem 'prawn'
 
+#faster webrick
+gem 'thin'
+

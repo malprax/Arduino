@@ -3,14 +3,12 @@
 	  <div class="panel-heading">
 	    <h3 class="panel-title">Member Parkir</h3>
 	  </div>
- 
-	  <ul class="list-group">
-	    <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.name.titleize %></li>
-	    <li class="list-group-item"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.address.titleize %></li>
-	    <li class="list-group-item"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.phone %></li>
-	    <li class="list-group-item"><%= raw (@barcode_for) %></li>
-	  </ul>
-
+  	  <ul class="list-group">
+  	    <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.name.titleize %></li>
+  	    <li class="list-group-item"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.address.titleize %></li>
+  	    <li class="list-group-item"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.phone %></li>
+		<li class="list-group-item"><%= raw (@barcode_for) %></li>
+  	  </ul>
 	  <div class="panel-footer">
 		  <%= link_to 'Edit', edit_member_path(@member), class: 'btn btn-default' %> 
 		  <%= link_to 'Kembali', members_path, class: 'btn btn-success' %>
