@@ -1,0 +1,41 @@
+<%= form_for(@report) do |f| %>
+  <% if @report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+
+      <ul>
+      <% @report.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br>
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :member %><br>
+    <%= f.text_field :member %>
+  </div>
+  <div class="field">
+    <%= f.label :time_in %><br>
+    <%= f.text_field :time_in %>
+  </div>
+  <div class="field">
+    <%= f.label :time_out %><br>
+    <%= f.text_field :time_out %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

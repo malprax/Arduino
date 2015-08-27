@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @report.date %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @report.member %>
+</p>
+
+<p>
+  <strong>Time in:</strong>
+  <%= @report.time_in %>
+</p>
+
+<p>
+  <strong>Time out:</strong>
+  <%= @report.time_out %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @report.duration %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @report.price %>
+</p>
+
+<%= link_to 'Edit', edit_report_path(@report) %> |
+<%= link_to 'Back', reports_path %>

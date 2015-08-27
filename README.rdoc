@@ -53,13 +53,20 @@ coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
 
 Progress hari ini selasa 25 agustus 2015
 priority:
+coba buat koneksi dari browser ke arduino
+
+Progress hari ini rabu 26 agustus 2015
+priority:
+coba buat koneksi dari arduino ke browser
+sudah pesan barcode scanner yang dimaui untuk riset
+
+Progres hari ini kamis 27 agustus 2015
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat print out otomatis setleah menscan kartu member
 coba buat report pendapatan secara harian dan bulanan
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
-
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 coba riset scanner untuk membaca barcode
