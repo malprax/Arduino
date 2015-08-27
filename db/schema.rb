@@ -17,11 +17,12 @@ ActiveRecord::Schema.define(version: 20150827061339) do
   enable_extension "plpgsql"
 
   create_table "billings", force: :cascade do |t|
-    t.string   "user"
+    t.integer  "member_id"
     t.datetime "time_in"
     t.datetime "time_out"
     t.decimal  "price"
     t.string   "comment"
+    t.date     "expiration"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,10 +38,11 @@ ActiveRecord::Schema.define(version: 20150827061339) do
 
   create_table "reports", force: :cascade do |t|
     t.datetime "date"
-    t.string   "member"
-    t.string   "time_in"
-    t.string   "time_out"
-    t.string   "duration"
+    t.integer  "billing_id"
+    t.datetime "time_in"
+    t.datetime "time_out"
+    t.datetime "duration"
+    t.string   "comment"
     t.decimal  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

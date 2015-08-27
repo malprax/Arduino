@@ -36,7 +36,7 @@
 			  <tbody>
 			    <% @billings.each do |billing| %>
 			      <tr>
-			        <td><%= link_to billing.user, billing %></td>
+			        <td><%= billing.member.name %></td>
 			        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
 
 					<% unless billing.time_out.nil? %>

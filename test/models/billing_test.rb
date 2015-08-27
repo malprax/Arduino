@@ -3,11 +3,12 @@
 # Table name: billings
 #
 #  id         :integer          not null, primary key
-#  user       :string
+#  member_id  :integer
 #  time_in    :datetime
 #  time_out   :datetime
 #  price      :decimal(, )
 #  comment    :string
+#  expiration :date
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

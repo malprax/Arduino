@@ -26,7 +26,6 @@ class BillingsController < ApplicationController
   # POST /billings.json
   def create
     @billing = Billing.new(billing_params)
-
     respond_to do |format|
       if @billing.save
         format.html { redirect_to @billing, notice: 'Billing was successfully created.' }
@@ -104,6 +103,6 @@ class BillingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def billing_params
-      params.require(:billing).permit(:user, :time_in, :time_out, :price, :comment, :duration)
+      params.require(:billing).permit(:member_id, :time_in, :time_out, :price, :comment, :duration, :expiration, :reports_attributes => [:id, :date, :time_in, :time_out, :duration, :price, :comment] )
     end
 end

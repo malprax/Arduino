@@ -1,7 +1,7 @@
 
 <p>
-  <strong>User:</strong>
-  <%= @billing.user %>
+  <strong>Member:</strong>
+  <%= @billing.member.name %>
 </p>
 
 <p>
@@ -22,6 +22,11 @@
 <p>
   <strong>Price:</strong>
   <%= @billing.price %>
+</p>
+
+<p>
+  <strong>Expired:</strong>
+  <%= @billing.expiration %>
 </p>
 
 <%= link_to 'Edit', edit_billing_path(@billing), class:'btn btn-default' %> 

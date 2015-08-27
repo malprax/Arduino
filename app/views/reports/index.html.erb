@@ -34,9 +34,9 @@
 			  <tbody>
 			    <% @reports.each do |report| %>
 			      <tr>
-					  <td><%= report.datetime %></td>
-			        <td><%= link_to report.member.titleize, report %></td>
-			        <td><%= report.time_in %></td>
+					  <td><%= report.date %></td>
+			        <td><%= report.billing %></td>
+			        <td><%= report.billing.time_in %></td>
 			        <td><%= report.time_out %></td>
 					<td><%= report.duration %></td>
 					<td><%= report.price %></td>
