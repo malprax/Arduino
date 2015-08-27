@@ -1,60 +1,70 @@
+<div class="row">
+	<div class="col-md-12"><h3>Billing :  <%= Time.now.strftime("%d %B %Y") %></h3></div>
+	
+</div>
 
-	<h3>Billing :  <%= Time.now.strftime("%d %B %Y") %> </h3>
-	<%= link_to 'New Billing', new_billing_path, class: 'btn' %>
+<div class="row">
+	<div class="col-md-12"><%= link_to 'New Billing', new_billing_path, class: 'btn' %>
     <%= link_to 'Portal', root_path, class: 'btn btn-default' %>
 	
     <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
+        <input type="text" class="form-control" placeholder="Kata Kunci">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-primary">Cari</button>
     </form>
+	</div>
+</div>
 
-	<table class="table table-hover table-striped">
-	  <thead>
-	    <tr>
-	      <th>User</th>
-	      <th>Jam Masuk</th>
-	      <th>Jam Keluar</th>
-	      <th>Lama</th>
-	      <th>Biaya</th>
-		  <th>Stop</th>
-		  <th>Portal</th>
-	      <th colspan="2">Option</th>
-	    </tr>
-	  </thead>
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-success">
+			<div class="panel panel-heading"></div>
+			<table class="table table-hover table-striped">
+			  <thead>
+			    <tr>
+			      <th>Member</th>
+			      <th>Jam Masuk</th>
+			      <th>Jam Keluar</th>
+			      <th>Lama</th>
+			      <th>Biaya</th>
+				  <th>Stop</th>
+				  <th>Portal</th>
+			      <th colspan="2">Option</th>
+			    </tr>
+			  </thead>
 
-	  <tbody>
-	    <% @billings.each do |billing| %>
-	      <tr>
-	        <td><%= billing.user %></td>
-	        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
+			  <tbody>
+			    <% @billings.each do |billing| %>
+			      <tr>
+			        <td><%= link_to billing.user, billing %></td>
+			        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
 
-			<% unless billing.time_out.nil? %>
-			<% lama = (billing.time_out - billing.time_in) %>
-			<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
-	        <td><%= lama  %></td>
-	        <td>Rp <%= number_with_precision(lama, precision: 2).to_i * 1000 %></td>
-			<% else %>
-			<td></td>
-			<td><%#= number_with_precision((Time.now - current_billings.first.time_in) / 3600, precision: 2, class:'time') %></td>
-			<td></td>
-			<% end %>
+					<% unless billing.time_out.nil? %>
+					<% lama = (billing.time_out - billing.time_in) %>
+					<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
+			        <td><%= lama  %></td>
+			        <td>Rp <%= number_with_precision(lama, precision: 2).to_i * 1000 %></td>
+					<% else %>
+					<td></td>
+					<td><%#= number_with_precision((Time.now - current_billings.first.time_in) / 3600, precision: 2, class:'time') %></td>
+					<td></td>
+					<% end %>
 
-	        <td><% if billing.time_out.nil? %> 
-				<div class="time"><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %> </div>
+			        <td><% if billing.time_out.nil? %> 
+						<div class="time"><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %> </div>
 				
-				<% end %>
-			</td>
-			<td><button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
-			<button id="turunkan_portal", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></td>
-	        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
-	        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-	      </tr>
-	    <% end %>
-	  </tbody>
-	</table>
-	<br>
-
-	<br>
-
+						<% end %>
+					</td>
+					<td><button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+					<button id="turunkan_portal", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></button></td>
+			        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
+			        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			      </tr>
+			    <% end %>
+			  </tbody>
+			</table>
+			<br>
+		</div>
+	</div>
+</div>
