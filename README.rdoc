@@ -64,6 +64,7 @@ Progres hari ini kamis 27 agustus 2015
 coba riset callback untuk billing
 coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
 
+
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat print out otomatis setleah menscan kartu member
@@ -74,7 +75,7 @@ coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 coba riset scanner untuk membaca barcode
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
-
+target akhir 7 september
 
 Time progress
 29 oktober wisuda
