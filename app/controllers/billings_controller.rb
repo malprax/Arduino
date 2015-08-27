@@ -1,4 +1,5 @@
 class BillingsController < ApplicationController
+  before_action :set_up_led, only: [:angkat_portal, :turunkan_portal]
   before_action :set_billing, only: [:show, :edit, :update, :destroy]
 
   # GET /billings
@@ -78,10 +79,27 @@ class BillingsController < ApplicationController
 #     render partial: 'billings/current', current_billings: current_billings
 #   end
 
+  def angkat_portal
+    @led.off
+    render :nothing => true
+  end
+
+  def turunkan_portal
+    @led.on
+    render :nothing => true
+  end
+  
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_billing
       @billing = Billing.find(params[:id])
+    end
+    
+    def set_up_led
+      @board = Dino::Board.new(Dino::TxRx.new)
+      @led = Dino::Components::Led.new(pin: 12, board: @board )
+      # @led2 = Dino::Components::Led.new(pin: 12, board: board )
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
