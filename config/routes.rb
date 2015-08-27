@@ -1,13 +1,8 @@
 Rails.application.routes.draw do
 
   resources :reports
-
   resources :members
-
   resources :try_codes, only: [:new, :create, :index]
-
-  resources :qr_codes
-
   resources :billings do
     # collection do
 #       get 'current'
@@ -24,13 +19,7 @@ Rails.application.routes.draw do
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-  # match '/on' => 'led#on'
-  # match '/off' => 'led#off'
-
-  root 'led#index'
+  root 'billings#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
