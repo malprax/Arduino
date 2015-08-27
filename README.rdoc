@@ -64,7 +64,7 @@ Progres hari ini kamis 27 agustus 2015
 coba riset callback untuk billing
 coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
 
-
+pelajari gem whenever untuk membuat pengecekan aplikasi
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat print out otomatis setleah menscan kartu member
