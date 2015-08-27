@@ -14,4 +14,6 @@
 #
 
 class Report < ActiveRecord::Base
+  has_many :billings, dependent: :destroy
+  
 end

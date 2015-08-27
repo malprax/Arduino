@@ -70,6 +70,7 @@ coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan r
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 coba riset scanner untuk membaca barcode
+coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 
 
 Time progress
@@ -84,6 +85,8 @@ target utama besar
 2. buat member card pdf
 3. buat report harian bulanan
 4. buat keceradasan nomor parkir
+
+
 
 
 

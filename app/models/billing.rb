@@ -13,6 +13,9 @@
 #
 
 class Billing < ActiveRecord::Base
+  belongs_to :report
+  before_create :set_expiration_date
+  before_destroy :delete_expired
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -44,6 +47,17 @@ class Billing < ActiveRecord::Base
   def self.time_today
     sum = 0.0
     self.today.each {|e| sum += (e.time_out.nil ? Time.now : e.time_out) - e.time_in }
+  end
+  
+  def set_expiration_date
+    self.expiration = Date.today + 1.days
+    save
+  end
+  
+  def delete_expired_data
+    
+    @billing.destroy
+    redirect_to(:back)
   end
   
 end
