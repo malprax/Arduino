@@ -68,7 +68,7 @@ pelajari gem whenever untuk membuat pengecekan aplikasi
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
-coba buat print out otomatis setleah menscan kartu member
+coba buat print out otomatis setelah menscan kartu member
 coba buat report pendapatan secara harian dan bulanan
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 
