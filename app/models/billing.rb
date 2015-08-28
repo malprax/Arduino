@@ -58,7 +58,7 @@ class Billing < ActiveRecord::Base
   
   def copy_to_reports
     billing_item = self.attributes
-    Report.create!(billing_item.merge(:date => :expiration ))
+    Report.create!(billing_item.merge(:expiration => :date ))
   end
   
 end
