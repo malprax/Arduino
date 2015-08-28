@@ -15,10 +15,11 @@
 
 class Billing < ActiveRecord::Base
   belongs_to :member
-  has_many :reports
+  has_many :reports, dependent: :destroy  
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
-  before_destroy :copy_to_reports
+  after_update :copy_to_reports
+  
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -57,8 +58,7 @@ class Billing < ActiveRecord::Base
   end
   
   def copy_to_reports
-      reports.build(:date => :created_at, :member_id => :member_id, :time_in => :time_in, :time_out => :time_out, :comment => :comment, :price => :price)
-    end
+    # reports.build
   end
   
 end

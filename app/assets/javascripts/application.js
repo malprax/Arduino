@@ -12,15 +12,12 @@
 //
 
 //= require jquery	
-//= require jquery.cookie
-//= require jstz
-//= require browser_timezone_rails/set_time_zone
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 	
-// $(function(){
+$(function(){
 	// setInterval(function(){
 // 	    $.get('/billings/current', function(data) {
 // 	      $('#status').html(data);
@@ -34,12 +31,12 @@
 	//   	    });
 	//   	  }, 3000);
 
-// 	if ($('#flash').length > 0){
-// 		setTimeout(function(){
-// 			$('#flash').slideUp();
-// 		}, 5000);
-// 	}
-// });
+	if ($('#flash').length > 0){
+		setTimeout(function(){
+			$('#flash').slideUp();
+		}, 5000);
+	};
+});
 //
 //
 // function printpage()
@@ -50,29 +47,4 @@
 // $(document).on('click', '#exclude', function(){
 // 	$('#report').find('.no_data').toggle();
 // });
-
-$(function(){
-	$('#angkat_portal').click(function(){
-	   $.get('/angkat_portal')
-	 });
-
-	$('#turunkan_portal').click(function(){
-	   $.get('/turunkan_portal')
-	});
-	 var pusher = new Pusher('#{Pusher.key}');
-	 var channel = pusher.subscribe('button');
-	 channel.bind('angkat_portal', function(data) {
-	   $('body').css({background: 'red'})
-	 });
-	 channel.bind('turunkan_portal', function(data) {
-	   $('body').css({background: 'white'})
-	 });
-
-});
-
-		
-
-
-
-
 
