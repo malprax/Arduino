@@ -4,6 +4,7 @@
 #
 #  id         :integer          not null, primary key
 #  date       :datetime
+#  billing_id :integer
 #  member_id  :integer
 #  time_in    :datetime
 #  time_out   :datetime

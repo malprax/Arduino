@@ -8,7 +8,7 @@
 #  time_out   :datetime
 #  price      :decimal(, )
 #  comment    :string
-#  expiration :date
+#  expiration :datetime
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
