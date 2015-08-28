@@ -94,7 +94,7 @@ gem 'figaro'
 gem 'rails_12factor', group: :production
 
 #time zones each users
-# gem 'browser-timezone-rails'
+gem 'browser-timezone-rails'
 
 #add pagination
 gem "kaminari", '0.16.1'
