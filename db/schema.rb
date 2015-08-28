@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20150827061339) do
 
   create_table "reports", force: :cascade do |t|
     t.datetime "date"
-    t.integer  "billing_id"
+    t.integer  "member_id"
     t.datetime "time_in"
     t.datetime "time_out"
     t.datetime "duration"

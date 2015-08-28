@@ -18,7 +18,7 @@ class Billing < ActiveRecord::Base
   has_many :reports
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
-  before_save :delete_expired_data
+  before_destroy :copy_to_reports
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -56,10 +56,8 @@ class Billing < ActiveRecord::Base
     self.expiration = Date.today + 1.day
   end
   
-  def delete_expired_data
-    if self.expiration == Date.today
-      reports.build(:date => :created_at, :billing_id => :id, :time_in => :time_in, :time_out => :time_out, :comment => :comment, :price => :price)
-      self.delete
+  def copy_to_reports
+      reports.build(:date => :created_at, :member_id => :member_id, :time_in => :time_in, :time_out => :time_out, :comment => :comment, :price => :price)
     end
   end
   
