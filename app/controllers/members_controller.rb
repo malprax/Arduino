@@ -16,7 +16,7 @@ class MembersController < ApplicationController
   # GET /members
   # GET /members.json
   def index
-    @members = Member.search(params[:search]).page(params[:page]).per(10)
+    @members = Member.search(params[:search]).page(params[:page])#.per(10)
   end
 
   # GET /members/1
