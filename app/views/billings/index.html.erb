@@ -1,11 +1,9 @@
 <div class="row">
-	<div class="col-md-12"><h3>Billing :  <%= Time.now.strftime("%d %B %Y") %></h3></div>
-	
+	<div class="col-md-12">
+		<h3>Billing : <span class="time-rect-container"></span></h3>
+	</div>	
 </div>
 
-<div class="time-rect-container">
-   <%= render :partial => 'shared/time_portion' %>
- </div>
 
 
 
@@ -47,13 +45,13 @@
 			        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
 
 					<% unless billing.time_out.nil? %>
-					<% lama = (billing.time_out - billing.time_in) %>
+					<% selisih_waktu = (Time.parse(billing.time_out.to_s) - Time.parse(billing.time_in.to_s))%>
 					<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
-			        <td><%= lama  %></td>
-			        <td>Rp <%= number_with_precision(lama, precision: 2).to_i * 1000 %></td>
+			        <td><%=  selisih_waktu.to_i.pretty_duration    %></td>
+			        <td>Rp <%= number_with_precision(selisih_waktu/1800, precision: 2).to_i * 1000 %></td>
 					<% else %>
 					<td></td>
-					<td><%#= number_with_precision((Time.now - current_billings.first.time_in) / 3600, precision: 2, class:'time') %></td>
+					<td class="duration"><%= render 'shared/duration' %></td>
 					<td></td>
 					<% end %>
 

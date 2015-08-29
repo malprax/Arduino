@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
   match'/angkat_portal' => 'billings#angkat_portal', via: :get
   match '/turunkan_portal' => 'billings#turunkan_portal', via: :get
+  match '/give_time' => 'billings#give_time', via: :get
+  match '/durate' => 'billings#durate', via: :get
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.

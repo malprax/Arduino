@@ -90,10 +90,27 @@ class BillingsController < ApplicationController
   
   def give_time
 
-    @time = Time.now.strftime("%H:%M:%S ")
+    @time = Time.now.strftime("%d %B %Y %H:%M:%S ")
 
     render :partial => 'shared/time_portion'
 
+  end
+  
+  def pretty_duration
+    parse_string = 
+        if self < 3600
+            '%M:%S'
+        else
+            '%H:%M:%S'
+        end
+
+    Time.at(self).utc.strftime(parse_string)
+  end
+  
+  def durate
+    durate = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))
+    @durate = durate.to_i.pretty_duration
+    render :partial => 'shared/duration'
   end
   
 

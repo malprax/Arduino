@@ -40,7 +40,7 @@ class Billing < ActiveRecord::Base
   
   def stop!
     if self.time_out.nil?
-      update_attributes(time_out: Time.now, duration: (:time_out - :time_in))#("#{self.time_out}".to_i - "#{self.time_in}".to_i))
+      update_attributes(time_out: Time.now)#("#{self.time_out}".to_i - "#{self.time_in}".to_i))
       true
     else
       false
