@@ -18,7 +18,7 @@ class Billing < ActiveRecord::Base
   has_many :reports
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
-  before_update :copy_to_reports
+  before_destroy :copy_to_reports
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -40,7 +40,7 @@ class Billing < ActiveRecord::Base
   
   def stop!
     if self.time_out.nil?
-      update_attributes(time_out: Time.now, duration: (Time.now - "#{self.time_in}"))
+      update_attributes(time_out: Time.now, duration: (:time_out - :time_in))#("#{self.time_out}".to_i - "#{self.time_in}".to_i))
       true
     else
       false
