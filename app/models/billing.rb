@@ -61,4 +61,10 @@ class Billing < ActiveRecord::Base
     Report.create( :date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}")
   end
   
+  private
+    def self.search(query)
+        where("comment like ?", "%#{query}%")
+    end 
+  
+  
 end

@@ -18,4 +18,9 @@
 class Report < ActiveRecord::Base
   belongs_to :billing
   
+  private
+    def self.search(query)
+        where("lower(comment) like ?", "%#{query}%") 
+    end 
+  
 end

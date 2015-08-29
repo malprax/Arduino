@@ -219,7 +219,7 @@ DEPENDENCIES
   has_barcode
   jbuilder (~> 2.0)
   jquery-rails
-  kaminari (= 0.16.1)
+  kaminari
   pg
   prawn
   pusher

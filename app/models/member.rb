@@ -16,4 +16,10 @@ class Member < ActiveRecord::Base
   validates :address, length: { minimum: 4, message: "Alamat Terlalu Pendek" }
   validates :phone, numericality: { only_integer: true, message: "Masukkan Hanya Angka Saja" }, length: { minimum: 10, message: "No Telepon Terlalu Pendek" }
   has_many :billings
+  
+  private
+    def self.search(query)
+        where("lower(name) like lower(?) or phone like ? ", "%#{query}%", "%#{query}%") 
+    end 
+  
 end

@@ -5,14 +5,19 @@
 		
 	</div>
 	
+    
+	
 	<div class="row">
-		<div class="col-md-12"><%= link_to 'Member Baru', new_member_path, class: 'btn btn-default' %>
-	    <form class="navbar-form navbar-right" role="search">
-	      <div class="form-group">
-	        <input type="text" class="form-control" placeholder="Kata Kunci">
-	      </div>
-	      <button type="submit" class="btn btn-primary">Cari</button>
-	    </form>
+		<div class="col-md-12">
+			<%= link_to 'Member Baru', new_member_path, class: 'btn btn-default' %>
+		    <%= form_tag members_path, :method => 'get', :id => "search",class:'navbar-form navbar-right', role: 'search' do%>
+		    <div class="form-group">
+		      <div class="col-xs-6 col-sm-4 col-md-4">
+		        <%= text_field_tag :search, params[:search], class:'form-control', placeholder:'Cari..' %>
+		      </div>
+		      <%= submit_tag "Cari", :name => nil, class:'btn btn-success col-xs-offset-0 col-xs-2 col-sm-offset-5 col-sm-3 col-md-offset-5 col-md-3' %>
+		    </div>    
+		    <% end %>
 		</div>
 	</div>
 	
@@ -46,6 +51,7 @@
 				<br>
 			</div>
 		</div>
+		<div class="col-xs-12 col-sm-12 col-md-12"><center><%= paginate @members %></center></div>
 	</div>
 
 

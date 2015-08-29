@@ -97,7 +97,7 @@ gem 'rails_12factor', group: :production
 # gem 'browser-timezone-rails'
 
 #add pagination
-gem "kaminari", '0.16.1'
+gem 'kaminari'
 
 #convert to pdf
 gem 'prawn'
