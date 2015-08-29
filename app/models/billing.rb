@@ -34,9 +34,9 @@ class Billing < ActiveRecord::Base
     end
   end
   
-  def only_one_current_billing
-    errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Yang Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size > 0
-  end
+  # def only_one_current_billing
+#     errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Yang Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size > 0
+#   end
   
   def stop!
     if self.time_out.nil?

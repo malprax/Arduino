@@ -108,8 +108,8 @@ class BillingsController < ApplicationController
   end
   
   def durate
-    durate = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))
-    @durate = durate.to_i.pretty_duration
+    durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))
+    @durate = durasi.to_i.pretty_duration
     render :partial => 'shared/duration'
   end
   
