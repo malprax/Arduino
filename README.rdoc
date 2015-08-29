@@ -22,56 +22,59 @@ Aplikasi Billing Dengan Skenario:
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
    
    
-#progres hari rabu, 19 agustus 2015
-coba desain front end web dengan bootstrap
-coba buat sebuah tombol dengan interface web untuk mengendalikan output led
-coba buat validasi user untuk satu event billing
-coba buat fungsi timer
-coba buat fungsi stop, sudah bisa
-coba buat presisi pembulatan waktu ke atas sehingga kalu lebih dari beberapa detik selalu dijadikan satu menit
-coba buat rumus untuk mengkonversi pengurangan waktu keluar dan masuk ke menit
-coba buat komunikasi serial dengan output led
+Progres hari rabu, 19 agustus 2015:
+1. coba desain front end web dengan bootstrap
+2. coba buat sebuah tombol dengan interface web untuk mengendalikan output led
+3. coba buat validasi user untuk satu event billing
+4. coba buat fungsi timer
+5. coba buat fungsi stop, sudah bisa
+6. coba buat presisi pembulatan waktu ke atas sehingga kalu lebih dari beberapa detik selalu dijadikan satu menit
+7. coba buat rumus untuk mengkonversi pengurangan waktu keluar dan masuk ke menit
+8. coba buat komunikasi serial dengan output led
 
+Progres hari ini kamis 20 agustus 2015:
+1. coba ubah waktu UTC nya menjadi waktu local
 
+Progress hari ini jumat 21 agustus 2015:
+1. error handling led
 
-#progres hari ini kamis 20 agustus 2015
-coba ubah waktu UTC nya menjadi waktu local
+Progress hari ini sabtu 22 agustus 2015:
+1. berhasil buat barcode 2d tapi terkendala di mahalnya scanner
+2. berhasil buat barcode 1d tapi hanya versi html
 
-Progress hari ini jumat 21 agustus 2015
-error handling led
+Progress hari ini minggu 23 agustus 2015:
+1. coba buat tabel user dengan generate barcode nya
 
-Progress hari ini sabtu 22 agustus 2015
-berhasil buat barcode 2d tapi terkendala di mahalnya scanner
-berhasil buat barcode 1d tapi hanya versi html
-
-Progress hari ini minggu 23 agustus 2015
-coba buat tabel user dengan generate barcode nya
-
-Progress hari ini senin 24 agustus 2015
-coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
-coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
+Progress hari ini senin 24 agustus 2015:
+1. coba buat tombol jalankan servo posisi ke sudut 90 derajat atau sebaliknya
+2. coba perbaiki tampilan desain secara menyeluruh sesuai permintaan client
 
 Progress hari ini selasa 25 agustus 2015
-priority:
-coba buat koneksi dari browser ke arduino
+1. coba buat koneksi dari browser ke arduino
 
-Progress hari ini rabu 26 agustus 2015
-priority:
-coba buat koneksi dari arduino ke browser
-sudah pesan barcode scanner yang dimaui untuk riset
+Progress hari ini rabu 26 agustus 2015:
+1. coba buat koneksi dari arduino ke browser
+2. sudah pesan barcode scanner yang dimaui untuk riset
 
 Progres hari ini kamis 27 agustus 2015
-coba riset callback untuk billing
-coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
+1. coba riset callback untuk billing
+2. coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
+
+Progres hari ini jumat 28 agustus 2015
+1. coba buat report pendapatan secara harian 
+
+Progres hari ini sabtu 29 agustus 2015
+1. coba perbaiki seluruh view
+2. coba pasang search engine
+3. coba buat report pendapatan secara harian 
+
 
 pelajari gem whenever untuk membuat pengecekan aplikasi
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
 coba buat print out otomatis setelah menscan kartu member
-coba buat report pendapatan secara harian dan bulanan
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
-
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 coba riset scanner untuk membaca barcode

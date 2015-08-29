@@ -88,6 +88,14 @@ class BillingsController < ApplicationController
     render :nothing => true
   end
   
+  def give_time
+
+    @time = Time.now.strftime("%H:%M:%S ")
+
+    render :partial => 'shared/time_portion'
+
+  end
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
