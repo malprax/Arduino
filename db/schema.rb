@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150827061339) do
     t.integer  "member_id"
     t.datetime "time_in"
     t.datetime "time_out"
+    t.datetime "duration"
     t.decimal  "price"
     t.string   "comment"
     t.datetime "expiration"
@@ -37,12 +38,14 @@ ActiveRecord::Schema.define(version: 20150827061339) do
   end
 
   create_table "reports", force: :cascade do |t|
+    t.datetime "date"
+    t.integer  "billing_id"
     t.integer  "member_id"
     t.datetime "time_in"
     t.datetime "time_out"
-    t.decimal  "price"
+    t.datetime "duration"
     t.string   "comment"
-    t.datetime "expiration"
+    t.decimal  "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

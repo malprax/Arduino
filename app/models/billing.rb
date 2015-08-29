@@ -40,7 +40,7 @@ class Billing < ActiveRecord::Base
   
   def stop!
     if self.time_out.nil?
-      update_attributes(time_out: Time.now)
+      update_attributes(time_out: Time.now, duration: (Time.now - "#{self.time_in}"))
       true
     else
       false
@@ -58,7 +58,7 @@ class Billing < ActiveRecord::Base
   
   def copy_to_reports
     #billing_item = self.attributes
-    Report.create()
+    Report.create( :date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}")
   end
   
 end
