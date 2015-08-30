@@ -6,6 +6,7 @@
 #  member_id  :integer
 #  time_in    :datetime
 #  time_out   :datetime
+#  duration   :datetime
 #  price      :decimal(, )
 #  comment    :string
 #  expiration :datetime
@@ -18,7 +19,7 @@ class Billing < ActiveRecord::Base
   has_many :reports
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
-  before_destroy :copy_to_reports
+  before_update :copy_to_reports
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -57,14 +58,13 @@ class Billing < ActiveRecord::Base
   end
   
   def copy_to_reports
-    #billing_item = self.attributes
-    Report.create( :date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}")
+    Report.create(:date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}") 
   end
   
   private
-    def self.search(query)
-        where("comment like ?", "%#{query}%")
-    end 
+  def self.search(query)
+      where("comment like ?", "%#{query}%")
+  end 
   
   
 end

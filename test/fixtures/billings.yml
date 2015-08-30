@@ -6,6 +6,7 @@
 #  member_id  :integer
 #  time_in    :datetime
 #  time_out   :datetime
+#  duration   :datetime
 #  price      :decimal(, )
 #  comment    :string
 #  expiration :datetime

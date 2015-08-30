@@ -1,0 +1,9 @@
+namespace :delete do
+	desc	'Delete old billings'
+	task	:old_billings => :environment do
+		Billing.where('expiration =< ?', Date.now).each do |b|
+			Report.create(:date  => "#{b.expiration}", :billing_id  => "#{b.id}", :member_id  => "#{b.member_id}", :time_in  => "#{b.time_in}", :time_out  => "#{b.time_out}", :duration  => "#{b.duration}", :comment  => "#{b.comment}", :price  => "#{b.price}")
+			b.destroy	
+		end
+	end
+end
