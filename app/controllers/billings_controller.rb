@@ -90,7 +90,8 @@ class BillingsController < ApplicationController
   
   def give_time
 
-    @time = Time.now.strftime("%d %B %Y %H:%M:%S ")
+    @time = Time.now.strftime(" %H:%M:%S ")
+    #%d %B %Y
 
     render :partial => 'shared/time_portion'
 

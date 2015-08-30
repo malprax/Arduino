@@ -50,7 +50,7 @@
 			        <td><%=  selisih_waktu.to_i.pretty_duration    %></td>
 			        <td>Rp <%= number_with_precision(selisih_waktu/1800, precision: 2).to_i * 1000 %></td>
 					<% else %>
-					<td></td>
+					<td class="time-rect-container"></td>
 					<td class="duration"> <%= render 'shared/duration' %> </td>
 					<td></td>
 					<% end %>
