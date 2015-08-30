@@ -109,3 +109,6 @@ group :development do
   gem "better_errors"
 end
 
+#background job
+gem 'delayed_job_active_record'
+
