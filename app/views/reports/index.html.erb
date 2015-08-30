@@ -43,7 +43,11 @@
 			        <td><%= report.member_id %></td>
 					<td><%= report.time_in.strftime("%T") %></td>
 			        <td><%= report.time_out.strftime("%T") if report.time_out  %></td>
-					<td><%= report.duration.strftime("%T") if report.duration %></td>
+					<td>
+						<% selisih_waktu = (Time.parse(report.time_out.to_s) - Time.parse(report.time_in.to_s))%>
+						<%=  selisih_waktu.to_i.pretty_duration    %>
+					</td>
+					<td>Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %></td>
 					<td><%= report.comment %></td>
 					<td><%= report.price %></td>
 			        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_member_path(report) %></td>

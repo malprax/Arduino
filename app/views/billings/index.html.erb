@@ -48,7 +48,7 @@
 					<% selisih_waktu = (Time.parse(billing.time_out.to_s) - Time.parse(billing.time_in.to_s))%>
 					<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
 			        <td><%=  selisih_waktu.to_i.pretty_duration    %></td>
-			        <td>Rp <%= number_with_precision(selisih_waktu/1800, precision: 2).to_i * 1000 %></td>
+			        <td>Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %></td>
 					<% else %>
 					<td class="time-rect-container"></td>
 					<td class="duration"> <%= render 'shared/duration' %> </td>
