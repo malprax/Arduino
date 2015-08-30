@@ -112,3 +112,6 @@ end
 #background job
 gem 'delayed_job_active_record'
 
+#make schedule for cron jobs
+gem 'whenever', :require => false
+
