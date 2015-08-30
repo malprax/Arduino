@@ -4,9 +4,12 @@
 # Pusher.key = '429f0dfaaec2f4d689e8'
 # Pusher.secret = '808cd9f52d25422d41ec'
 
-Pusher.app_id = '122740'
-    Pusher.key = '6a97661ed61a198a18cf'
-    Pusher.secret = 'bd808ec7f68f4ec890a2'
+# Pusher.app_id = '122740'
+#     Pusher.key = '6a97661ed61a198a18cf'
+#     Pusher.secret = 'bd808ec7f68f4ec890a2'
+Pusher.app_id = ENV['PUSHER_APP_ID']
+   Pusher.key = ENV['PUSHER_KEY']
+   Pusher.secret = ENV['PUSHER_SECRET']
 
 
 
