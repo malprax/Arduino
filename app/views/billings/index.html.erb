@@ -34,6 +34,7 @@
 			      <th>Lama</th>
 			      <th>Biaya</th>
 				  <th>Stop</th>
+				  <th>Masa Berlaku</th>
 			      <th colspan="2">Option</th>
 			    </tr>
 			  </thead>
@@ -60,7 +61,7 @@
 				
 						<% end %>
 					</td>
-					<td></td>
+					<td><%= billing.expiration.strftime("%D")%></td>
 			        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td>
 			        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 			      </tr>

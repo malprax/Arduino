@@ -19,7 +19,7 @@ class Billing < ActiveRecord::Base
   has_many :reports
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
-  before_update :copy_to_reports
+  # before_update :copy_to_reports
   default_scope   -> {order('time_in DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
@@ -54,11 +54,19 @@ class Billing < ActiveRecord::Base
   end
   
   def set_expiration_date
-    self.expiration = Date.today + 1.day
+    tomorrow = Date.today + 1.day
+    self.expiration = tomorrow
   end
   
-  def copy_to_reports
-    Report.create(:date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}") 
+  
+  def self.tomorrow
+    @tomorrow = Date.today + 1.day
+  end
+  
+  def self.copy_to_reports
+    if self.expiration == tomorrow 
+        Report.create(:date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}") 
+    end
   end
   
   private

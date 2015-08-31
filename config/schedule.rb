@@ -20,7 +20,7 @@
 # Learn more: http://github.com/javan/whenever
 # every 1.day, :at => '00:00 am' do
 every 2.minutes do
-  rake "delete:old_billings"
+  rake "delete:remove_billings"
 end
 
 # to modify the schedule we have to trigger back the cron
