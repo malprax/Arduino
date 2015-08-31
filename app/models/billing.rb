@@ -64,9 +64,7 @@ class Billing < ActiveRecord::Base
   end
   
   def self.copy_to_reports
-    if self.expiration == tomorrow 
-        Report.create(:date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}") 
-    end
+      # Report.create(:date  => "#{self.expiration}", :billing_id  => "#{self.id}", :member_id  => "#{self.member_id}", :time_in  => "#{self.time_in}", :time_out  => "#{self.time_out}", :duration  => "#{self.duration}", :comment  => "#{self.comment}", :price  => "#{self.price}") if billing.expiration == tomorrow
   end
   
   private
