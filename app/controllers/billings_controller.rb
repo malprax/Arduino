@@ -41,6 +41,7 @@ class BillingsController < ApplicationController
   # PATCH/PUT /billings/1.json
   def update
     respond_to do |format|
+      # if @billing.update_attributes(params[:time_in, :comment, :expiration])
       if @billing.update(billing_params)
         format.html { redirect_to @billing, notice: 'Billing was successfully updated.' }
         format.json { render :show, status: :ok, location: @billing }
