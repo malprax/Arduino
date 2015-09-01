@@ -64,11 +64,9 @@ class Billing < ActiveRecord::Base
   end
   
   def self.copy_to_reports
-    Billing.find_each do |billing|
-       unless billing.expiration == tomorrow 
+    Billing.where('expiration <= ?', Date.today ).find_each do |billing|
          Report.create(:date  => "#{billing.expiration}", :billing_id  => "#{billing.id}", :member_id  => "#{billing.member_id}", :time_in  => "#{billing.time_in}", :time_out  => "#{billing.time_out}", :duration  => "#{billing.duration}", :comment  => "#{billing.comment}", :price  => "#{billing.price}") 
          billing.destroy  
-       end
     end
   end
   
