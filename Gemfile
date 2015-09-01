@@ -12,7 +12,7 @@ gem 'sass-rails', '~> 5.0'
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
-gem 'bootstrap-will_paginate'
+gem 'will_paginate-bootstrap'
 gem 'will_paginate'
 gem 'bootstrap_form'
 
@@ -95,9 +95,6 @@ gem 'rails_12factor', group: :production
 
 #time zones each users
 # gem 'browser-timezone-rails'
-
-#add pagination
-gem 'kaminari'
 
 #convert to pdf
 gem 'prawn'

@@ -53,8 +53,6 @@ GEM
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
-    bootstrap-will_paginate (0.0.10)
-      will_paginate
     bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (6.0.2)
@@ -99,9 +97,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
-    kaminari (0.16.1)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
     kgio (2.9.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -208,6 +203,8 @@ GEM
     whenever (0.9.4)
       chronic (>= 0.6.3)
     will_paginate (3.0.7)
+    will_paginate-bootstrap (1.0.1)
+      will_paginate (>= 3.0.3)
 
 PLATFORMS
   ruby
@@ -218,7 +215,6 @@ DEPENDENCIES
   barby
   better_errors
   bootstrap-sass (~> 3.3.5)
-  bootstrap-will_paginate
   bootstrap_form
   byebug
   coffee-rails (~> 4.1.0)
@@ -228,7 +224,6 @@ DEPENDENCIES
   has_barcode
   jbuilder (~> 2.0)
   jquery-rails
-  kaminari
   pg
   prawn
   pusher
@@ -247,6 +242,7 @@ DEPENDENCIES
   web-console (~> 2.0)
   whenever
   will_paginate
+  will_paginate-bootstrap
 
 BUNDLED WITH
    1.10.6
