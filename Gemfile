@@ -12,6 +12,8 @@ gem 'sass-rails', '~> 5.0'
 #bootstrap
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
+
+#add paginate
 gem 'will_paginate-bootstrap'
 gem 'will_paginate'
 gem 'bootstrap_form'
