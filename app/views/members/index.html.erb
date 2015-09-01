@@ -51,7 +51,7 @@
 				<br>
 			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-12"><center><%= paginate @members %></center></div>
+		<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @members, renderer: BootstrapPagination::Rails %></center></div>
 	</div>
 
 
