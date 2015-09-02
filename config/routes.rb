@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :reports
   resources :members
   resources :try_codes, only: [:new, :create, :index]
-  resources :billings, only:[:new, :create, :index] do
+  resources :billings, only:[:new, :create, :index, :destroy, :show, :durate, :give_time] do
     # collection do
 #       get 'current'
 #     end
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
-  match'/angkat_portal' => 'billings#angkat_portal', via: :get
+  match '/angkat_portal' => 'billings#angkat_portal', via: :get
   match '/turunkan_portal' => 'billings#turunkan_portal', via: :get
   match '/give_time' => 'billings#give_time', via: :get
   match '/durate' => 'billings#durate', via: :get

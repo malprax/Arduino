@@ -81,6 +81,11 @@ class Billing < ActiveRecord::Base
     end
   end
   
+  # def durasi
+ #        @selisih_waktu = (Time.parse(Time.now.to_s)) #- Time.parse(self.time_in.to_s))
+ #        @durate = @selisih_waktu.to_i.pretty_duration
+ #  end
+ # 
   
   
 end

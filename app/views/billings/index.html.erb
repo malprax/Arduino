@@ -8,7 +8,7 @@
 
 
 <div class="row">
-	<div class="col-md-12"><%= link_to 'New Billing', new_billing_path, class: 'btn' %>
+	<div class="col-md-12"><%= link_to '+ Buat Billing', new_billing_path, class: 'btn' %>
     <%#= link_to 'Portal', root_path, class: 'btn btn-default' %>
 	</div>
 </div>
@@ -25,7 +25,11 @@
 			      <th>Jam Keluar</th>
 			      <th>Lama</th>
 			      <th>Biaya</th>
+				  <% @billings.each do |billing| %>
+				  <% if billing.time_out.nil? %>
 				  <th>Stop</th>
+				  <% end %>
+				  <% end %>
 				  <th>Masa Berlaku</th>
 			      <th colspan="2">Option</th>
 			    </tr>
@@ -43,18 +47,20 @@
 			        <td><%=  selisih_waktu.to_i.pretty_duration    %></td>
 			        <td>Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %></td>
 					<% else %>
-					<td class="time-rect-container"></td>
-					<td class="duration"> <%= render 'shared/duration' %> </td>
+					<td class="time"></td>
+					<%# durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))%>
+					<td class= "counter"> <%#= render partial: 'shared/duration' %>  <%#= durasi.to_i.pretty_duration %></td>
 					<td></td>
 					<% end %>
-
-			        <td><% if billing.time_out.nil? %> 
+					<% if billing.time_out.nil? %>
+			        <td> 
 						<div class="time"><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %> </div>
-				
-						<% end %>
 					</td>
+					<% else %>
+					<td></td>
+					<% end %>
 					<td><%= billing.expiration.strftime("%D")%></td>
-			        <!-- <td><%#= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_billing_path(billing) %></td> -->
+			     
 			        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 			      </tr>
 			    <% end %>

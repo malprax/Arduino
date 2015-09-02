@@ -28,7 +28,7 @@ class BillingsController < ApplicationController
     @billing = Billing.new(billing_params)
     respond_to do |format|
       if @billing.save
-        format.html { redirect_to @billing, notice: 'Billing was successfully created.' }
+        format.html { redirect_to billings_path, notice: 'Billing was successfully created.' }
         # format.json { render :show, status: :created, location: @billing }
         format.json { render :new }
       else
@@ -91,15 +91,6 @@ class BillingsController < ApplicationController
     render :nothing => true
   end
   
-  def give_time
-
-    @time = Time.now.strftime(" %H:%M:%S ")
-    #%d %B %Y
-
-    render :partial => 'shared/time_portion'
-
-  end
-  
   def pretty_duration
     parse_string = 
         if self < 3600
@@ -111,11 +102,26 @@ class BillingsController < ApplicationController
     Time.at(self).utc.strftime(parse_string)
   end
   
+  def give_time
+    @time = Time.now.strftime(" %H:%M:%S ")
+    #%d %B %Y
+    render :partial => 'shared/time_portion'
+  end
+  
   def durate
     # durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))
-    @durate = Time.now.strftime(" %H:%M:%S ")
+    # @durate = Time.now.strftime(" %H:%M:%S ")
     # @durate = durasi.to_i.pretty_duration
-    render :partial => 'shared/duration'
+    
+    #@billing = Billing.find(params[:id])
+    # @billings = Billing.all
+ #    @billings.find_each do |billing|
+        @billing = Billing.find(params[:id])
+        @selisih_waktu = (Time.parse(Time.now.to_s)- Time.parse(@billing.time_in.to_s))
+        @durate = @selisih_waktu.to_i.pretty_duration
+        
+        render :partial => 'shared/durate'
+ #    end
   end
   
 
