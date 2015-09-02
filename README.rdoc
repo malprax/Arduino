@@ -96,22 +96,20 @@ Porgress hari ini kamis 3 september 2015
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
-coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
-coba buat print out otomatis setelah menscan kartu member
+coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 
 
-target akhir 7 september
-
-Time progress
-29 oktober wisuda
-15 oktober pendaftaran wisuda akhir
-7 oktober pengurusan perbaikan
-1 oktober ujian meja
-15 september seminar hasil
-7 september asistensi dan pengurusan berkas
+Time progress:
+1 -  10 pembuatan penulisa semua bab dan asistensi
+11 - 14 september pengurusan berkas
+15 - 20 september seminar hasil
+21 - 30 september perbaikan
+1 - 5 oktober ujian meja
+6 - 14 perbaikan
+15 - 20 pendaftaran wisuda
 
 target utama besar
 2. buat member card pdf
