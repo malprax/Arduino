@@ -84,8 +84,11 @@ Progres hari ini rabu 2 september 2015
 1. coba buat pdf dan berhasil
 2. coba buat barcode di pdf dan berhasil
 3. coba buat persamaan barcode di pdf dengan di html
+4. coba buat validasi kalau belum di stop kita tidak boleh parkir lagi
+5. Coba kustomisasi pdf sehingga seperti besar ID Card
 
-pelajari gem whenever untuk membuat pengecekan aplikasi
+
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya menekan tombol submit secara otomatis setelah mengisi nama
@@ -93,7 +96,7 @@ coba buat print out otomatis setelah menscan kartu member
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
-coba riset scanner untuk membaca barcode
+
 
 target akhir 7 september
 
