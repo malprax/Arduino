@@ -12,6 +12,8 @@
 	  <div class="panel-footer">
 		  <%= link_to 'Edit', edit_member_path(@member), class: 'btn btn-default' %> 
 		  <%= link_to 'Kembali', members_path, class: 'btn btn-success' %>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <%= link_to "Cetak Formulir", member_path(@member, format:"pdf"), class:"btn btn-success", :target  => "_blank" %>
 	  </div>
 	</div>
 	

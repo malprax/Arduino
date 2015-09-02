@@ -1,3 +1,8 @@
+require 'barby'
+require 'barby/barcode/ean_13'
+require 'barby/barcode/code_39'
+require 'barby/barcode/code_128'
+
 # == Schema Information
 #
 # Table name: members
@@ -16,6 +21,10 @@ class Member < ActiveRecord::Base
   validates :address, length: { minimum: 4, message: "Alamat Terlalu Pendek" }
   validates :phone, numericality: { only_integer: true, message: "Masukkan Hanya Angka Saja" }, length: { minimum: 10, message: "No Telepon Terlalu Pendek" }
   has_many :billings
+  
+  def barcode
+    @barcode = Barby::Code128B.new(self.id)
+  end
   
   private
     def self.search(query)

@@ -9,6 +9,8 @@ require 'barby/outputter/ascii_outputter'
 require 'barby/outputter/rmagick_outputter'
 require 'barby/outputter/html_outputter'
 require 'barby/outputter/png_outputter' 
+require 'barby/outputter/pdfwriter_outputter'
+
 
 class MembersController < ApplicationController
   before_action :set_member, only: [:show, :edit, :update, :destroy]
@@ -22,13 +24,14 @@ class MembersController < ApplicationController
   # GET /members/1
   # GET /members/1.json
   def show
-    @barcode = Barby::Code128B.new(@member.id)
-    barcodex = Barby::HtmlOutputter.new(@barcode).to_html  
+    # @barcode = Barby::Code128B.new(@member.id)
+    barcodex = Barby::HtmlOutputter.new(@member.barcode).to_html  
+    # barcodexpdf.annotate_pdf(doc)
     @barcode_for = barcodex
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = RegisterPdf.new(@member)
+        pdf = MemberPdf.new(@member)
         send_data pdf.render,
                               type: "application/pdf",
                               disposition: "inline",
