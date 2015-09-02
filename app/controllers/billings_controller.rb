@@ -29,7 +29,8 @@ class BillingsController < ApplicationController
     respond_to do |format|
       if @billing.save
         format.html { redirect_to @billing, notice: 'Billing was successfully created.' }
-        format.json { render :show, status: :created, location: @billing }
+        # format.json { render :show, status: :created, location: @billing }
+        format.json { render :new }
       else
         format.html { render :new }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
@@ -44,7 +45,8 @@ class BillingsController < ApplicationController
       # if @billing.update_attributes(params[:time_in, :comment, :expiration])
       if @billing.update(billing_params)
         format.html { redirect_to @billing, notice: 'Billing was successfully updated.' }
-        format.json { render :show, status: :ok, location: @billing }
+        # format.json { render :show, status: :ok, location: @billing }
+        format.json { render :new }
       else
         format.html { render :edit }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
