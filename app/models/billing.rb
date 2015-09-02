@@ -19,15 +19,20 @@ class Billing < ActiveRecord::Base
   has_many :reports
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
+  
+  attr_accessor :check_nama
+
+  
   # before_update :copy_to_reports
   default_scope   -> {order('time_in DESC')}
-  # scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
+  scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
   
   validates_presence_of :time_in, :member, message: 'Tidak Kosong'
   validate :check_time_in_and_out
-  # validate :only_one_current_billing, on: :create
+  # validates_uniqueness_of :member_id, if: 'self.time_out.blank? && self.member_id.present? '
+  validate :only_one_current_billing, on: :create
   
   def check_time_in_and_out
     if self.time_out.present?
@@ -35,9 +40,15 @@ class Billing < ActiveRecord::Base
     end
   end
   
-  # def only_one_current_billing
-#     errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Yang Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size > 0
-#   end
+  def check_nama
+    if "#{self.member_id}" 
+      "#{self.name}"
+    end
+  end
+    
+  def only_one_current_billing
+    errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Yang Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size > 0
+  end
   
   def stop!
     if self.time_out.nil?
