@@ -71,11 +71,19 @@ Progres hari ini sabtu 29 agustus 2015
 
 Progres hari ini minggu 30 agustus 2015
 1. coba buat report otomatis setelah berganti tanggal namun tetap error.
-2. coba buat rake otomatis dan berhasil
+2. coba buat rake otomatis namun semua data billing baik yang belum expired langsung di hapus
 
 
 Progres hari ini senin 31 agustus 2015
 1. sudah ujicoba scanner dan berjalan baik di mac, tinggal memprint barcode
+
+Progres hari ini selasa 1 september 2015
+1. coba buat rake otomatis tinggal parameter perlu ditambahkan yang tidak ada tombol stopnya jangan di report dulu
+
+Progres hari ini rabu 2 september 2015
+1. coba buat pdf dan berhasil
+2. coba buat barcode di pdf dan berhasil
+3. coba buat persamaan barcode di pdf dengan di html
 
 pelajari gem whenever untuk membuat pengecekan aplikasi
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
