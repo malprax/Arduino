@@ -54,7 +54,7 @@
 					<% end %>
 					<% if billing.time_out.nil? %>
 			        <td> 
-						<div class="time"><%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %> </div>
+						<%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %>
 					</td>
 					<% else %>
 					<td></td>

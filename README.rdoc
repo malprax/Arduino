@@ -85,7 +85,12 @@ Progres hari ini rabu 2 september 2015
 2. coba buat barcode di pdf dan berhasil
 3. coba buat persamaan barcode di pdf dengan di html
 4. coba buat validasi kalau belum di stop kita tidak boleh parkir lagi
-5. Coba kustomisasi pdf sehingga seperti besar ID Card
+5. Coba kustomisasi pdf tahap 1
+6. Scanner sudah bisa autofocus dengan bantuan javascript dan setting html nya
+
+Porgress hari ini kamis 3 september 2015
+1. Ada bug ditemukan ketika member parkir melewati satu hari tetap juga dihapus karena parameternya cuman berdasarkan tanggal expired nya
+2. 
 
 
 

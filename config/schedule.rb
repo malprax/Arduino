@@ -26,6 +26,9 @@ end
 # to modify the schedule we have to trigger back the cron
 # whenever --update-crontab
 
+# set environment
+#whenever --update-crontab --set environment=development 
+
 #to check the task is registered properly in cron
 # crontab -l
 
