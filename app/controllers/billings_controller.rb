@@ -19,8 +19,8 @@ class BillingsController < ApplicationController
   end
 
   # GET /billings/1/edit
-  def edit
-  end
+  # def edit
+#   end
 
   # POST /billings
   # POST /billings.json
@@ -40,19 +40,19 @@ class BillingsController < ApplicationController
 
   # PATCH/PUT /billings/1
   # PATCH/PUT /billings/1.json
-  def update
-    respond_to do |format|
-      # if @billing.update_attributes(params[:time_in, :comment, :expiration])
-      if @billing.update(billing_params)
-        format.html { redirect_to @billing, notice: 'Billing was successfully updated.' }
-        # format.json { render :show, status: :ok, location: @billing }
-        format.json { render :new }
-      else
-        format.html { render :edit }
-        format.json { render json: @billing.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+  # def update
+#     respond_to do |format|
+#       # if @billing.update_attributes(params[:time_in, :comment, :expiration])
+#       if @billing.update(billing_params)
+#         format.html { redirect_to @billing, notice: 'Billing was successfully updated.' }
+#         # format.json { render :show, status: :ok, location: @billing }
+#         format.json { render :new }
+#       else
+#         format.html { render :edit }
+#         format.json { render json: @billing.errors, status: :unprocessable_entity }
+#       end
+#     end
+#   end
 
   # DELETE /billings/1
   # DELETE /billings/1.json
@@ -135,4 +135,5 @@ class BillingsController < ApplicationController
     def billing_params
       params.require(:billing).permit(:member_id, :time_in, :time_out, :price, :comment, :duration, :expiration, :reports_attributes => [:id, :date, :time_in, :time_out, :duration, :price, :comment, :member_id, :billing_id] )
     end
+    
 end

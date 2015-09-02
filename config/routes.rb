@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :reports
   resources :members
   resources :try_codes, only: [:new, :create, :index]
-  resources :billings do
+  resources :billings, only:[:new, :create, :index] do
     # collection do
 #       get 'current'
 #     end
