@@ -9,7 +9,7 @@
 #  duration   :datetime
 #  price      :decimal(, )
 #  comment    :string
-#  expiration :datetime
+#  expiration :date
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
@@ -21,7 +21,7 @@ class Billing < ActiveRecord::Base
   before_create :set_expiration_date
   # before_update :copy_to_reports
   default_scope   -> {order('time_in DESC')}
-  scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
+  # scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
   
@@ -70,10 +70,6 @@ class Billing < ActiveRecord::Base
     end
   end
   
-  private
-  def self.search(query)
-      where("comment like ?", "%#{query}%")
-  end 
   
   
 end

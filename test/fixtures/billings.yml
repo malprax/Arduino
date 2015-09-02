@@ -9,7 +9,7 @@
 #  duration   :datetime
 #  price      :decimal(, )
 #  comment    :string
-#  expiration :datetime
+#  expiration :date
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

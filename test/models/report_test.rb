@@ -3,7 +3,7 @@
 # Table name: reports
 #
 #  id         :integer          not null, primary key
-#  date       :datetime
+#  date       :date
 #  billing_id :integer
 #  member_id  :integer
 #  time_in    :datetime

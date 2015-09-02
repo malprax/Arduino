@@ -7,7 +7,7 @@ class CreateBillings < ActiveRecord::Migration
       t.datetime :duration
       t.decimal :price
       t.string :comment
-      t.datetime :expiration
+      t.date :expiration
 
       t.timestamps null: false
     end

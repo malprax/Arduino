@@ -1,7 +1,7 @@
 class CreateReports < ActiveRecord::Migration
   def change
     create_table :reports do |t|
-      t.datetime :date
+      t.date :date
       t.integer :billing_id
       t.integer :member_id
       t.datetime :time_in
