@@ -16,7 +16,8 @@
 
 class Billing < ActiveRecord::Base
   belongs_to :member
-  has_many :reports
+  belongs_to :report
+  
   accepts_nested_attributes_for :reports
   before_create :set_expiration_date
   

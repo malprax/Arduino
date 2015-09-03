@@ -16,8 +16,8 @@
 #
 
 class Report < ActiveRecord::Base
-  belongs_to :billing
-  
+  has_many :billings
+  has_many :members, through: :billings
   private
     def self.search(query)
         where("lower(comment) like ?", "%#{query}%") 

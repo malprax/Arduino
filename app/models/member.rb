@@ -21,6 +21,7 @@ class Member < ActiveRecord::Base
   validates :address, length: { minimum: 4, message: "Alamat Terlalu Pendek" }
   validates :phone, numericality: { only_integer: true, message: "Masukkan Hanya Angka Saja" }, length: { minimum: 10, message: "No Telepon Terlalu Pendek" }
   has_many :billings
+  has_many :reports, through: :billings
   
   def barcode
     @barcode = Barby::Code128B.new(self.id)
