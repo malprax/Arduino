@@ -25,11 +25,13 @@
 			      <th>Jam Keluar</th>
 			      <th>Lama</th>
 			      <th>Biaya</th>
-				  <% @billings.each do |billing| %>
-				  <% if billing.time_out.nil? %>
-				  <th>Stop</th>
-				  <% end %>
-				  <% end %>
+				  
+				  		<%# if @billing.time_out.nil? %>
+				  	  		<th>Stop</th>
+						<%# else %>
+							<!-- <th></th> -->
+				  		 <%# end %>
+				 
 				  <th>Masa Berlaku</th>
 			      <th colspan="2">Option</th>
 			    </tr>

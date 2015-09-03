@@ -1,11 +1,12 @@
 class BillingsController < ApplicationController
   before_action :set_up_led, only: [:angkat_portal, :turunkan_portal]
-  before_action :set_billing, only: [:show, :edit, :update, :destroy]
+  before_action :set_billing, only: [ :show, :edit, :update, :destroy]
 
   # GET /billings
   # GET /billings.json
   def index
     @billings = Billing.all.page(params[:page]).per_page(6)
+    @billing = Billing.find(params[:id]) unless @Billings.nil?
   end
 
   # GET /billings/1

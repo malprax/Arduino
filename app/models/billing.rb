@@ -18,7 +18,7 @@ class Billing < ActiveRecord::Base
   belongs_to :member
   belongs_to :report
   
-  accepts_nested_attributes_for :reports
+  accepts_nested_attributes_for :report
   before_create :set_expiration_date
   
   # attr_accessor :check_nama
@@ -48,7 +48,8 @@ class Billing < ActiveRecord::Base
 #   end
     
   def only_one_current_billing
-    errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size > 0 
+    errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup') if Billing.current.size >= 6 
+    # if Billing.current.size > 0 
   end
   
   def stop!
