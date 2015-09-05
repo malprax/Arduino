@@ -78,18 +78,16 @@
 	<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @billings, renderer: BootstrapPagination::Rails %></center></div>
 </div>
 
-<script = "text/javascript">
-
-  $(document).ready($(function(){
-  
-var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>;
-  if(portal_terangkat){
-    window.setTimeout(function(){
-      $.ajax({
-        url: '<%= turunkan_portal_path %>'
-      });
-    }, 3000);
-  };
-}););
+<script = "text/javascript">  
+  $(document).ready(function(){
+    var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %> 
+    if(portal_terangkat){
+        window.setTimeout(function(){
+          $.ajax({
+            url: '<%= turunkan_portal_path %>'
+          });
+        }, 3000);
+      }
+  });
 
 </script>
