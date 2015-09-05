@@ -1,4 +1,5 @@
-# pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
+require 'pusher'
+pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
 # Pusher.app_id = '122739'
 # Pusher.key = '429f0dfaaec2f4d689e8'
@@ -14,6 +15,10 @@
 # Pusher.key = 'APP_KEY'
 # Pusher.secret = 'APP_SECRET'
 
+
+Pusher.app_id = 'app_id'
+Pusher.key = 'key'
+Pusher.secret = 'secret'
 
 begin
   # board = Dino::Board.new(Dino::TxRx.new)

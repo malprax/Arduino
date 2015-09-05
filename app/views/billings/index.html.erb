@@ -25,14 +25,7 @@
 			      <th>Jam Keluar</th>
 			      <th>Lama</th>
 			      <th>Biaya</th>
-				  
-				  		<%# if @billing.time_out.nil? %>
-				  	  		<th>Stop</th>
-						<%# else %>
-							<!-- <th></th> -->
-				  		 <%# end %>
-				 
-				  <th>Masa Berlaku</th>
+				    <th>Masa Berlaku</th>
 			      <th colspan="2">Option</th>
 			    </tr>
 			  </thead>
@@ -51,19 +44,14 @@
 					<% else %>
 					<td class="time"></td>
 					<%# durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))%>
-					<td class= "counter"> <%#= render partial: 'shared/duration' %>  <%#= durasi.to_i.pretty_duration %></td>
+					<td class= "counter" data-id="<%= billing.id %>"> <%#= render partial: 'shared/duration' %>  <%#= durasi.to_i.pretty_duration %></td>
 					<td></td>
 					<% end %>
-					<% if billing.time_out.nil? %>
-			        <td> 
-						<%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch  %>
-					</td>
-					<% else %>
-					<td></td>
-					<% end %>
-					<td><%= billing.expiration.strftime("%D")%></td>
-			     
-			        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= billing.expiration.strftime("%D")%></td>
+				   
+			        <td>
+                <%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %>
+              		<%= link_to 'Stop', stop_billing_path(billing), class: 'btn btn-danger', method: :patch if billing.time_out.nil? %></td>
 			      </tr>
 			    <% end %>
 			  </tbody>
@@ -72,6 +60,7 @@
 			<div class="panel-footer">
 				<button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>
 									<button id="turunkan_portal", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>  Turunkan</button>
+                  <button id="ubah_warna", class="btn btn-primary"></button>
 			</div>
 		</div>
 	</div>
