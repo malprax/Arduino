@@ -1,8 +1,8 @@
-$(document).ready(function () {
-    setInterval(function () {
-
-        $('.counter').load('/durate');
-
-    }, 1000);
-	
-});
+// $(document).ready(function () {
+//     setInterval(function () {
+//
+//         $('.counter').load('/durate');
+//
+//     }, 1000);
+//
+// });

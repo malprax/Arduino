@@ -7,9 +7,9 @@
 # Pusher.app_id = '122740'
 #     Pusher.key = '6a97661ed61a198a18cf'
 #     Pusher.secret = 'bd808ec7f68f4ec890a2'
-Pusher.app_id = ENV['PUSHER_APP_ID']
-   Pusher.key = ENV['PUSHER_KEY']
-   Pusher.secret = ENV['PUSHER_SECRET']
+Pusher.app_id = ENV['APP_ID']
+   Pusher.key = ENV['APP_KEY']
+   Pusher.secret = ENV['APP_SECRET']
 
 
 
