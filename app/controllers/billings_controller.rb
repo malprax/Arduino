@@ -29,8 +29,8 @@ class BillingsController < ApplicationController
   def create
     @billing = Billing.new(billing_params)
     respond_to do |format|
-      format.html { render :new }
-      format.json { render json: @billing.errors, status: :unprocessable_entity }
+      # format.html { render :new }
+ #      format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
         Rails.logger.info('------bolo -----')
         @led.off

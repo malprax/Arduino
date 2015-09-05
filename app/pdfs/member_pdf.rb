@@ -9,14 +9,14 @@ class MemberPdf < Prawn::Document
     bounding_box([10, cursor], :width => 500, :height => 84) do
       header
     end
-    stroke do
-      stroke_color '000000'
-      line_width 1
-      stroke_horizontal_rule
-      move_down 3
-      horizontal_line(0, 509)
-    end
-    
+    # stroke do
+ #      stroke_color '000000'
+ #      line_width 1
+ #      stroke_horizontal_rule
+ #      move_down 3
+ #      horizontal_line(0, 509)
+ #    end
+ # 
     move_down 10
     line_items
     nama
@@ -38,14 +38,14 @@ class MemberPdf < Prawn::Document
     logo = "#{Rails.root}/app/assets/images/logoeditupri.png"
     image "#{logo}", scale: 0.08, :at => [0, cursor+14]
 
-    text_box "YAYASAN PERGURUAN TINGGI KARYA DHARMA PUSAT MAKASSAR", :at  => [70,cursor], :size  => 10
+    # text_box "YAYASAN PERGURUAN TINGGI KARYA DHARMA PUSAT MAKASSAR", :at  => [70,cursor], :size  => 10
   
     text_box "UNIVERSITAS PEJUANG REPUBLIK INDONESIA", :at  => [70,cursor-14], :size  => 12, :style  => :bold
 
-    text_box "FAKULTAS TEKNIK", :at  => [70,cursor-30], :size  => 25, :style  => :bold
-    text_box "Jurusan Teknik Pertambangan, Jurusan Teknik Mesin, Jurusan Teknik Informatika", :at  => [70,cursor-55], :size  => 8, :style  => :bold
-
-    text_box "Jl. Baruga Raya - Antang Telp. (0411)492008 - Fax.(0411)494500 Ujung Pandang 90234", :at  => [70,cursor-64], :size  => 8, :style  => :bold
+    # text_box "FAKULTAS TEKNIK", :at  => [70,cursor-30], :size  => 25, :style  => :bold
+    # text_box "Jurusan Teknik Pertambangan, Jurusan Teknik Mesin, Jurusan Teknik Informatika", :at  => [70,cursor-55], :size  => 8, :style  => :bold
+  #
+  #   text_box "Jl. Baruga Raya - Antang Telp. (0411)492008 - Fax.(0411)494500 Ujung Pandang 90234", :at  => [70,cursor-64], :size  => 8, :style  => :bold
 
   end
   
