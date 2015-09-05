@@ -1,3 +1,4 @@
+require 'pusher'
 # pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
 # Pusher.app_id = '122739'
@@ -7,10 +8,15 @@
 # Pusher.app_id = '122740'
 #     Pusher.key = '6a97661ed61a198a18cf'
 #     Pusher.secret = 'bd808ec7f68f4ec890a2'
-Pusher.app_id = ENV['APP_ID']
-   Pusher.key = ENV['APP_KEY']
-   Pusher.secret = ENV['APP_SECRET']
-
+# Pusher.app_id = ENV['APP_ID']
+# Pusher.key = ENV['APP_KEY']
+# Pusher.secret = ENV['APP_SECRET']
+# Pusher.app_id = 'APP_ID'
+# Pusher.key = 'APP_KEY'
+# Pusher.secret = 'APP_SECRET'
+Pusher.app_id = '122740'
+Pusher.key = '6a97661ed61a198a18cf'
+Pusher.secret = 'bd808ec7f68f4ec890a2'
 
 
 begin

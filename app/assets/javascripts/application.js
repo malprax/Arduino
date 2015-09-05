@@ -17,17 +17,11 @@
 //= require led
 //= require durate
 //= require timer
+//= require billing
+//= require message_flash
 //= require turbolinks
 //= require_tree .
 	
-$(function(){
-   	
-	if ($('#flash').length > 0){
-		setTimeout(function(){
-			$('#flash').slideUp();
-		}, 5000);
-	};
-});
 
 $(function(){
 	$('#angkat_portal').click(function(){
@@ -37,7 +31,7 @@ $(function(){
 	$('#turunkan_portal').click(function(){
 	   $.get('/turunkan_portal')
 	});
-	 var pusher = new Pusher('#{Pusher.key}');
+	 var pusher = new Pusher('6a97661ed61a198a18cf');
 	 var channel = pusher.subscribe('button');
 	 channel.bind('angkat_portal', function(data) {
 	   $('body').css({background: 'red'})
