@@ -14,6 +14,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require pusher.min
+//= require jquery.min
 //= require led
 //= require durate
 //= require timer
