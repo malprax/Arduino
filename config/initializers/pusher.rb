@@ -1,5 +1,8 @@
 # config/initializers/pusher.rb
-# require 'pusher'
-#
-# Pusher.url = "https://429f0dfaaec2f4d689e8:808cd9f52d25422d41ec@api.pusherapp.com/apps/122739"
-# Pusher.logger = Rails.logger
+require 'pusher'
+
+Pusher.app_id = '122740'
+Pusher.key = '6a97661ed61a198a18cf'
+Pusher.secret = 'bd808ec7f68f4ec890a2'
+Pusher.url = "https://6a97661ed61a198a18cf:bd808ec7f68f4ec890a2@api.pusherapp.com/apps/122740"
+Pusher.logger = Rails.logger
