@@ -29,6 +29,7 @@ class Billing < ActiveRecord::Base
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
+  scope :expiration_date, -> {where('expiration <= ?', Date.today )}
   
   validates_presence_of :time_in, :member, message: 'Tidak Kosong'
   validate :check_time_in_and_out
@@ -79,7 +80,7 @@ class Billing < ActiveRecord::Base
   end
   
   def self.copy_to_reports
-    Billing.where('expiration <= ?', Date.today ).find_each do |billing|
+    Billing.expiration_date.complete.find_each do |billing|
          Report.create(:date  => "#{billing.expiration}", :billing_id  => "#{billing.id}", :member_id  => "#{billing.member_id}", :time_in  => "#{billing.time_in}", :time_out  => "#{billing.time_out}", :duration  => "#{billing.duration}", :comment  => "#{billing.comment}", :price  => "#{billing.price}") 
          billing.destroy  
     end
