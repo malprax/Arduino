@@ -92,8 +92,10 @@ Progress hari ini kamis 3 september 2015
 1. Ada bug ditemukan ketika member parkir melewati satu hari tetap juga dihapus karena parameternya cuman berdasarkan tanggal expired nya
 
 Progress hari ini jumat 4 september 2015
-1. fix error bug dengan metode dua scope
+1. Fix error logika durasi waktu
 
+Progress hari ini sabtu 5 september 2015
+1. fix error bug dengan metode dua scope
 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
