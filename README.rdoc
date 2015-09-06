@@ -96,6 +96,7 @@ Progress hari ini jumat 4 september 2015
 
 Progress hari ini sabtu 5 september 2015
 1. fix error bug dengan metode dua scope
+2. try to find push without pusher
 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
