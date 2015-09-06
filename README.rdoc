@@ -88,9 +88,11 @@ Progres hari ini rabu 2 september 2015
 5. Coba kustomisasi pdf tahap 1
 6. Scanner sudah bisa autofocus dengan bantuan javascript dan setting html nya
 
-Porgress hari ini kamis 3 september 2015
+Progress hari ini kamis 3 september 2015
 1. Ada bug ditemukan ketika member parkir melewati satu hari tetap juga dihapus karena parameternya cuman berdasarkan tanggal expired nya
-2. 
+
+Progress hari ini jumat 4 september 2015
+1. fix error bug dengan metode dua scope
 
 
 
