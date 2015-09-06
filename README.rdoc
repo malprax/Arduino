@@ -95,9 +95,11 @@ Progress hari ini jumat 4 september 2015
 1. Fix error logika durasi waktu
 
 Progress hari ini sabtu 5 september 2015
-1. fix error bug dengan metode dua scope
+1. fix error bug rake dengan metode dua scope
 2. try to find push without pusher
 
+Progress hari ini minggu 6 september 2015
+1. masih ada yang belum dicoba yaitu ketika parkir sedang tidak stop
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
