@@ -144,7 +144,7 @@ end
     def set_up_led
       @board = Dino::Board.new(Dino::TxRx.new)
       @led = Dino::Components::Led.new(pin: 12, board: @board )
-      @led2 = Dino::Components::Led.new(pin: 13, board: @board )
+      # @led2 = Dino::Components::Led.new(pin: 13, board: @board )
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -20,7 +20,7 @@
 # Learn more: http://github.com/javan/whenever
 # every 1.day, :at => '00:00 am' do
 # every 1.day, :at => '00:00 am' do
-every 2.hours do
+every 10.minutes do
   rake "delete:remove_billings"
 end
 
@@ -34,4 +34,4 @@ end
 # crontab -l
 
 #to run tasks by self just run command in console:
-# rake delete:old_billings
+# rake delete:remove_billings

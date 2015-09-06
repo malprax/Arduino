@@ -28,12 +28,14 @@ begin
 
   button.down do
     puts 'down'
-    Pusher['button'].trigger!('down', { :some => 'data' })
+    # Pusher['button'].trigger!('down', { :some => 'data' })
+    $(this).trigger!('down', { :some => 'data' })
   end
 
   button.up do
     puts 'up'
-    Pusher['button'].trigger!('up', { :some => 'data' })
+    # Pusher['button'].trigger!('up', { :some => 'data' })
+    $(this).trigger!('down', { :some => 'data' })
   end
 
 rescue Dino::BoardNotFound
