@@ -1,5 +1,5 @@
 class BillingsController < ApplicationController
-  before_action :set_up_led, only: [:angkat_portal, :turunkan_portal, :create]
+  before_action :set_up_led, only: [:angkat_portal, :turunkan_portal] #, :create]
   before_action :set_billing, only: [ :show, :edit, :update, :destroy]
 
   # GET /billings
@@ -33,8 +33,9 @@ class BillingsController < ApplicationController
  #      format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
         Rails.logger.info('------bolo -----')
-        @led.off
-        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing was successfully created.' }
+        format.html { redirect_to billings_path, notice: 'Billing was successfully created.' }
+        # @led.off
+        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing was successfully created.' }
         # format.json { render :show, status: :created, location: @billing }
         format.json { render :new }
       else

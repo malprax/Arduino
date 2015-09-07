@@ -24,8 +24,9 @@ ActiveRecord::Schema.define(version: 20150827061339) do
     t.decimal  "price"
     t.string   "comment"
     t.date     "expiration"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "number_park"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "members", force: :cascade do |t|

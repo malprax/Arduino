@@ -8,7 +8,7 @@ class CreateBillings < ActiveRecord::Migration
       t.decimal :price
       t.string :comment
       t.date :expiration
-
+      t.integer :number_park
       t.timestamps null: false
     end
   end

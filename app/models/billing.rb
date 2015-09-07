@@ -20,6 +20,7 @@ class Billing < ActiveRecord::Base
   
   accepts_nested_attributes_for :report
   before_create :set_expiration_date
+  before_create :set_parking
   
   # attr_accessor :check_nama
 
@@ -83,6 +84,18 @@ class Billing < ActiveRecord::Base
     Billing.expiration_date.complete.find_each do |billing|
          Report.create(:date  => "#{billing.expiration}", :billing_id  => "#{billing.id}", :member_id  => "#{billing.member_id}", :time_in  => "#{billing.time_in}", :time_out  => "#{billing.time_out}", :duration  => "#{billing.duration}", :comment  => "#{billing.comment}", :price  => "#{billing.price}") 
          billing.destroy  
+    end
+  end
+  
+  def set_parking
+    array = ['1', '2', '3','4','5','6','7','8','9']
+    array.each do |a|
+      # if Billing.current.where(:number_park => number_park).present?
+        # next
+        Billing.new(:number_park => a)
+      # else
+        # Billing.new(:number_park => a)
+  #     end
     end
   end
   
