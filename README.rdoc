@@ -101,6 +101,9 @@ Progress hari ini sabtu 5 september 2015
 Progress hari ini minggu 6 september 2015
 1. masih ada yang belum dicoba yaitu ketika parkir sedang tidak stop
 
+Progress hari ini senin 7 september 2015
+1. coba buat nomor parkir cerdas dengan metode array 9 kotak parkir
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
