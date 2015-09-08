@@ -34,6 +34,7 @@ class Billing < ActiveRecord::Base
   
   validates_presence_of :time_in, :member, message: 'Tidak Kosong'
   validate :check_time_in_and_out
+  validate :set_parking
   # validates_uniqueness_of :member_id, if: 'self.time_out.blank? && self.member_id.present? '
   validate :only_one_current_billing, on: :create
 
@@ -93,7 +94,12 @@ class Billing < ActiveRecord::Base
     a = [1,2,3,4,5,6,7,8,9]
     b = Billing.current.pluck(:number_park)
     c = a - b
-    self.number_park = c.first
+    if c == []
+        errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+    else
+        self.number_park = c.first
+    end
+    
     # b = a - billing.current.plurk(:number_park)[]
     # b = a.first
   end 
