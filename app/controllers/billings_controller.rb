@@ -1,5 +1,5 @@
 class BillingsController < ApplicationController
-  before_action :set_up_led, only: [:angkat_portal, :turunkan_portal] #, :create]
+  before_action :set_up_led, only: [:angkat_portal, :turunkan_portal, :create]
   before_action :set_billing, only: [ :show, :edit, :update, :destroy]
 
   # GET /billings

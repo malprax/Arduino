@@ -90,7 +90,6 @@ class Billing < ActiveRecord::Base
   end
   
   def set_parking
-    # a = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # billing yang sudah terpake
     a = [1,2,3,4,5,6,7,8,9]
     b = Billing.current.pluck(:number_park)
     c = a - b
@@ -100,8 +99,6 @@ class Billing < ActiveRecord::Base
         self.number_park = c.first
     end
     
-    # b = a - billing.current.plurk(:number_park)[]
-    # b = a.first
   end 
   
 end
