@@ -84,14 +84,6 @@ class BillingsController < ApplicationController
     end
   end
   
-  # def current
-#     render partial: 'billings/current', current_billings: current_billings
-#   end
-def change_color
-  @color = @led2.on
-  render partial: 'shared/change_color'
-end
-  
   def angkat_portal
     @led.off
     render :nothing => true
@@ -115,24 +107,15 @@ end
   
   def give_time
     @time = Time.now.strftime(" %H:%M:%S ")
-    #%d %B %Y
+
     render :partial => 'shared/time_portion'
   end
   
   def durate
-    # durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))
-    # @durate = Time.now.strftime(" %H:%M:%S ")
-    # @durate = durasi.to_i.pretty_duration
-    
-    #@billing = Billing.find(params[:id])
-    # @billings = Billing.all
- #    @billings.find_each do |billing|
         @billing = Billing.find(params[:id])
         @selisih_waktu = Time.now - @billing.time_in
         @durate = @selisih_waktu.to_i.pretty_duration
-        
         render :partial => 'shared/durate'
- #    end
   end
   
 
@@ -145,7 +128,6 @@ end
     def set_up_led
       @board = Dino::Board.new(Dino::TxRx.new)
       @led = Dino::Components::Led.new(pin: 12, board: @board )
-      # @led2 = Dino::Components::Led.new(pin: 13, board: @board )
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

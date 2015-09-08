@@ -1,5 +1,5 @@
 namespace :delete do
-	desc	'Delete old billings'
+	desc	'remove billings'
 	task	:remove_billings => :environment  do
     puts "Mulai Menghapus Billing Kemarin...."
     Billing.copy_to_reports
