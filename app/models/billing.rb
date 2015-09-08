@@ -36,6 +36,7 @@ class Billing < ActiveRecord::Base
   validate :check_time_in_and_out
   # validates_uniqueness_of :member_id, if: 'self.time_out.blank? && self.member_id.present? '
   validate :only_one_current_billing, on: :create
+
   
   def check_time_in_and_out
     if self.time_out.present?
@@ -88,22 +89,13 @@ class Billing < ActiveRecord::Base
   end
   
   def set_parking
-    array = ['1', '2', '3','4','5','6','7','8','9']
-    array.each do |a|
-      # if Billing.current.where(:number_park => number_park).present?
-        # next
-        Billing.new(:number_park => a)
-      # else
-        # Billing.new(:number_park => a)
-  #     end
-    end
-  end
-  
-  # def durasi
- #        @selisih_waktu = (Time.parse(Time.now.to_s)) #- Time.parse(self.time_in.to_s))
- #        @durate = @selisih_waktu.to_i.pretty_duration
- #  end
- # 
-  
+    # a = ['1', '2', '3', '4', '5', '6', '7', '8', '9']  # billing yang sudah terpake
+    a = [1,2,3,4,5,6,7,8,9]
+    b = Billing.current.pluck(:number_park)
+    c = a - b
+    self.number_park = c.first
+    # b = a - billing.current.plurk(:number_park)[]
+    # b = a.first
+  end 
   
 end

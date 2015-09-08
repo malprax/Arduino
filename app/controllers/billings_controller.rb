@@ -6,7 +6,7 @@ class BillingsController < ApplicationController
   # GET /billings.json
   def index
     @portal_terangkat = params[:portal_terangkat]
-    @billings = Billing.all.page(params[:page]).per_page(6)
+    @billings = Billing.all.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
   end
 
@@ -150,7 +150,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def billing_params
-      params.require(:billing).permit(:member_id, :time_in, :time_out, :price, :comment, :duration, :expiration, :reports_attributes => [:id, :date, :time_in, :time_out, :duration, :price, :comment, :member_id, :billing_id] )
+      params.require(:billing).permit(:member_id, :time_in, :time_out, :price, :comment, :duration, :expiration, :number_park, :reports_attributes => [:id, :date, :time_in, :time_out, :duration, :price, :comment, :member_id, :billing_id] )
     end
     
 end
