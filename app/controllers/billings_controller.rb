@@ -34,10 +34,17 @@ class BillingsController < ApplicationController
       if @billing.save
         Rails.logger.info('------bolo -----')
         format.html { redirect_to billings_path, notice: 'Billing was successfully created.' }
-        # @led.off
-        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing was successfully created.' }
+        @led.off
+        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing was successfully created.' }
         # format.json { render :show, status: :created, location: @billing }
         format.json { render :new }
+        format.pdf do
+          pdf = ParkirPdf.new(@billing)
+          send_data pdf.render,
+                                type: "application/pdf",
+                                disposition: "inline",
+                                filename: "Form_#{@billing.time_in}.pdf"
+        end
       else
         format.html { render :new }
         format.json { render json: @billing.errors, status: :unprocessable_entity }

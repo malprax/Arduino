@@ -1,3 +1,4 @@
+require "../pdfs/parkir_pdf"
 # == Schema Information
 #
 # Table name: billings

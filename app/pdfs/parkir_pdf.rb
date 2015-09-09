@@ -2,32 +2,14 @@ require 'barby'
 require 'barby/barcode/code_128'
 require 'barby/outputter/prawn_outputter'
 
-class MemberPdf < Prawn::Document
-  def initialize(member)
+class ParkirPdf < Prawn::Document
+  def initialize(billing)
     super(top_margin: 2, left_margin: 2, :page_size  => 'LETTER')
-    @member = member
+    @billing = billing
     bounding_box([10, cursor], :width => 250, :height => 150) do
       header
     end
-    # stroke do
-#       stroke_color '000000'
-#       line_width 1
-      # stroke_horizontal_rule
-      # move_down 3
-      # stroke_vertical_line
-    # end
-
-    # move_down 2
-    # line_items
-#
-#     alamat
-#     line_items
-#     telepon
-#     line_items
-#     barcode
-#     line_items
-    # catatan_penting
-    # line_items
+  
   end
   
   def header
@@ -35,9 +17,9 @@ class MemberPdf < Prawn::Document
     # universitas
     fakultas
     nama
-    alamat
-    telepon
-    barcode
+    masuk
+    nomor_parkir
+    keterangan
   end
   
   def logo
@@ -52,32 +34,24 @@ class MemberPdf < Prawn::Document
     text_box "FAKULTAS TEKNIK", :at  => [70,cursor-25], :size  => 6
   end
   def nama
-    text_box "Nama   :   #{@member.name}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
+    text_box "Nama   :   #{@billing.member.name}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
   end
   
-  
-  def alamat
-    text_box "Alamat  :   #{@member.address}".upcase, :at  => [70,cursor-45], :size  => 6#, :style  => :bold
+  def masuk
+    text_box "Nama   :   #{@billing.name}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
   end
   
-  def telepon
-    text_box "No HP/TLP   :   #{@member.phone}".upcase, :at  => [70,cursor-55], :size  => 6#, :style  => :bold
+  def nomor_parkir
+    text_box "Nama   :   #{@billing.number_park}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
   end
   
-  def barcode
-    # _barcode = Barby::Code128B.new(@member.id)
-    barcode = Barby::PrawnOutputter.new(@member.barcode)
-    barcode.annotate_pdf(self, :x => 170, :y => 80)
-    # text_box "no telepon   :   #{ @barcodexpdf}"  :at  => [20,cursor]
-    # text_box "#{ @barcodexpdf}"  :at  => [20,cursor]
+  def keterangan
+    text_box "Mohon Parkir Pada Nomor Parkir Yang Ada Di Karcis Ini"
   end
   
   def line_items
     move_down 10    
   end
   
-  def catatan_penting
-    text "Catatan Penting :"
-  end  
-
+  
 end
