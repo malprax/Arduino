@@ -116,6 +116,7 @@ Progress hari ini rabu 9 september 2015
 1. fix buat karcis parkir
 2. coab search fungsi print out 
 3. coba cari bug report
+4. coba buat fix semua simulasi
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
