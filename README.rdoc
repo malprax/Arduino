@@ -112,6 +112,11 @@ Progress hari ini selasa 8 september 2015
 5. coba buat nota otomatis
 6. kita coba print out berfungsi 
 
+Progress hari ini rabu 9 september 2015
+1. fix buat karcis parkir
+2. coab search fungsi print out 
+3. coba cari bug report
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
