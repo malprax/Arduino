@@ -118,6 +118,12 @@ Progress hari ini rabu 9 september 2015
 3. coba cari bug report
 4. coba buat fix semua simulasi
 
+Progress hari ini kamis 10 september 2015
+Libur
+
+Progress hari ini jumat 11 september 2015
+Libur
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
