@@ -45,6 +45,7 @@ class BillingsController < ApplicationController
                                 filename: "Form_#{@billing.time_in}.pdf"
         end
       else
+        @led.on
         format.html { render :new }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
       end
