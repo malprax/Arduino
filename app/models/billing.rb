@@ -22,6 +22,7 @@ class Billing < ActiveRecord::Base
   accepts_nested_attributes_for :report
   before_create :set_expiration_date
   before_create :set_parking
+  before_create :check_status_park
   
   # attr_accessor :check_nama
 
@@ -51,10 +52,23 @@ class Billing < ActiveRecord::Base
 #       "#{self.name}"
 #     end
 #   end
+  def check_status_park
+    if Billing.current.number_park.nil?
+        errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+    else
+        self.number_park = c.first
+    end
+  
+  
+  end
     
   def only_one_current_billing
-    if Billing.current.where(:member_id => member_id).present?
+    if Billing.current.where(:member_id => member_id).present? && Billing.current.where(:number_park => number_park).nil?
+      errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+    elsif Billing.current.where(:member_id => member_id).present? 
       errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup')
+    else
+      Billing.number_park = @number_park.first
     end
     # if Billing.current.size > 0 
   end
@@ -94,12 +108,8 @@ class Billing < ActiveRecord::Base
     a = [1,2,3,4,5,6,7,8,9]
     b = Billing.current.pluck(:number_park)
     c = a - b
-    if c == []
-        errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
-    else
-        self.number_park = c.first
-    end
-    
+    @number_park = c
+    #self.number_park = c
   end 
   
 end

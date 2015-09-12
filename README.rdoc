@@ -124,6 +124,9 @@ Libur
 Progress hari ini jumat 11 september 2015
 Libur
 
+Progress hari ini sabtu 12 septemeber 2015
+Ada bug ketika parkir sudah penuh orang masih bisa masuk untuk parkir dengan nomor parkir kosong
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
