@@ -28,7 +28,7 @@ class Billing < ActiveRecord::Base
 
   
   # before_update :copy_to_reports
-  default_scope   -> {order('time_in DESC')}
+  default_scope   -> {order('time_out DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
@@ -36,15 +36,20 @@ class Billing < ActiveRecord::Base
   scope :park, -> {where('number_park IS NULL')}
   
   validates_presence_of :time_in, :member, message: 'Tidak Kosong'
+  # validates_presence_of :number_park, message: 'Parkir sudah penuh'
   validate :check_time_in_and_out
-  validate :only_one_current_billing, on: :create
+  validate :check_current_billing_in_use, on: :create
   validate :check_number_park, on: :create
+
   
-  #jika sudah user yang keluar dan ada parkir yang kosong dan parkir sebelumnya 
+  #jika sudah ada user yang keluar dan maka parkir dibuat untuk mengisi kekosongan 
   def check_number_park
-    if Billing.where(:number_park => nil).present?  #&& Billing.current.where(:member_id => member_id).present? 
-      errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+    if Billing.current.size == 9
+            errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
     end
+    # if self.number_park.nil? #&& Billing.complete.where(:number_park => nil).present?
+#       errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+#     end
   end
   def check_time_in_and_out
     if self.time_out.present?
@@ -53,7 +58,7 @@ class Billing < ActiveRecord::Base
   end
    
    #jika sudah ada user yang parkir dan belum keluar maka tidak dapat mebuat billing baru  
-  def only_one_current_billing
+  def check_current_billing_in_use
     if Billing.current.where(:member_id => member_id).present? 
       errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup')   
     end 
