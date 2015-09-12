@@ -22,7 +22,7 @@ class Billing < ActiveRecord::Base
   accepts_nested_attributes_for :report
   before_create :set_expiration_date
   before_create :set_parking
-  before_create :check_status_park
+  
   
   # attr_accessor :check_nama
 
@@ -33,44 +33,30 @@ class Billing < ActiveRecord::Base
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
   scope :expiration_date, -> {where('expiration <= ?', Date.today )}
+  scope :park, -> {where('number_park IS NULL')}
   
   validates_presence_of :time_in, :member, message: 'Tidak Kosong'
   validate :check_time_in_and_out
-  # validate :set_parking
-  # validates_uniqueness_of :member_id, if: 'self.time_out.blank? && self.member_id.present? '
   validate :only_one_current_billing, on: :create
-
+  validate :check_number_park, on: :create
   
+  #jika sudah user yang keluar dan ada parkir yang kosong dan parkir sebelumnya 
+  def check_number_park
+    if Billing.where(:number_park => nil).present?  #&& Billing.current.where(:member_id => member_id).present? 
+      errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
+    end
+  end
   def check_time_in_and_out
     if self.time_out.present?
       errors.add(:time_out, "Waktu Keluar Muncul Setelah Waktu Masuk") if self.time_out.present? && self.time_out < self.time_in
     end
   end
-  
-  # def check_nama
-#     if "#{self.member_id}"
-#       "#{self.name}"
-#     end
-#   end
-  def check_status_park
-    if Billing.current.number_park.nil?
-        errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
-    else
-        self.number_park = c.first
-    end
-  
-  
-  end
-    
+   
+   #jika sudah ada user yang parkir dan belum keluar maka tidak dapat mebuat billing baru  
   def only_one_current_billing
-    if Billing.current.where(:member_id => member_id).present? && Billing.current.where(:number_park => number_park).nil?
-      errors.add(:number_park, "Parkir Sudah Full Silahkan Datang Kembali Lain Waktu")
-    elsif Billing.current.where(:member_id => member_id).present? 
-      errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup')
-    else
-      Billing.number_park = @number_park.first
-    end
-    # if Billing.current.size > 0 
+    if Billing.current.where(:member_id => member_id).present? 
+      errors.add(:base, 'Tidak Dapat Membuat Billing Baru Jika Ada Billing Sebelumnya Yang Belum Di Tutup')   
+    end 
   end
   
   def stop!
@@ -108,8 +94,7 @@ class Billing < ActiveRecord::Base
     a = [1,2,3,4,5,6,7,8,9]
     b = Billing.current.pluck(:number_park)
     c = a - b
-    @number_park = c
-    #self.number_park = c
+    self.number_park = c.first    
   end 
   
 end
