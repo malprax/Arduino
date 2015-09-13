@@ -132,7 +132,7 @@ Progress hari ini sabtu 12 septemeber 2015
 5. Mau Dibuatkan javascriptnya supaya yang tidak ada tombol stopnya di hidden
 
 Progress hari ini minggu 13 september 2015
-
+1.sukses membuat contoh modal 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
