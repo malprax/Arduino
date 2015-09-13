@@ -1,3 +1,4 @@
+<% if @billings.present? %>
 <div class="row">
 	<div class="col-md-12">
 		<h3>Billing : <span class="time-rect-container"></span></h3>
@@ -71,6 +72,14 @@
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @billings, renderer: BootstrapPagination::Rails %></center></div>
 </div>
+<% else %>
+<div class="row">
+	<div class="col-md-12">
+		<h3>Billing Hari Ini Belum Ada, Silahkan Menunggu.. </h3>
+	</div>	
+</div>
+<% end %>
+
 
 <script = "text/javascript">  
   $(document).ready(function(){
