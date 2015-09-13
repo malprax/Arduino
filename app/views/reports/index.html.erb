@@ -1,5 +1,6 @@
+<% if @reports.present? %>
 <div class="row">
-	<div class="col-md-12"><h3>Laporan Harian</h3></div>
+	<div class="col-md-12"><h3>Laporan Transaksi Billing</h3></div>
 	
 </div>
 
@@ -61,6 +62,14 @@
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @reports, renderer: BootstrapPagination::Rails %></center></div>
 </div>
+
+<% else %>
+<div class="row">
+	<div class="col-md-12"><h3>Belum Ada Laporan Yang Diterima</h3></div>
+	
+</div>
+<% end %>
+
 
 
 
