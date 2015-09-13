@@ -125,7 +125,14 @@ Progress hari ini jumat 11 september 2015
 Libur
 
 Progress hari ini sabtu 12 septemeber 2015
-Ada bug ketika parkir sudah penuh orang masih bisa masuk untuk parkir dengan nomor parkir kosong
+1. Ada bug ketika parkir sudah penuh orang masih bisa masuk untuk parkir dengan nomor parkir kosong
+2. fix eror bug point 1
+3. fix eror bug portal masih mau terbuka
+4. Mau Dibuatkan Modal supaya harga bisa langsung terbaca
+5. Mau Dibuatkan javascriptnya supaya yang tidak ada tombol stopnya di hidden
+
+Progress hari ini minggu 13 september 2015
+
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member

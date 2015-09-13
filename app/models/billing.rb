@@ -31,7 +31,7 @@ class Billing < ActiveRecord::Base
   default_scope   -> {order('number_park ASC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
-  scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day)}
+  scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day).order('time_out DESC')}
   scope :expiration_date, -> {where('expiration <= ?', Date.today )}
   scope :park, -> {where('number_park IS NULL')}
   

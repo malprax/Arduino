@@ -6,7 +6,7 @@ class BillingsController < ApplicationController
   # GET /billings.json
   def index
     @portal_terangkat = params[:portal_terangkat]
-    @billings = Billing.current.page(params[:page]).per_page(9)
+    @billings = Billing.today.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
   end
 
