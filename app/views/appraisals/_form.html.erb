@@ -1,0 +1,45 @@
+<%= form_for(@appraisal) do |f| %>
+  <% if @appraisal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@appraisal.errors.count, "error") %> prohibited this appraisal from being saved:</h2>
+
+      <ul>
+      <% @appraisal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :land_wide %><br>
+    <%= f.number_field :land_wide %>
+  </div>
+  <div class="field">
+    <%= f.label :land_price %><br>
+    <%= f.text_field :land_price %>
+  </div>
+  <div class="field">
+    <%= f.label :building_wide %><br>
+    <%= f.number_field :building_wide %>
+  </div>
+  <div class="field">
+    <%= f.label :building_price %><br>
+    <%= f.text_field :building_price %>
+  </div>
+  <div class="field">
+    <%= f.label :appraisal %><br>
+    <%= f.date_select :appraisal %>
+  </div>
+  <div class="field">
+    <%= f.label :comment %><br>
+    <%= f.text_field :comment %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :appraisals
+
   resources :products do
     get "delete"
   end
