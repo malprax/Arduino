@@ -41,8 +41,8 @@ class MemberPdf < Prawn::Document
   end
   
   def logo
-    logo = "#{Rails.root}/app/assets/images/logoeditupri.png"
-    image "#{logo}", scale: 0.04, :at => [25, cursor-25]
+    logo = "#{Rails.root}/app/assets/images/unifa.jpg"
+    image "#{logo}", scale: 0.06, :at => [25, cursor-25]
   end
   def universitas
     text_box "UNIVERSITAS FAJAR", :at  => [10,cursor-14], :size  => 6, :style  => :bold
