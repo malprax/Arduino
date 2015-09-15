@@ -31,8 +31,9 @@ class MembersController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        pdf = MemberPdf.new(@member)
-        send_data pdf.render,
+        # pdf = MemberPdf.new(@member)
+        # send_data pdf.render,
+        send_data generate_pdf,
                               type: "application/pdf",
                               disposition: "inline",
                               filename: "Form_#{@member.name}.pdf"
@@ -91,6 +92,11 @@ class MembersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def generate_pdf
+      pdf = MemberPdf.new(@member)
+      pdf.render
+      # pdf.autoprint
+    end
     def set_member
       @member = Member.find(params[:id])
     end

@@ -31,28 +31,20 @@ class BillingsController < ApplicationController
     @billing = Billing.new(billing_params)
     respond_to do |format|
       # format.html { render :new }
- #      format.json { render json: @billing.errors, status: :unprocessable_entity }
+      # format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
-        # Rails.logger.info('------bolo -----')
-        # pdf = ParkirPdf.new(@billing)
-        # send_data pdf.render,
-        send_data generate_pdf,
-                              type: "application/pdf",
-                              disposition: "inline",
-                              filename: "Form_#{@billing.time_in}.pdf"
         @led.off
-        
-        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        
+        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        format.pdf do
+          send_data generate_pdf,
+                                type: "application/pdf",
+                                # disposition: "inline",
+                                filename: "Form_#{@billing.time_in}.pdf"
+          
+        end
         # format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
-        # format.pdf do
-#           pdf = ParkirPdf.new(@billing)
-#           send_data pdf.render,
-#                                 type: "application/pdf",
-#                                 disposition: "inline",
-#                                 filename: "Form_#{@billing.time_in}.pdf"
-#         end
+        
       else
         @led.on
         format.html { render :new }
@@ -109,20 +101,7 @@ class BillingsController < ApplicationController
     @led.on
     render :nothing => true
   end
-  
-  def buat_karcis
-    @billing = Billing.find(params[:id])
-    respond_to do |format|
-      format.pdf do
-        pdf = ParkirPdf.new(@billing)
-        send_data pdf.render,
-                              type: "application/pdf",
-                              disposition: "inline",
-                              filename: "Form_#{@billing.time_in}.pdf"
-      end
-    end
-  end
-  
+    
   # def pretty_duration
   #   parse_string =
   #       if self < 3600
@@ -150,11 +129,12 @@ class BillingsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    
     def generate_pdf
       pdf = ParkirPdf.new(@billing)
-      pdf.render
-      
+      pdf.autoprint    
     end
+    
     def set_billing
       @billing = Billing.find(params[:id])
     end
