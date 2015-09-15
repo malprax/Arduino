@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   match '/turunkan_portal' => 'billings#turunkan_portal', via: :get
   match '/give_time' => 'billings#give_time', via: :get
   match '/durate' => 'billings#durate', via: :get
-  match '/change_color' => 'billings#change_color', via: :get
+  match '/buat_karcis' => 'billings#buat_karcis', via: :get
   
   
 

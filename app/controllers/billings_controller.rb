@@ -1,3 +1,4 @@
+require "prawn"
 class BillingsController < ApplicationController
   before_action :set_up_led, only: [:angkat_portal, :turunkan_portal, :create]
   before_action :set_billing, only: [ :show, :edit, :update, :destroy]
@@ -33,17 +34,25 @@ class BillingsController < ApplicationController
  #      format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
         # Rails.logger.info('------bolo -----')
+        # pdf = ParkirPdf.new(@billing)
+        # send_data pdf.render,
+        send_data generate_pdf,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "Form_#{@billing.time_in}.pdf"
         @led.off
-        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        
+        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        
         # format.json { render :show, status: :created, location: @billing }
-        format.json { render :new }
-        format.pdf do
-          pdf = ParkirPdf.new(@billing)
-          send_data pdf.render,
-                                type: "application/pdf",
-                                disposition: "inline",
-                                filename: "Form_#{@billing.time_in}.pdf"
-        end
+        # format.json { render :new }
+        # format.pdf do
+#           pdf = ParkirPdf.new(@billing)
+#           send_data pdf.render,
+#                                 type: "application/pdf",
+#                                 disposition: "inline",
+#                                 filename: "Form_#{@billing.time_in}.pdf"
+#         end
       else
         @led.on
         format.html { render :new }
@@ -101,16 +110,29 @@ class BillingsController < ApplicationController
     render :nothing => true
   end
   
-  def pretty_duration
-    parse_string = 
-        if self < 3600
-            '%M:%S'
-        else
-            '%H:%M:%S'
-        end
-
-    Time.at(self).utc.strftime(parse_string)
+  def buat_karcis
+    @billing = Billing.find(params[:id])
+    respond_to do |format|
+      format.pdf do
+        pdf = ParkirPdf.new(@billing)
+        send_data pdf.render,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "Form_#{@billing.time_in}.pdf"
+      end
+    end
   end
+  
+  # def pretty_duration
+  #   parse_string =
+  #       if self < 3600
+  #           '%M:%S'
+  #       else
+  #           '%H:%M:%S'
+  #       end
+  #
+  #   Time.at(self).utc.strftime(parse_string)
+  # end
   
   def give_time
     @time = Time.now.strftime(" %H:%M:%S ")
@@ -128,6 +150,11 @@ class BillingsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
+    def generate_pdf
+      pdf = ParkirPdf.new(@billing)
+      pdf.render
+      
+    end
     def set_billing
       @billing = Billing.find(params[:id])
     end
