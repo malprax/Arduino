@@ -145,6 +145,8 @@ Progress hari ini rabu 15 september 2015
 1. masih gagal dalam mencari bahan buat led di parkirannya
 2. masih gagal membuat auutomasi print out
 3. masih gagal membuat modal stop
+4. cari cari artikel sebanyak mungkin yang berkaitan dengan dino gem
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
