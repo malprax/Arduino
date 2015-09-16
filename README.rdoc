@@ -141,6 +141,8 @@ Progress hari ini senin 14 september 2015
 Progress hari ini selasa 15 september 2015
 1. coba riset automasi print
 
+Progress hari ini rabu 15 september 2015
+1. masih gagal dalam mencari bahan buat led di parkirannya
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
