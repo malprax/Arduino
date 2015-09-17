@@ -22,6 +22,6 @@
 //= require billing
 //= require message_flash
 //= require turbolinks
-//= require_tree .
+//= require_self
 	
 
