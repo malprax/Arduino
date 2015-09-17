@@ -1,3 +1,4 @@
+require 'dino'
 require 'pusher'
 pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'))
 
@@ -16,9 +17,9 @@ pusher = YAML.load_file(File.join(Arduino::Application.root, 'config/pusher.yml'
 # Pusher.secret = 'APP_SECRET'
 
 
-Pusher.app_id = 'app_id'
-Pusher.key = 'key'
-Pusher.secret = 'secret'
+Pusher.app_id = pusher['app_id']
+Pusher.key = pusher['key']
+Pusher.secret = pusher['secret']
 
 begin
   # board = Dino::Board.new(Dino::TxRx.new)
@@ -28,16 +29,18 @@ begin
 
   button.down do
     puts 'down'
-    # Pusher['button'].trigger!('down', { :some => 'data' })
-    # $(this).trigger!('down', { :some => 'data' })
+    Pusher['button'].trigger!('down', { :some => 'data' })
+    # button.trigger!('down', { :some => 'data' })
+    
   end
 
   button.up do
     puts 'up'
-    # Pusher['button'].trigger!('up', { :some => 'data' })
-    # $(this).trigger!('down', { :some => 'data' })
+    Pusher['button'].trigger!('up', { :some => 'data' })
+    # button.trigger!('up', { :some => 'data' })
+    
   end
-
+  
 rescue Dino::BoardNotFound
   puts 'The board is not connected'
 end

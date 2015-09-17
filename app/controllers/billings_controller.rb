@@ -133,7 +133,8 @@ class BillingsController < ApplicationController
     end
     
     def set_up_led
-      @board = Dino::Board.new(Dino::TxRx.new)
+      # @board = Dino::Board.new(Dino::TxRx.new)
+      @board = Arduino::Application.config.board
       @led = Dino::Components::Led.new(pin: 12, board: @board )
     end
 
