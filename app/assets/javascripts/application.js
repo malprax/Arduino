@@ -12,6 +12,7 @@
 //
 
 //= require jquery
+  //= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require pusher.min
@@ -22,6 +23,5 @@
 //= require billing
 //= require message_flash
 //= require turbolinks
-//= require_self
+//= require_tree .
 	
-
