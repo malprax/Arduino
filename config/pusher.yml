@@ -3,10 +3,15 @@
 # Pusher.url = ENV["pusher_url"]
 
 
+# For Development
+# app_id: 122740
+# key: 6a97661ed61a198a18cf
+# secret: bd808ec7f68f4ec890a2
 
-app_id: 122740
-key: 6a97661ed61a198a18cf
-secret: bd808ec7f68f4ec890a2
+# For Production
+app_id = '122739'
+key = '429f0dfaaec2f4d689e8'
+secret = '808cd9f52d25422d41ec'
 
 
 

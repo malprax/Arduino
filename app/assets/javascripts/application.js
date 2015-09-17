@@ -37,7 +37,7 @@ var main = $(function(){
 	});
   
   
-   var pusher = new Pusher('6a97661ed61a198a18cf');
+   var pusher = new Pusher('429f0dfaaec2f4d689e8');
    var channel = pusher.subscribe('button')
    channel.bind('down', function(data) {
     $('body').css({background: 'red'})
