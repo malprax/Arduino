@@ -25,9 +25,6 @@ var led = $(function(){
 //      $('body').css({background: 'white'})
 //     });
 
-('button').bind()
-});
-
 $( document ).ready(led);
 // $( document ).ready(channel);
 
