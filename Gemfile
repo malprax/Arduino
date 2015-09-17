@@ -103,7 +103,7 @@ gem 'rails_12factor', group: :production
 
 #convert to pdf
 gem 'prawn'
-gem 'prawn-print', :git => 'git://github.com/barsoom/prawn-print.git' #autoprint pdf
+# gem 'prawn-print', :git => 'git://github.com/barsoom/prawn-print.git' #autoprint pdf
 
 #faster webrick
 gem 'thin'
