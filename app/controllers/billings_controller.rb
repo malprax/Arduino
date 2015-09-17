@@ -7,7 +7,7 @@ class BillingsController < ApplicationController
   # GET /billings.json
   def index
     @portal_terangkat = params[:portal_terangkat]
-    @billings = Billing.today.page(params[:page]).per_page(9)
+    @billings = Billing.all.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
   end
 
@@ -140,7 +140,8 @@ class BillingsController < ApplicationController
     end
     
     def set_up_led
-      @board = Dino::Board.new(Dino::TxRx.new)
+      # @board = Dino::Board.new(Dino::TxRx.new)
+      @board = Arduino::Application.config.board
       @led = Dino::Components::Led.new(pin: 12, board: @board )
     end
 

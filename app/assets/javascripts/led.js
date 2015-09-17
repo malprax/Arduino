@@ -24,6 +24,8 @@ var led = $(function(){
 //     channel.bind('up', function(data) {
 //      $('body').css({background: 'white'})
 //     });
+
+('button').bind()
 });
 
 $( document ).ready(led);

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :products do
+    get "delete"
+  end
+
   resources :reports
   resources :members
   resources :try_codes, only: [:new, :create, :index]

@@ -132,8 +132,8 @@ Progress hari ini sabtu 12 septemeber 2015
 5. Mau Dibuatkan javascriptnya supaya yang tidak ada tombol stopnya di hidden
 
 Progress hari ini minggu 13 september 2015
-1.sukses membuat contoh modal 
 
+1.sukses membuat contoh modal 
 
 Progress hari ini senin 14 september 2015
 1. coba riset modal buat stop billingnya
@@ -146,6 +146,10 @@ Progress hari ini rabu 15 september 2015
 2. masih gagal membuat auutomasi print out
 3. masih gagal membuat modal stop
 4. cari cari artikel sebanyak mungkin yang berkaitan dengan dino gem
+
+Progress hari ini kamis 16 september 2015
+1. sukses membaca socket server buat area parkiran
+2. 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
