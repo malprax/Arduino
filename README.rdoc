@@ -141,15 +141,17 @@ Progress hari ini senin 14 september 2015
 Progress hari ini selasa 15 september 2015
 1. coba riset automasi print
 
-Progress hari ini rabu 15 september 2015
+Progress hari ini rabu 16 september 2015
 1. masih gagal dalam mencari bahan buat led di parkirannya
 2. masih gagal membuat auutomasi print out
 3. masih gagal membuat modal stop
 4. cari cari artikel sebanyak mungkin yang berkaitan dengan dino gem
 
-Progress hari ini kamis 16 september 2015
+Progress hari ini kamis 17 september 2015
 1. sukses membaca socket server buat area parkiran
-2. 
+
+Progress hari ini jumat 18 september 2015
+1. buat progress dengan modal stop
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
