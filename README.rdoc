@@ -158,6 +158,9 @@ Progress hari ini sabtu 19 september 2015
 1. cari artikel modals
 2. cari artikerl push button
 
+Progress hari ini minggu 20 september 2015
+1. libur
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
