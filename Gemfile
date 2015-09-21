@@ -17,6 +17,7 @@ gem 'autoprefixer-rails'
 gem 'will_paginate-bootstrap'
 gem 'will_paginate'
 gem 'bootstrap_form'
+gem 'simple_form'
 
 #nice terminal
 gem 'quiet_assets'
