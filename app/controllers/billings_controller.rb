@@ -142,9 +142,9 @@ class BillingsController < ApplicationController
     def set_up_led
       # Arduino::Application.config.board
       # Dino::Board.new(Dino::TxRx.new)
-      @board = Dino::Board.new(Dino::TxRx.new)
-      # @led = Dino::Components::Led.new(pin: 12, board: Arduino::Application.config.board )
-            @led = Dino::Components::Led.new(pin: 12, board: @board)
+      #@board = Dino::Board.new(Dino::TxRx.new)
+            @led = Dino::Components::Led.new(pin: 12, board: Arduino::Application.config.board )
+            #@led = Dino::Components::Led.new(pin: 12, board: @board)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

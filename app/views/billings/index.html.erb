@@ -62,6 +62,8 @@
 			    <% end %>
 			  </tbody>
 			</table>
+      
+      
 			<br>
 			<div class="panel-footer">
 				<button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>
@@ -69,9 +71,11 @@
                   <button id="ubah_warna", class="btn btn-primary"></button>
 			</div>
 		</div>
+    <div id="product-modal" class="modal fade"></div>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @billings, renderer: BootstrapPagination::Rails %></center></div>
 </div>
+
 <% else %>
 <div class="row">
 	<div class="col-md-12">
