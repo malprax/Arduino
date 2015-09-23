@@ -28,7 +28,7 @@ class Billing < ActiveRecord::Base
 
   
   # before_update :copy_to_reports
-  default_scope   -> {order('time_in DESC')}
+  default_scope   -> {order('time_out DESC')}
   scope :current, -> {where('time_out IS NULL').order('time_in DESC')}
   scope :complete, -> {where('time_out IS NOT NULL').order('time_out DESC')}  
   scope :today, -> {where('time_in >= ? AND time_in <= ?', Time.now.beginning_of_day, Time.now.end_of_day).order('time_out DESC')}

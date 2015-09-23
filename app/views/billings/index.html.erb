@@ -18,52 +18,25 @@
 	<div class="col-md-12">
 		<div class="panel panel-success">
 			<div class="panel-heading"></div>
-			<table class="table table-hover table-striped">
-			  <thead>
-			    <tr>
+    			<table class="table table-hover table-striped">
+    			  <thead>
+    			    <tr>
 			      
-            <th>Parkir No</th>
-            <th>Member</th>
-			      <th>Jam Masuk</th>
-			      <th>Jam Keluar</th>
-			      <th>Lama</th>
-			      <th>Biaya</th>
-				    <th>Masa Berlaku</th>
-			      <th colspan="2">Option</th>
-			    </tr>
-			  </thead>
+                <th>Parkir No</th>
+                <th>Member</th>
+    			      <th>Jam Masuk</th>
+    			      <th>Jam Keluar</th>
+    			      <th>Lama</th>
+    			      <th>Biaya</th>
+    				    <th>Masa Berlaku</th>
+    			      <th colspan="2">Option</th>
+    			    </tr>
+    			  </thead>
 
-			  <tbody>
-			    <% @billings.each do |billing| %>
-			      <tr>
-			        
-              <td><%= billing.number_park %></td>
-              <td><%= billing.member.name %></td>
-			        <td><%= billing.time_in.strftime("%H:%M:%S")%></td>
-
-					<% unless billing.time_out.nil? %>
-					<% selisih_waktu = (Time.parse(billing.time_out.to_s) - Time.parse(billing.time_in.to_s))%>
-					<td><%= billing.time_out.strftime("%H:%M:%S")%></td>
-			        <td><%=  selisih_waktu.to_i.pretty_duration    %></td>
-			        <td>Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %></td>
-					<% else %>
-					<td class="time"></td>
-					<%# durasi = (Time.parse(Time.now.to_s) - Time.parse(billing.time_in.to_s))%>
-					<td class= "counter" data-id="<%= billing.id %>"> <%#= render partial: 'shared/duration' %>  <%#= durasi.to_i.pretty_duration %></td>
-					<td></td>
-					<% end %>
-          <td><%= billing.expiration.strftime("%D")%></td>
-				   
-			        <td>
-                <%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, billing, method: :delete, data: { confirm: 'Are you sure?' } %>
-              		</td>
-                  <td><%= link_to 'Stop', stop_billing_path(billing), remote: true, class: 'btn btn-danger', method: :patch if billing.time_out.nil? %></td>
-			      </tr>
-			    <% end %>
-			  </tbody>
-			</table>
-      
-      
+    			  <tbody class="billing-index">
+    			   <%= render 'index' %>
+    			  </tbody>
+    			</table>
 			<br>
 			<div class="panel-footer">
 				<button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>

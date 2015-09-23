@@ -14,6 +14,11 @@ class BillingsController < ApplicationController
   # GET /billings/1
   # GET /billings/1.json
   def show
+    respond_to do |format|
+      format.html
+      format.js
+      format.json{render json: @billing}
+    end
   end
 
   # GET /billings/new
@@ -34,7 +39,8 @@ class BillingsController < ApplicationController
       # format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
         @led.off
-        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        format.html { redirect_to @billing, notice: 'Billing Berhasil Dibuat.' }
         format.pdf do
           send_data generate_pdf,
                                 type: "application/pdf",
@@ -83,11 +89,13 @@ class BillingsController < ApplicationController
     @billing = Billing.find(params[:id])
     if @billing.stop!
       respond_to do |format|
-        format.html {redirect_to(billings_url, notice: 'Billing stopped')}
+        format.html {redirect_to @billing, notice: 'Billing stopped'}
+        format.js
+        format.json{render json: @billing}
       end
     else
       respond_to do |format|
-        format.html {redirect_to(billings_url, notice: 'Billing was already stopped')}
+        format.html {redirect_to billings_url, notice: 'Billing was already stopped'}
       end
     end
   end
@@ -142,9 +150,10 @@ class BillingsController < ApplicationController
     def set_up_led
       # Arduino::Application.config.board
       # Dino::Board.new(Dino::TxRx.new)
-      #@board = Dino::Board.new(Dino::TxRx.new)
-            @led = Dino::Components::Led.new(pin: 12, board: Arduino::Application.config.board )
-            #@led = Dino::Components::Led.new(pin: 12, board: @board)
+      
+      @board = Dino::Board.new(Dino::TxRx.new)
+            @led = Dino::Components::Led.new(pin: 12, board: @board )
+            # @led = Dino::Components::Led.new(pin: 12, board: @board)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
