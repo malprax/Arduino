@@ -44,7 +44,7 @@ class BillingsController < ApplicationController
         format.pdf do
           send_data generate_pdf,
                                 type: "application/pdf",
-                                # disposition: "inline",
+                                disposition: "inline",
                                 filename: "Form_#{@billing.time_in}.pdf"
           
         end
@@ -140,8 +140,8 @@ class BillingsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     
     def generate_pdf
-      pdf = ParkirPdf.new(@billing)
-      pdf.autoprint    
+      pdf = ParkirPdf.new(@billing)  
+      pdf.autoprint 
     end
     
     def set_billing
