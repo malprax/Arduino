@@ -161,6 +161,16 @@ Progress hari ini sabtu 19 september 2015
 Progress hari ini minggu 20 september 2015
 1. libur
 
+Progress hari ini senin 23 september 2015
+1. try study modal
+
+Progress hari ini selasa 24 september 2015
+1. still error modals
+
+
+Progress hari ini rabu 23 september 2015
+1. fix error modals
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
