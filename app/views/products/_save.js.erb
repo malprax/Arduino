@@ -1,9 +1,9 @@
 $("ul.errors").html("")
-<% if @billing.errors.any? %>
-  <% @billing.errors.full_messages.each do |message| %>
+<% if @product.errors.any? %>
+  <% @product.errors.full_messages.each do |message| %>
     $("ul.errors").append($("<li />").html("<%= message.html_safe %>"))
   <% end %>
 <% else %>
-  $(".billing-index").html("<%= escape_javascript(render 'index') %>")
-  $("#billing-modal").modal("hide")
+  $(".product-index").html("<%= escape_javascript(render 'index') %>")
+  $("#product-modal").modal("hide")
 <% end %>

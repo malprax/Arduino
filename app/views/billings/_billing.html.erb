@@ -1,36 +1,34 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+    <h3>Parkir Nomor  <%= @billing.number_park %> Selesai</h3>   
+  </div>
+  <div class="modal-body">
+  <% selisih_waktu = (Time.parse(@billing.time_out.to_s) - Time.parse(@billing.time_in.to_s))%>    
+  <p><strong>Lama Parkir:&nbsp;</strong> <%=  selisih_waktu.to_i.pretty_duration    %></p>
+  <h1>
+    <strong>Biaya:&nbsp;</strong>
+    Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %>
+  </h1>
+  <p>
+    <strong>Member:&nbsp;</strong>
+    <%= @billing.member.name %>
+  </p>
 
-<p>
-  <strong>Member:</strong>
-  <%= @billing.member.name %>
-</p>
+  <p>
+    <strong>Waktu Masuk:&nbsp;</strong>
+    <%= @billing.time_in.strftime("%H:%M:%S") %>
+  </p>
 
-<p>
-  <strong>Member:</strong>
-  <%= @billing.number_park %>
-</p>
-
-<p>
-  <strong>Time in:</strong>
-  <%= @billing.time_in %>
-</p>
-
-<p>
-  <strong>Time out:</strong>
-  <%= @billing.time_out %>
-</p>
-
-<p>
-  <strong>Duration:</strong>
-  <%#= @billing.duration %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @billing.price %>
-</p>
-
-<p>
-  <strong>Expired:</strong>
-  <%= @billing.expiration %>
-</p>
-
+  <p>
+    <strong>Waktu Keluar:&nbsp;</strong>
+    <%= @billing.time_out.strftime("%H:%M:%S") %>
+  </p>
+  <ul class="errors"></ul>
+    
+  </div>
+  <div class="modal-footer">
+    <%= link_to "Close", billings_path(@billing), class: "btn btn-default" %>
+  </div>
+  </div>
+</div>

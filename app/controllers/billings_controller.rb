@@ -40,7 +40,7 @@ class BillingsController < ApplicationController
       if @billing.save
         @led.off
         # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        format.html { redirect_to @billing, notice: 'Billing Berhasil Dibuat.' }
+        format.html { redirect_to billings_path, notice: 'Billing Berhasil Dibuat.' }
         format.pdf do
           send_data generate_pdf,
                                 type: "application/pdf",
@@ -87,17 +87,18 @@ class BillingsController < ApplicationController
   
   def stop
     @billing = Billing.find(params[:id])
-    if @billing.stop!
-      respond_to do |format|
-        format.html {redirect_to @billing, notice: 'Billing stopped'}
-        format.js
-        format.json{render json: @billing}
-      end
-    else
-      respond_to do |format|
-        format.html {redirect_to billings_url, notice: 'Billing was already stopped'}
-      end
-    end
+    @billing.stop!
+    # if @billing.stop!
+      # respond_to do |format|
+  #       format.html {redirect_to @billing, notice: 'Billing stopped'}
+  #       format.js
+  #       format.json{render json: @billing}
+  #     end
+  #   else
+  #     respond_to do |format|
+  #       format.html {redirect_to billings_url, notice: 'Billing was already stopped'}
+  #     end
+  #   end
   end
   
   def angkat_portal
