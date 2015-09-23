@@ -34,5 +34,21 @@
   <%= @billing.expiration %>
 </p>
 
+<% url = "#{@billing.id}.pdf" %>
+<iframe id ="pdf_source" src="<%=url %>" style="width:700px;height:500px;"></iframe>
+
+
 <%#= link_to 'Edit', edit_billing_path(@billing), class:'btn btn-default' %> 
 <%= link_to 'Kembali', billings_path, class:'btn btn-success' %>
+
+<script>
+      $(document).ready(function() {
+          pdf = document.getElementById('pdf_source');
+          pdf.focus();
+
+          setTimeout(function(){
+              pdf.contentWindow.print();
+          }, 3000);
+
+      });
+  </script>

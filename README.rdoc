@@ -166,6 +166,7 @@ Progress hari ini senin 23 september 2015
 
 Progress hari ini selasa 24 september 2015
 1. still error modals
+2. perbaiki print out
 
 
 Progress hari ini rabu 23 september 2015

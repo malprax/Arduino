@@ -23,7 +23,7 @@ class ParkirPdf < Prawn::Document
   end
   
   def logo
-    logo = "#{Rails.root}/app/assets/images/logoeditupri.png"
+    logo = "#{Rails.root}/app/assets/images/unifa.jpg"
     image "#{logo}", scale: 0.04, :at => [25, cursor-25]
   end
   def universitas

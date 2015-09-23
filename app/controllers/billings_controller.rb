@@ -17,7 +17,13 @@ class BillingsController < ApplicationController
     respond_to do |format|
       format.html
       format.js
-      format.json{render json: @billing}
+      # format.json{render json: @billing}
+      format.pdf do
+        send_data generate_pdf,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "#{@billing.id}.pdf"
+      end
     end
   end
 
@@ -45,7 +51,7 @@ class BillingsController < ApplicationController
           send_data generate_pdf,
                                 type: "application/pdf",
                                 disposition: "inline",
-                                filename: "Form_#{@billing.time_in}.pdf"
+                                filename: "#{@billing.id}.pdf"
           
         end
         # format.json { render :show, status: :created, location: @billing }
@@ -140,8 +146,8 @@ class BillingsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     
     def generate_pdf
-      pdf = ParkirPdf.new(@billing)  
-      pdf.autoprint 
+      pdf = ParkirPdf.new(@billing) 
+      pdf.render 
     end
     
     def set_billing
