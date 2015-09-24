@@ -1,54 +1,17 @@
 
-<p>
-  <strong>Member:</strong>
-  <%= @billing.member.name %>
-</p>
+<%= render "parkir" %>
 
-<p>
-  <strong>Member:</strong>
-  <%= @billing.number_park %>
-</p>
-
-<p>
-  <strong>Time in:</strong>
-  <%= @billing.time_in %>
-</p>
-
-<p>
-  <strong>Time out:</strong>
-  <%= @billing.time_out %>
-</p>
-
-<p>
-  <strong>Duration:</strong>
-  <%#= @billing.duration %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @billing.price %>
-</p>
-
-<p>
-  <strong>Expired:</strong>
-  <%= @billing.expiration %>
-</p>
-
-<% url = "#{@billing.id}.pdf" %>
-<iframe id ="pdf_source" src="<%=url %>" style="width:700px;height:500px;"></iframe>
-
-
-<%#= link_to 'Edit', edit_billing_path(@billing), class:'btn btn-default' %> 
-<%= link_to 'Kembali', billings_path, class:'btn btn-success' %>
+<% url = "#{@billing.id}.pdf" %> 
+<iframe id ="pdf_source" src="<%= url %>" style="width:700px;height:500px;"></iframe>
 
 <script>
-      $(document).ready(function() {
-          pdf = document.getElementById('pdf_source');
-          pdf.focus();
+$(document).ready(function(){
+  pdf = document.getElementById('pdf_source');
+  pdf.focus();
 
-          setTimeout(function(){
-              pdf.contentWindow.print();
-          }, 3000);
-
-      });
-  </script>
+  setTimeout(function(){
+      pdf.contentWindow.print();
+  }, 3000);
+})
+  
+</script>

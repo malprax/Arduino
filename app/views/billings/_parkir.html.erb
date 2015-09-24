@@ -1,0 +1,23 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+    <h3>Parkir Nomor <%= @billing.number_park %> </h3>   
+  </div>
+  <div class="modal-body">
+  <p>
+    <strong>Member:&nbsp;</strong>
+    <%= @billing.member.name %>
+  </p>
+
+  <p>
+    <strong>Waktu Masuk:&nbsp;</strong>
+    <%= @billing.time_in.strftime("%H:%M:%S") %>
+  </p>
+  <ul class="errors"></ul>
+    
+  </div>
+  <div class="modal-footer">
+    <%= link_to "Close", billings_path(@billing), class: "btn btn-default" %>
+  </div>
+  </div>
+</div>
