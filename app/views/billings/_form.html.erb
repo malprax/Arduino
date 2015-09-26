@@ -19,7 +19,7 @@
      
           <% end %>
         <center>
-          <h3>Selamat Datang Dafi</h3>
+          <h3>Selamat Datang</h3>
           <h1>Silahkan Scan Member Card Anda</h1>
         </center>
        	<div class="form-group">
@@ -50,7 +50,7 @@
             </div>
           </div>
           
-          <%= link_to "Tutup", "#", class: "btn", data: {dismiss: "modal"} %>
+          <%= link_to "Tutup", "#", remote:true, class: "btn", data: {dismiss: "modal"} %>
         <% end %>
         </div>
       </div>

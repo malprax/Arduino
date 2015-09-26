@@ -31,6 +31,8 @@ class BillingsController < ApplicationController
   def new
     @billing = Billing.new
   end
+  
+  
 
   # GET /billings/1/edit
   # def edit
