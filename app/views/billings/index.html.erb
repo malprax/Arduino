@@ -9,7 +9,7 @@
 
 
 <div class="row">
-	<div class="col-md-12"><%= link_to '+ Buat Billing', new_billing_path, class: 'btn' %>
+	<div class="col-md-12"><%= link_to '+ Buat Billing', new_billing_path, remote: true, class: 'btn' %>
     <%#= link_to 'Portal', root_path, class: 'btn btn-default' %>
 	</div>
 </div>
@@ -71,3 +71,5 @@
       }
   });
 </script>
+  
+  
