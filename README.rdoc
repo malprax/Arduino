@@ -184,6 +184,7 @@ Progress hari ini sabtu 26 september 2015
 Progress hari ini minggu 27 september 2015
 1. fix error modals
 2. find out layout parking
+3. try fix simple_form
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member

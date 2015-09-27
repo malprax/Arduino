@@ -56,6 +56,7 @@ class ReportsController < ApplicationController
   def delete
     @report = Report.find(params[:report_id])
   end
+  
   def destroy
     @report.destroy
     respond_to do |format|
