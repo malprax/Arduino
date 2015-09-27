@@ -172,6 +172,19 @@ Progress hari ini selasa 24 september 2015
 Progress hari ini rabu 23 september 2015
 1. fix error modals
 
+Progress hari ini kamis 24 september 2015
+1. fix error modals
+
+Progress hari ini jumat 25 september 2015
+1. fix error modals
+
+Progress hari ini sabtu 26 september 2015
+1. fix error modals
+
+Progress hari ini minggu 27 september 2015
+1. fix error modals
+2. find out layout parking
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
