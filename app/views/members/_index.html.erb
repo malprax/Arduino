@@ -1,0 +1,10 @@
+				    <% @members.each do |member| %>
+				      <tr>
+						<% member.barcode %>  
+				        <td><%= link_to member.name.titleize, member_look_path(member), remote: true %></td>
+				        <td><%= member.address.titleize %></td>
+				        <td><%= member.phone %></td>
+				        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_member_path(member), remote: true %></td>
+				        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, member_delete_path(member), remote: true %></td>
+				      </tr>
+				    <% end %>

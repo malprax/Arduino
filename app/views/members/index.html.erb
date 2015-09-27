@@ -9,7 +9,7 @@
 	
 	<div class="row">
 		<div class="col-md-12">
-			<%= link_to 'Member Baru', new_member_path, class: 'btn btn-default' %>
+			<%= link_to 'Member Baru', new_member_path, remote: true, class: 'btn btn-default' %>
 		    <%= form_tag members_path, :method => 'get', :id => "search",class:'navbar-form navbar-right', role: 'search' do%>
 		    <div class="form-group">
 		      <div class="col-xs-6 col-sm-4 col-md-4">
@@ -35,21 +35,13 @@
 				    </tr>
 				  </thead>
 
-				  <tbody>
-				    <% @members.each do |member| %>
-				      <tr>
-						<% member.barcode %>  
-				        <td><%= link_to member.name.titleize, member %></td>
-				        <td><%= member.address.titleize %></td>
-				        <td><%= member.phone %></td>
-				        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_member_path(member) %></td>
-				        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, member, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-				      </tr>
-				    <% end %>
+				  <tbody class="member-index">
+				    <%= render 'index' %>
 				  </tbody>
 				</table>
 				<br>
 			</div>
+      <div id="member-modal" class="modal fade"></div>
 		</div>
 		<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @members, renderer: BootstrapPagination::Rails %></center></div>
 	</div>
@@ -58,7 +50,7 @@
 <% else %>
 	<div class="row">
 		<div class="col-md-12"><h3>Belum Ada Member Yang Mendaftar. Harap Sabar Menunggu</h3></div>
-		<div class="col-md-12"><%= link_to 'Member Baru', new_member_path, class: 'btn btn-default' %></div>
+		<div class="col-md-12"><%= link_to 'Member Baru', new_member_path, remote: true, class: 'btn btn-default' %></div>
 	</div>
 <% end %>
 

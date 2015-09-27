@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-  before_action :set_report, only: [:show, :edit, :update, :destroy]
+  before_action :set_report, only: [:show, :edit, :update, :destroy, :delete]
 
   # GET /reports
   # GET /reports.json
@@ -53,6 +53,9 @@ class ReportsController < ApplicationController
 
   # DELETE /reports/1
   # DELETE /reports/1.json
+  def delete
+    
+  end
   def destroy
     @report.destroy
     respond_to do |format|

@@ -13,7 +13,7 @@ require 'barby/outputter/pdfwriter_outputter'
 
 
 class MembersController < ApplicationController
-  before_action :set_member, only: [:show, :edit, :update, :destroy]
+  before_action :set_member, only: [:edit, :update, :destroy]
 
   # GET /members
   # GET /members.json
@@ -23,7 +23,26 @@ class MembersController < ApplicationController
 
   # GET /members/1
   # GET /members/1.json
+  def look
+    @member = Member.find(params[:member_id])
+    barcodex = Barby::HtmlOutputter.new(@member.barcode).to_html  
+    # barcodexpdf.annotate_pdf(doc)
+    @barcode_for = barcodex
+    respond_to do |format|
+      format.html
+      format.js
+      format.pdf do
+        # pdf = MemberPdf.new(@member)
+        # send_data pdf.render,
+        send_data generate_pdf,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "Form_#{@member.name}.pdf"
+      end
+    end
+  end
   def show
+    @member = Member.find(params[:id])
     # @barcode = Barby::Code128B.new(@member.id)
     barcodex = Barby::HtmlOutputter.new(@member.barcode).to_html  
     # barcodexpdf.annotate_pdf(doc)
@@ -57,7 +76,7 @@ class MembersController < ApplicationController
     @member = Member.new(member_params)
     respond_to do |format|
       if @member.save
-        format.html { redirect_to @member, notice: 'Member was successfully created.' }
+        format.html { redirect_to members_path, notice: 'Member was successfully created.' }
         format.json { render :show, status: :created, location: @member }
       else
         format.html { render :new }
@@ -71,7 +90,7 @@ class MembersController < ApplicationController
   def update
     respond_to do |format|
       if @member.update(member_params)
-        format.html { redirect_to @member, notice: 'Member Berhasil Diupdate.' }
+        format.html { redirect_to members_path, notice: 'Member Berhasil Diupdate.' }
         format.json { render :show, status: :ok, location: @member }
       else
         format.html { render :edit }
@@ -82,6 +101,9 @@ class MembersController < ApplicationController
 
   # DELETE /members/1
   # DELETE /members/1.json
+  def delete
+    @member = Member.find(params[:member_id])
+  end
   def destroy
     @member.destroy
     respond_to do |format|

@@ -1,0 +1,27 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-body">
+      
+        	<div class="panel panel-default">
+        	  <div class="panel-heading">
+        	    <h3 class="panel-title">Member Parkir</h3>
+        	  </div>
+          	  <ul class="list-group">
+          	    <li class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.name.titleize %></li>
+          	    <li class="list-group-item"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.address.titleize %></li>
+          	    <li class="list-group-item"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;<%= @member.phone %></li>
+        		<li class="list-group-item"><%= raw (@barcode_for) %></li>
+          	  </ul>
+        	  <div class="panel-footer">
+        		  <%= link_to 'Edit', edit_member_path(@member), remote: true, class: 'btn btn-default' %> 
+        		  <%= link_to 'Kembali', '#', class: 'btn btn-success', data: {dismiss: 'modal'} %>
+        		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        		  <%= link_to "Cetak ID Card", member_path(@member, format:"pdf"), class:"btn btn-primary", :target  => "_blank" %>
+        	  </div>
+        	</div>
+	
+       
+      </div>
+    </div>
+</div>
+        

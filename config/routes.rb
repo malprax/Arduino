@@ -4,8 +4,13 @@ Rails.application.routes.draw do
     get "delete"
   end
 
-  resources :reports
-  resources :members
+  resources :reports do
+    get "delete"
+  end
+  resources :members do
+    get "delete"
+    get "look"
+  end
   resources :try_codes, only: [:new, :create, :index]
   resources :billings, only:[:new, :create, :index, :destroy, :show, :durate, :give_time] do
     # collection do
