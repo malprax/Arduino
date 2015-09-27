@@ -1,13 +1,15 @@
 <div class="modal-dialog">
   <div class="modal-content">
+    <div class="modal-header">
+      <h3>Edit Laporan</h3>
+    </div>
     <div class="modal-body">
-      <h1>Edit Laporan</h1>
-
       <%= render 'form' %>
-
-      <%= link_to 'Show', @report %> |
-      <%= link_to 'Kembali', '#', remote: true, data: {dismiss: 'modal'} %>
-      
+    </div>
+    <div class="modal-footer">
+      <%= link_to 'Show', @report, remote: true, class: 'btn btn-primary' %> 
+      <%= link_to 'Tutup', '#', remote:true, data:{dismiss: 'modal'}, class: 'btn' %>
     </div>
   </div>
 </div>
+
