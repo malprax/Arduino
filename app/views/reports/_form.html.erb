@@ -1,51 +1,53 @@
-<%= form_for(@report) do |f| %>
-  <% if @report.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+      <%= form_for(@report) do |f| %>
+        <% if @report.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
 
-      <ul>
-      <% @report.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+            <ul>
+            <% @report.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field">
+          <%= f.label :date %><br>
+          <%= f.datetime_select :date %>
+        </div>
+  
+        <div class="field">
+          <%= f.label :billing_id %><br>
+          <%= f.number_field :billing_id %>
+        </div>
+        <div class="field">
+          <%= f.label :member_id %><br>
+          <%= f.text_field :member_id %>
+        </div>
+        <div class="field">
+          <%= f.label :time_in %><br>
+          <%= f.text_field :time_in %>
+        </div>
+        <div class="field">
+          <%= f.label :time_out %><br>
+          <%= f.text_field :time_out %>
+        </div>
+        <div class="field">
+          <%= f.label :duration %><br>
+          <%= f.text_field :duration %>
+        </div>
+        <div class="field">
+          <%= f.label :price %><br>
+          <%= f.text_field :price %>
+        </div>
+        <div class="field">
+          <%= f.label :comment %><br>
+          <%= f.text_area :comment, row: 3 %>
+        </div>
+  
+        <div class="actions">
+          <%= f.submit %>
+        </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.datetime_select :date %>
-  </div>
-  
-  <div class="field">
-    <%= f.label :billing_id %><br>
-    <%= f.number_field :billing_id %>
-  </div>
-  <div class="field">
-    <%= f.label :member_id %><br>
-    <%= f.text_field :member_id %>
-  </div>
-  <div class="field">
-    <%= f.label :time_in %><br>
-    <%= f.text_field :time_in %>
-  </div>
-  <div class="field">
-    <%= f.label :time_out %><br>
-    <%= f.text_field :time_out %>
-  </div>
-  <div class="field">
-    <%= f.label :duration %><br>
-    <%= f.text_field :duration %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :comment %><br>
-    <%= f.text_area :comment, row: 3 %>
-  </div>
-  
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+      
+   

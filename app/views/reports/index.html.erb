@@ -5,7 +5,7 @@
 </div>
 
 <div class="row">
-	<div class="col-md-12"><%= link_to 'Laporan Baru', new_report_path, class: 'btn btn-default' %>
+	<div class="col-md-12"><%= link_to 'Laporan Baru', new_report_path, remote: true, class: 'btn btn-default' %>
     <%= form_tag reports_path, :method => 'get', :id => "search",class:'navbar-form navbar-right', role: 'search' do%>
     <div class="form-group">
       <div class="col-xs-6 col-sm-4 col-md-4">
@@ -36,28 +36,12 @@
 			    </tr>
 			  </thead>
 
-			  <tbody>
-			    <% @reports.each do |report| %>
-			      <tr>
-					  <td><%= report.date.strftime('%d - %m - %Y') %></td>
-			        <td><%= report.billing_id%></td>
-			        <td><%= report.member_id %></td>
-					<td><%= report.time_in.strftime("%T") %></td>
-			        <td><%= report.time_out.strftime("%T") if report.time_out  %></td>
-					<td>
-						<% selisih_waktu = (Time.parse(report.time_out.to_s) - Time.parse(report.time_in.to_s))%>
-						<%=  selisih_waktu.to_i.pretty_duration    %>
-					</td>
-					<td>Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %></td>
-					<td><%= report.comment %></td>
-					<td><%= report.price %></td>
-			        <td><%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Edit"></span>'.html_safe, edit_member_path(report) %></td>
-			        <td><%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"data-toggle="tooltip" data-placement="top" title="Hapus"></span>'.html_safe, report, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-			      </tr>
-			    <% end %>
+			  <tbody class="report-index">
+			    <%= render 'index' %>
 			  </tbody>
 			</table>
 			<br>
+      <div id="report-modal" class="modal fade"></div>
 		</div>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12"><center><%= will_paginate @reports, renderer: BootstrapPagination::Rails %></center></div>

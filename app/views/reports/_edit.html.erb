@@ -1,0 +1,13 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-body">
+      <h1>Edit Laporan</h1>
+
+      <%= render 'form' %>
+
+      <%= link_to 'Show', @report %> |
+      <%= link_to 'Kembali', '#', remote: true, data: {dismiss: 'modal'} %>
+      
+    </div>
+  </div>
+</div>
