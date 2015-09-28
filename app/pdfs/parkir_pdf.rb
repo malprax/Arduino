@@ -19,7 +19,6 @@ class ParkirPdf < Prawn::Document
     nama
     masuk
     nomor_parkir
-    keterangan
   end
   
   def logo
@@ -38,11 +37,11 @@ class ParkirPdf < Prawn::Document
   end
   
   def masuk
-    text_box "Waktu Masuk   :   #{@billing.time_in}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
+    text_box "Waktu Masuk   :   #{@billing.time_in}".upcase, :at  => [70,cursor-45], :size  => 6#, :style  => :bold
   end
   
   def nomor_parkir
-    text_box "Nomor Parkir   :   #{@billing.number_park}".upcase, :at  => [70,cursor-35], :size  => 6#, :style  => :bold
+    text_box "Nomor Parkir   :   #{@billing.number_park}".upcase, :at  => [70,cursor-55], :size  => 6#, :style  => :bold
   end
   
   def keterangan

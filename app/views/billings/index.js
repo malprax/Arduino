@@ -1,3 +1,3 @@
-
-  window.billing.reload();
-
+$(document).ready(function(){
+   window.billing.reload()
+})

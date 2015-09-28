@@ -14,6 +14,7 @@ class BillingsController < ApplicationController
   # GET /billings/1
   # GET /billings/1.json
   def show
+    @portal_terangkat = params[:portal_terangkat]
     respond_to do |format|
       format.html
       format.js
@@ -48,7 +49,7 @@ class BillingsController < ApplicationController
       if @billing.save
         @servo.position = 90
         # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        format.html { redirect_to @billing, notice: 'Billing Berhasil Dibuat.' }
+        format.html { redirect_to billing_path(@billing, :portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
         format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
         
