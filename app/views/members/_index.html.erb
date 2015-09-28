@@ -1,6 +1,6 @@
 				    <% @members.each do |member| %>
 				      <tr>
-						<% member.barcode %>  
+						    <% member.barcode %>  
 				        <td><%= link_to member.name.titleize, member_look_path(member), remote: true %></td>
 				        <td><%= member.address.titleize %></td>
 				        <td><%= member.phone %></td>

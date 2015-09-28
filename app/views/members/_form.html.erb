@@ -1,5 +1,5 @@
     
-    <%= form_for(@member, :html => { class:"form-horizontal", role:"form"}) do |f| %>
+    <%= form_for @member, :html => { class:"form-horizontal", role:"form"} do |f| %>
 
     <div class="modal-body">
 
@@ -32,7 +32,7 @@
 	       
     <div class="modal-footer">
     	
-      <%= action_name == "new" ? (f.submit "Buat Member", class:"btn btn-success"):(f.submit "Edit Member", class:"btn btn-success") %>
+      <%= action_name == "new" ? (f.submit "Buat Member", remote: true, class:"btn btn-success"):(f.submit "Edit Member",  remote: true, class:"btn btn-success") %>
          
       <%= link_to 'Tutup','#', class: 'btn', data: {dismiss: 'modal'} %>
     </div>

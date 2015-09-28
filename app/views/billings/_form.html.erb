@@ -1,6 +1,6 @@
       <div class="row">
         <div class="col-sm-12 col-md-12">
-        <%= form_for(@billing, :html => { class:"form-horizontal", role:"form"}) do |f| %>
+        <%= form_for(@billing, remote: true, :html => { class:"form-horizontal", role:"form"}) do |f| %>
           <% if @billing.errors.any? %>
           <div id="flash">
             <div id="error_explanation">
