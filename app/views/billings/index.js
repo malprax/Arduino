@@ -1,3 +1,3 @@
 
-  window..billing.reload();
+  window.billing.reload();
 

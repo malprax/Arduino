@@ -46,14 +46,14 @@ class BillingsController < ApplicationController
       # format.html { render :new }
       # format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
-        @led.off
+        @servo.position = 90
         # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
         format.html { redirect_to @billing, notice: 'Billing Berhasil Dibuat.' }
         format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
         
       else
-        @led.on
+        @servo.position = 0
         format.html { render :new }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
       end
@@ -103,12 +103,14 @@ class BillingsController < ApplicationController
   end
   
   def angkat_portal
-    @led.off
+    @servo.position = 0
+    sleep 0.5
     render :nothing => true
   end
 
   def turunkan_portal
-    @led.on
+    @servo.position = 100
+    sleep 0.5
     render :nothing => true
   end
     
@@ -154,7 +156,7 @@ class BillingsController < ApplicationController
       # Dino::Board.new(Dino::TxRx.new)
       
       @board = Dino::Board.new(Dino::TxRx.new)
-            @led = Dino::Components::Led.new(pin: 12, board: @board )
+            @servo = Dino::Components::Servo.new(pin: 12, board: @board )
             # @led = Dino::Components::Led.new(pin: 12, board: @board)
     end
 

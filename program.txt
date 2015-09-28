@@ -124,4 +124,36 @@ void loop() {
    }
 }
 
+
+require 'bundler/setup'
+require 'dino'
+
+board = Dino::Board.new(Dino::TxRx::Serial.new)
+servo = Dino::Components::Servo.new(pin: 9, board: board)
+
+[0, 90].cycle do |angle|
+  servo.position = angle
+  sleep 0.5
+end
+
+
+  Arduino::Application.config.board = Dino::Board.new(Dino::TxRx.new)
+  button = Dino::Components::Button.new(pin: 13, board: Arduino::Application.config.board)
+ 
+
+  button.down do
+    puts 'down'
+    Pusher['button'].trigger!('down', { :some => 'data' })
+   
+    sleep
+  end
+
+  button.up do
+    puts 'up'
+    Pusher['button'].trigger!('up', { :some => 'data' })
+  
+    sleep
+    
+  end
+
  
