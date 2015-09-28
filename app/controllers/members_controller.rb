@@ -79,7 +79,7 @@ class MembersController < ApplicationController
         format.html { redirect_to members_path, notice: 'Member was successfully created.' }
         format.json { render :show, status: :created, location: @member }
       else
-        format.html { render :new }
+        format.html { render 'new', method: :new }
         format.json { render json: @member.errors, status: :unprocessable_entity }
       end
     end
@@ -93,7 +93,7 @@ class MembersController < ApplicationController
         format.html { redirect_to members_path, notice: 'Member Berhasil Diupdate.' }
         format.json { render :show, status: :ok, location: @member }
       else
-        format.html { render :edit }
+        format.html { render 'edit' }
         format.json { render json: @member.errors, status: :unprocessable_entity }
       end
     end
