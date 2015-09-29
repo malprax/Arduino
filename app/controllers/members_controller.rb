@@ -19,6 +19,10 @@ class MembersController < ApplicationController
   # GET /members.json
   def index
     @members = Member.search(params[:search]).page(params[:page]).per_page(6)
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
   # GET /members/1

@@ -12,13 +12,13 @@ function printpage(){
 
 $(document).ready(function () {
     // will call refreshPartial every 3 seconds
-    setInterval(refreshPartial, 3000)
+    setInterval(refreshPartial, 1000)
 
 });
 
 // calls action refreshing the partial
 function refreshPartial() {
   $.ajax({
-    url: "members/"
+    url: "/members"
  })
 }
