@@ -9,6 +9,10 @@ class BillingsController < ApplicationController
     @portal_terangkat = params[:portal_terangkat]
     @billings = Billing.all.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
 
   # GET /billings/1
