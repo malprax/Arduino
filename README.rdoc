@@ -187,6 +187,12 @@ Progress hari ini minggu 27 september 2015
 3. try fix simple_form
 4. add defaults write com.google.Chrome DisablePrintPreview -boolean true 
 
+Progress hari ini senin 28 september 2015
+
+Progress hari ini selasa 29 september 2015
+1. fix refresh ajax index billing
+
+
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
 coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
