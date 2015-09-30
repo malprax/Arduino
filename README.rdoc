@@ -188,6 +188,7 @@ Progress hari ini minggu 27 september 2015
 4. add defaults write com.google.Chrome DisablePrintPreview -boolean true 
 
 Progress hari ini senin 28 september 2015
+1. fix error in member index ajax
 
 Progress hari ini selasa 29 september 2015
 1. fix refresh ajax index billing
