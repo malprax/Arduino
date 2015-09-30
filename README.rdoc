@@ -193,6 +193,9 @@ Progress hari ini senin 28 september 2015
 Progress hari ini selasa 29 september 2015
 1. fix refresh ajax index billing
 
+Progress harin ini rabu 30 september 2015
+libur
+
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out kartu member
