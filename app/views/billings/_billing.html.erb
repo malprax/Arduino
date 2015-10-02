@@ -8,7 +8,7 @@
   <p><strong>Lama Parkir:&nbsp;</strong> <%=  selisih_waktu.to_i.pretty_duration    %></p>
   <h1>
     <strong>Biaya:&nbsp;</strong>
-    Rp <%= number_with_precision(selisih_waktu/3600, precision: 2).to_i * 1000 %>
+    Rp <%= 2000 + number_with_precision(selisih_waktu/1800, precision: 2).to_i * 1000 %>
   </h1>
   <p>
     <strong>Member:&nbsp;</strong>
