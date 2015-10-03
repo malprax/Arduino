@@ -41,7 +41,6 @@
 			<div class="panel-footer">
 				<button id="angkat_portal", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>
 									<button id="turunkan_portal", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>  Turunkan</button>
-                  <button id="ubah_warna", class="btn btn-primary"></button>
 			</div>
 		</div>
 
@@ -61,14 +60,15 @@
 
 <script = "text/javascript">  
   $(document).ready(function(){
-    // var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>
- //    if(portal_terangkat){
- //        window.setTimeout(function(){
- //          $.ajax({
- //            url: '<%= turunkan_portal_path %>';
- //          });
- //        }, 3000);
- //      }
+    var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>
+    if(portal_terangkat){
+        window.setTimeout(function(){
+          // setInterval(function(){
+          $.ajax({
+            url: '<%= turunkan_portal_path %>'
+          });
+        }, 3000);
+      }
   });
 </script>
   

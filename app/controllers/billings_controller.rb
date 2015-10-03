@@ -6,7 +6,7 @@ class BillingsController < ApplicationController
   # GET /billings
   # GET /billings.json
   def index
-    # @portal_terangkat = params[:portal_terangkat]
+    @portal_terangkat = params[:portal_terangkat]
     @billings = Billing.all.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
     respond_to do |format|
@@ -21,7 +21,7 @@ class BillingsController < ApplicationController
     @portal_terangkat = params[:portal_terangkat]
     respond_to do |format|
       format.html
-      format.js
+      # format.js
       # format.json{render json: @billing}
       format.pdf do
         send_data generate_pdf,
@@ -51,15 +51,17 @@ class BillingsController < ApplicationController
       # format.html { render :new }
       # format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
-        @servo.position = 90
-        # format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        format.html { redirect_to billing_path(@billing, :portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        format.json { render :show, status: :created, location: @billing }
+        # @servo.on
+        @servo.position = 100
+        format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        # format.html { redirect_to billing_path(@billing, :portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
+        # format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
         
       else
+                # @servo.off
         @servo.position = 0
-        format.html { render :new }
+        format.html { render :new, :portal_terangkat => false }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
       end
     end
@@ -108,14 +110,16 @@ class BillingsController < ApplicationController
   end
   
   def angkat_portal
-    @servo.position = 0
-    sleep 0.5
+    @servo.position = 100
+    # @servo.on
+    # sleep 0.5
     render :nothing => true
   end
 
   def turunkan_portal
-    @servo.position = 100
-    sleep 0.5
+    @servo.position = 0
+    # @servo.off
+    # sleep 0.5
     render :nothing => true
   end
     
@@ -162,7 +166,7 @@ class BillingsController < ApplicationController
       
       @board = Dino::Board.new(Dino::TxRx.new)
             @servo = Dino::Components::Servo.new(pin: 12, board: @board )
-            # @led = Dino::Components::Led.new(pin: 12, board: @board)
+            # @servo = Dino::Components::Led.new(pin: 12, board: @board)
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
