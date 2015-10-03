@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :parkings
   resources :reports do
     get "delete"
   end
@@ -22,6 +23,9 @@ Rails.application.routes.draw do
   match '/give_time' => 'billings#give_time', via: :get
   match '/durate' => 'billings#durate', via: :get
   match '/buat_karcis' => 'billings#buat_karcis', via: :get
+  
+  match '/angkat_portal_parkir' => 'parkings#angkat_portal_parkir', via: :get
+  match '/turunkan_portal_parkir' => 'parkings#turunkan_portal_parkir', via: :get
   
   
 

@@ -1,3 +1,15 @@
 $("#billing-modal").html("<%= escape_javascript(render 'show') %>")
 $("#billing-modal").modal('show')
 
+var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>
+if(portal_terangkat){
+    window.setTimeout(function(){
+      $.ajax({
+        url: '<%= turunkan_portal_path %>';
+      });
+    }, 3000);
+  }
+  
+  
+
+

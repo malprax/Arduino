@@ -6,7 +6,7 @@ class BillingsController < ApplicationController
   # GET /billings
   # GET /billings.json
   def index
-    @portal_terangkat = params[:portal_terangkat]
+    # @portal_terangkat = params[:portal_terangkat]
     @billings = Billing.all.page(params[:page]).per_page(9)
     @billing = Billing.find(params[:id]) unless @Billings.nil?
     respond_to do |format|

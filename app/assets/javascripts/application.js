@@ -27,12 +27,12 @@
   $(document).ready(function(){
   	$('#angkat_portal').click(function(){
   	   $.get('/angkat_portal')
-       $('body').css({background: 'red'})
+       // $('body').css({background: 'red'})
   	 });
 
   	$('#turunkan_portal').click(function(){
   	   $.get('/turunkan_portal')
-       $('body').css({background: 'white'})
+       // $('body').css({background: 'white'})
   	});
 
     var pusher = new Pusher('6a97661ed61a198a18cf');

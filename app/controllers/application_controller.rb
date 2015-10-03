@@ -12,7 +12,10 @@ class ApplicationController < ActionController::Base
   unless Rails.application.config.consider_all_requests_local             
       rescue_from ActionController::RoutingError, ActionController::UnknownController, ::AbstractController::ActionNotFound, ActiveRecord::RecordNotFound, with: lambda { |exception| render_error 404, exception }
   end
-
+ protected
+ # def current_park
+#    @current_park ||= Billing.find_by(params[:number_park]) if Billing.number_park
+#  end
  private
    def render_error(status, exception)
      Rails.logger.error status.to_s + " " + exception.message.to_s
@@ -22,4 +25,6 @@ class ApplicationController < ActionController::Base
        format.all { render nothing: true, status: status }
      end
    end
+   
+   
 end
