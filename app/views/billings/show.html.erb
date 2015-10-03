@@ -4,25 +4,3 @@
 <% url = "#{@billing.id}.pdf" %> 
 <iframe id ="pdf_source" src="<%= url %>" style="width:700px;height:500px;"></iframe>
 
-<script>
-$(document).ready(function(){  
-  pdf = document.getElementById('pdf_source');
-  pdf.focus();
-
-  setTimeout(function(){
-      pdf.contentWindow.print();
-  }, 3000);
-  
-  var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>;
-  if(portal_terangkat){
-      window.setTimeout(function(){
-        $.ajax({
-          url: '<%= turunkan_portal_path %>';
-        });
-      }, 3000);
-    }
-  
- 
-})
-  
-</script>

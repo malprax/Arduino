@@ -18,21 +18,27 @@
   </div>
   <div class="modal-footer">
     <%= link_to "Close", billings_path, class: "btn btn-default" %>
+		
   </div>
   </div>
 </div>
 
-
-<script = "text/javascript">  
-  // $(document).ready(function(){
- //    var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>
- //    if(portal_terangkat){
- //        window.setTimeout(function(){
- //          $.ajax({
- //            url: '<%= turunkan_portal_path %>';
- //          });
- //        }, 3000);
- //      }
- //  });
+<script>
+$(document).ready(function(){  
+  
+  
+  var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>;
+  if(portal_terangkat){
+      window.setTimeout(function(){
+        $.ajax({
+          url: '<%= turunkan_portal_path %>';
+        });
+      }, 3000);
+    }
+  
+ 
+})
+  
 </script>
+
 
