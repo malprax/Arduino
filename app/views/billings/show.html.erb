@@ -1,5 +1,6 @@
 
 <%#= render "parkir" %>
+
 <h3>Harap Parkir Di Nomor <%= @billing.number_park %> </h3>   
   <p>
     <strong>Member:&nbsp;</strong>
@@ -10,9 +11,11 @@
     <strong>Waktu Masuk:&nbsp;</strong>
     <%= @billing.time_in.strftime("%H:%M:%S") %>
   </p>
+  
+  <%= raw @barcode.to_html %>
   <ul class="errors"></ul>
 
-<% url = "#{@billing.id}.pdf" %> 
+<% url = "#{@billing}.pdf" %> 
 <iframe id ="pdf_source" src="<%= url %>" style="width:700px;height:500px;"></iframe>
 
 <script>
@@ -20,7 +23,7 @@
    if(portal_terangkat){
        window.setTimeout(function(){
          $.ajax({
-           url: '<%= turunkan_portal_path %>';
+           url: '<%= turunkan_portal_parkir1_path %>';
          });
        }, 3000);
     }

@@ -1,9 +1,10 @@
 <h3 >Scan Kartu Anda Untuk Parkir</h3>
 <%= form_tag parkings_path, :method  => :post do %>
   <div class="field">
-    <%= label_tag :number_park, "Nomor Parkir" %> <br />
-    <%= text_field_tag :number_park %>
+    <%= label_tag :member_id, "Member" %> <br />
+    <%= text_field_tag :member_id, params[:member_id], :id => 'number_park' %>
   </div>
+  <br>
   <div class="actions"><%= submit_tag "Parkir", :class  => "btn btn-success" %></div>
 <% end %>
 
@@ -14,7 +15,7 @@
     if(portal_parkir_terangkat){
         window.setTimeout(function(){
           $.ajax({
-            url: '<%= turunkan_portal_parkir_path %>';
+            url: '<%= turunkan_portal_parkir_path %>'
           });
         }, 3000);
       }

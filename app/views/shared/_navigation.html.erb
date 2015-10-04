@@ -15,8 +15,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><%= link_to 'Cashier', billings_path %></li>
         <li><%= link_to 'Member', members_path %></li>
-		<li><%= link_to 'Report', reports_path %></li>
+        <li><%= link_to 'Report', reports_path %></li>
+        <li><%= link_to 'Parks', new_park_path %></li>
+        <li><%#= link_to 'Parkings', new_parking_path %></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">

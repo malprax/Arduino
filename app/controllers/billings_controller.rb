@@ -8,10 +8,16 @@ class BillingsController < ApplicationController
   def index
     @portal_terangkat = params[:portal_terangkat]
     @billings = Billing.all.page(params[:page]).per_page(9)
-    @billing = Billing.find(params[:id]) unless @Billings.nil?
+    @billing = Billing.current.find(params[:id]) unless @Billings.nil?
     respond_to do |format|
       format.js
       format.html
+      format.pdf do
+        send_data generate_pdf,
+                              type: "application/pdf",
+                              disposition: "inline",
+                              filename: "#{@billing.id}.pdf"
+      end      
     end
   end
 
@@ -19,6 +25,10 @@ class BillingsController < ApplicationController
   # GET /billings/1.json
   def show
     @portal_terangkat = params[:portal_terangkat]
+    @barcode = Barby::HtmlOutputter.new(@billing.barcode)
+    # @barcode = Barby::CairoOutputter.new(@billing.barcode)
+        # @doc = barcode.annotate_pdf(self)
+    # @doc = @barcode.to_pdf
     respond_to do |format|
       format.html
       # format.js
@@ -52,15 +62,15 @@ class BillingsController < ApplicationController
       # format.json { render json: @billing.errors, status: :unprocessable_entity }
       if @billing.save
         # @servo.on
-        @servo.position = 100
+        @servo.position = 0
+        # format.html { render :show, :portal_terangkat => true, notice: 'Billing Berhasil Dibuat.' }
         format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
-        # format.html { redirect_to billing_path(@billing, :portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
         # format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
         
       else
                 # @servo.off
-        @servo.position = 0
+        @servo.position = 100
         format.html { render :new, :portal_terangkat => false }
         format.json { render json: @billing.errors, status: :unprocessable_entity }
       end
@@ -110,16 +120,16 @@ class BillingsController < ApplicationController
   end
   
   def angkat_portal
-    @servo.position = 100
+    @servo.position = 0
     # @servo.on
-    # sleep 0.5
+    sleep 0.1
     render :nothing => true
   end
 
   def turunkan_portal
-    @servo.position = 0
+    @servo.position = 100
     # @servo.off
-    # sleep 0.5
+    sleep 0.1
     render :nothing => true
   end
     

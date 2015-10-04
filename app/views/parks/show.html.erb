@@ -1,0 +1,30 @@
+<p>
+  <strong>Nomor Parkir:</strong>
+  <%= @park.number %>
+</p>
+
+<p>
+  <strong>Billing:</strong>
+  <%= @park.billing.member_id %>
+</p>
+
+				<button id="angkat_portal_parkir1", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>
+									<button id="turunkan_portal_parkir1", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>  Turunkan</button>
+
+<script>
+                  $(document).ready(function(){
+                    var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>;
+                    if(portal_terangkat){
+                        window.setTimeout(function(){
+                          $.ajax({
+                            url: '<%= turunkan_portal_parkir1_path %>';
+                          });
+                        }, 3000);
+                     }
+                  })
+  
+</script>
+
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Buat Parkir Baru', new_park_path(@path) %>

@@ -19,6 +19,7 @@ class ParkirPdf < Prawn::Document
     nama
     masuk
     nomor_parkir
+    barcode
   end
   
   def logo
@@ -46,6 +47,14 @@ class ParkirPdf < Prawn::Document
   
   def keterangan
     text_box "Mohon Parkir Pada Nomor Parkir Yang Ada Di Karcis Ini"
+  end
+  
+  def barcode
+    # _barcode = Barby::Code128B.new(@member.id)
+    barcode = Barby::PrawnOutputter.new(@billing.barcode)
+    barcode.annotate_pdf(self, :x => 170, :y => 80)
+    # text_box "no telepon   :   #{ @barcodexpdf}"  :at  => [20,cursor]
+    # text_box "#{ @barcodexpdf}"  :at  => [20,cursor]
   end
   
   def line_items

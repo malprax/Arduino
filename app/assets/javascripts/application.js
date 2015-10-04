@@ -34,7 +34,17 @@
   	   $.get('/turunkan_portal')
        // $('body').css({background: 'white'})
   	});
+    
+    $('#angkat_portal_parkir1').click(function(){
+       $.get('/angkat_portal_parkir1')
+ 
+     });
 
+    $('#turunkan_portal_parkir1').click(function(){
+       $.get('/turunkan_portal_parkir1')
+   
+    });
+    
     var pusher = new Pusher('6a97661ed61a198a18cf');
     var channel = pusher.subscribe('button')
     channel.bind('down', function(data) {

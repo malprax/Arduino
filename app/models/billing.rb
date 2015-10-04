@@ -1,3 +1,12 @@
+require 'barby'
+require 'barby/barcode/ean_13'
+require 'barby/barcode/code_39'
+require 'barby/barcode/code_128'
+require 'barby/outputter/html_outputter'
+require 'barby/outputter/pdfwriter_outputter'
+require 'barby/outputter/prawn_outputter'
+# require 'barby/outputter/cairo_outputter'
+
 # require "../pdfs/parkir_pdf"
 # == Schema Information
 #
@@ -16,6 +25,7 @@
 #
 
 class Billing < ActiveRecord::Base
+  has_many :parks
   belongs_to :member
   belongs_to :report
   
@@ -101,5 +111,9 @@ class Billing < ActiveRecord::Base
     c = a - b
     self.number_park = c.first    
   end 
+  
+  def barcode
+    @barcode = Barby::Code128B.new(self.number_park)
+  end
   
 end
