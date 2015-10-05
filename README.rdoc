@@ -199,6 +199,9 @@ libur
 Progress hari ini rabu 1 oktober 2015
 1. find parking method
 
+Progress hari ini kamis 2 oktober 2015
+1. find parking method
+
 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
