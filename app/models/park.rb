@@ -1,7 +1,6 @@
 class Park < ActiveRecord::Base
   belongs_to :billing
   before_save :set_number
- 
   
   def set_number
     if    billing.number_park == 1 #jika keluar nomor parkirnya 1 maka harus parkir di nomor 1
