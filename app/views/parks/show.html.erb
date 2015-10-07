@@ -11,6 +11,10 @@
 				<button id="angkat_portal_parkir1", class="btn btn-default"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>  Angkat</button>
 									<button id="turunkan_portal_parkir1", class="btn btn-success"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>  Turunkan</button>
 
+
+
+<%= link_to 'Edit', edit_park_path(@park) %> |
+<%= link_to 'Buat Parkir Baru', new_park_path(@path) %>
 <script>
                   $(document).ready(function(){
                     var portal_terangkat = <%= @portal_terangkat == 'true' ? 'true' : 'false' %>;
@@ -24,7 +28,3 @@
                   })
   
 </script>
-
-
-<%= link_to 'Edit', edit_park_path(@park) %> |
-<%= link_to 'Buat Parkir Baru', new_park_path(@path) %>
