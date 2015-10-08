@@ -55,8 +55,12 @@
         </div>
         </div>
         <div class="col-sm-12 col-md-4">
+          <% if Billing.present? %>
           <h3>Jumlah Parkir Tersedia</h3>
           <h1><%= Billing.current.count %></h1>
+          <% else %>
+          <h3>Belum Ada Yang Parkir</h3>
+          <% end %>
         </div>
       </div>
 
