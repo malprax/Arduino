@@ -58,6 +58,8 @@
           <% if Billing.present? %>
           <h3>Jumlah Parkir Tersedia</h3>
           <h1><%= Billing.current.count %></h1>
+          <% elsif Billing.current.count == 9 %>
+          <h3>Maaf Parkir Sudah Full Silahkan Datang Lain Kali</h3>
           <% else %>
           <h3>Belum Ada Yang Parkir</h3>
           <% end %>
