@@ -220,6 +220,7 @@ Progress hari ini rabu 7 oktober 2015
 Progress hari ini kamis 8 oktober 2015
 1. add new schedule 
 2. coba buat di form billing, status berapa jumlah orang yang sedang parkir
+3. coba buat di form billing, kalu sudah penuh jangan masuk lagi parkir
 
 
 
