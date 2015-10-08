@@ -219,6 +219,7 @@ Progress hari ini rabu 7 oktober 2015
 
 Progress hari ini kamis 8 oktober 2015
 1. add new schedule 
+2. coba buat di form billing, status berapa jumlah orang yang sedang parkir
 
 
 
@@ -245,16 +246,4 @@ target utama besar
 2. buat member card pdf
 3. buat report harian bulanan
 4. buat keceradasan nomor parkir
-
-kasrawati
-masniati
-husniati
-nasriati
-hunaedah
-
-
-
-
-
-
 
