@@ -227,6 +227,7 @@ Progress hari ini jumat 9 oktober 2015
 2. coba buat koneksi javascript tidak bentrok
 3. coba buat script testing advance
 4. coba buat script di *.js
+5. cari artikel lagi tentang javascript
 
 
 
