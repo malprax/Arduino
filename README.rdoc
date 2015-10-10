@@ -224,6 +224,7 @@ Progress hari ini kamis 8 oktober 2015
 
 Progress hari ini jumat 9 oktober 2015
 1. coba redesign form layout 
+2. coba buat koneksi javascript tidak bentrok
 
 
 
