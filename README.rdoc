@@ -230,11 +230,12 @@ Progress hari ini jumat 9 oktober 2015
 5. cari artikel lagi tentang javascript
 
 
+Progress hari ini sabtu 10 oktober 2015
+1. coba buat print out kartu member
+2. coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
 
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
-coba buat print out kartu member
-coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
