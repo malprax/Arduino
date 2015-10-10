@@ -226,6 +226,7 @@ Progress hari ini jumat 9 oktober 2015
 1. coba redesign form layout 
 2. coba buat koneksi javascript tidak bentrok
 3. coba buat script testing advance
+4. coba buat script di *.js
 
 
 
