@@ -10,15 +10,15 @@ function printpage(){
 //     }, pingAfter);
 // });
 
-$(document).ready(function () {
-    // will call refreshPartial every 3 seconds
-    setInterval(refreshPartial, 1000)
-
-});
+// $(document).ready(function () {
+//     // will call refreshPartial every 3 seconds
+//     setInterval(refreshPartial, 1000)
+//
+// });
 
 // calls action refreshing the partial
-function refreshPartial() {
-  $.ajax({
-    url: "/members"
- })
-}
+// function refreshPartial() {
+//   $.ajax({
+//     url: "/members"
+//  })
+// }
