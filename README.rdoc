@@ -234,6 +234,9 @@ Progress hari ini sabtu 10 oktober 2015
 1. coba buat print out kartu member
 2. coba buat form nya ketika sudah disubmit langsung terangkat palang parkir dan terprintout notanya
 
+Progress hari ini minggu 11 oktober 2015
+1. bundle update error libv8
+
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
