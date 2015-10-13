@@ -237,6 +237,8 @@ Progress hari ini sabtu 10 oktober 2015
 Progress hari ini minggu 11 oktober 2015
 1. bundle update error libv8
 
+Progress hari ini senin 12 oktober 2015
+
 
 coba riset background job dengan delayed job buat koneksi arduinonya soalnya sangat lambat
 coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
