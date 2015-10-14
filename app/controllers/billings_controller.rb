@@ -17,7 +17,7 @@ class BillingsController < ApplicationController
                               type: "application/pdf",
                               disposition: "inline",
                               filename: "#{@billing.id}.pdf"
-      end      
+      end
     end
   end
 
@@ -46,8 +46,8 @@ class BillingsController < ApplicationController
   def new
     @billing = Billing.new
   end
-  
-  
+
+
 
   # GET /billings/1/edit
   # def edit
@@ -67,7 +67,7 @@ class BillingsController < ApplicationController
         format.html { redirect_to billings_path(:portal_terangkat => true), notice: 'Billing Berhasil Dibuat.' }
         # format.json { render :show, status: :created, location: @billing }
         # format.json { render :new }
-        
+
       else
                 # @servo.off
         @servo.position = 100
@@ -102,7 +102,7 @@ class BillingsController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+
   def stop
     @billing = Billing.find(params[:id])
     # @billing.stop!
@@ -118,7 +118,7 @@ class BillingsController < ApplicationController
       end
     end
   end
-  
+
   def angkat_portal
     @servo.position = 0
     # @servo.on
@@ -132,7 +132,7 @@ class BillingsController < ApplicationController
     sleep 0.1
     render :nothing => true
   end
-    
+
   # def pretty_duration
   #   parse_string =
   #       if self < 3600
@@ -143,37 +143,37 @@ class BillingsController < ApplicationController
   #
   #   Time.at(self).utc.strftime(parse_string)
   # end
-  
+
   def give_time
     @time = Time.now.strftime(" %H:%M:%S ")
 
     render :partial => 'shared/time_portion'
   end
-  
+
   def durate
         @billing = Billing.find(params[:id])
         @selisih_waktu = Time.now - @billing.time_in
         @durate = @selisih_waktu.to_i.pretty_duration
         render :partial => 'shared/durate'
   end
-  
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    
+
     def generate_pdf
-      pdf = ParkirPdf.new(@billing) 
-      pdf.render 
+      pdf = ParkirPdf.new(@billing)
+      pdf.render
     end
-    
+
     def set_billing
       @billing = Billing.find(params[:id])
     end
-    
+
     def set_up_led
       # Arduino::Application.config.board
       # Dino::Board.new(Dino::TxRx.new)
-      
+
       @board = Dino::Board.new(Dino::TxRx.new)
             @servo = Dino::Components::Servo.new(pin: 12, board: @board )
             # @servo = Dino::Components::Led.new(pin: 12, board: @board)
@@ -183,5 +183,5 @@ class BillingsController < ApplicationController
     def billing_params
       params.require(:billing).permit(:member_id, :time_in, :time_out, :price, :comment, :duration, :expiration, :number_park, :reports_attributes => [:id, :date, :time_in, :time_out, :duration, :price, :comment, :member_id, :billing_id] )
     end
-    
+
 end
