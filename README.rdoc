@@ -258,5 +258,5 @@ coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 
 
-4. buat keceradasan nomor parkir
+
 
