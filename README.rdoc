@@ -258,9 +258,6 @@ coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 
 
-
-
-target utama besar
 2. buat member card pdf
 3. buat report harian bulanan
 4. buat keceradasan nomor parkir
