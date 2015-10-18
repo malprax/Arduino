@@ -258,8 +258,6 @@ coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 
 
-
-1 -  10 pembuatan penulisan semua bab dan asistensi
 11 - 14 september pengurusan berkas
 15 - 20 september seminar hasil
 21 - 30 september perbaikan
