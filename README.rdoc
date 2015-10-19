@@ -254,7 +254,7 @@ Progress hari ini minggu 18 oktober 2015
 Progress hari ini senin 19 oktober 2015
 
 
-coba buat print out report harian dan bulanan dari html ke excel atau ke pdf
+
 coba buat nomor parkirnya dan mengecek beberapa parameternya
 coba buat model miniatur parkiran
 
