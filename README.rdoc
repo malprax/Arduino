@@ -265,6 +265,7 @@ untuk runiah:
 6. bikin sms gateway sample
 7. bikin absensi online
 8. coba cari barscanner
+9. padukan barscanner dgn sms gateway
 
 
 
