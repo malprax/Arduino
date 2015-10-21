@@ -262,6 +262,7 @@ untuk runiah:
 3. setting halaman admin
 4. setting chat fb di home
 5. settting gambar background
+6. bikin sms gateway sample
 
 
 
