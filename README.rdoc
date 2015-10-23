@@ -256,6 +256,8 @@ Progress hari ini senin 19 oktober 2015
 Progress hari ini selasa 20 oktober 2015
 
 Progress hari ini rabu 20 oktober 2015
+
+Progress hari ini kamis 21 oktober 2015
 untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
 2. setting galery dengan koneksi dropbox
