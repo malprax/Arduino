@@ -270,6 +270,8 @@ untuk runiah:
 3. programs slug
 4. facilities slug
 5. staff slug
+6. right responsibilities slug
+
 
 untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
