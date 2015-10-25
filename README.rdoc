@@ -265,6 +265,9 @@ Progress hari ini sabtu 23 oktober 2015
 
 Progress hari ini minggu 24 oktober 2015
 untuk runiah:
+1. pages slug
+
+untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
 2. setting galery dengan koneksi dropbox
 3. setting halaman admin
@@ -274,3 +277,5 @@ untuk runiah:
 7. bikin absensi online
 8. coba cari barscanner
 9. padukan barscanner dgn sms gateway
+
+
