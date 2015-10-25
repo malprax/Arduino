@@ -267,6 +267,7 @@ Progress hari ini minggu 24 oktober 2015
 untuk runiah:
 1. pages slug
 2. visiMissions slug
+3. programs slug
 
 untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
