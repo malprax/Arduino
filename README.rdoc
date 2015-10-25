@@ -269,6 +269,7 @@ untuk runiah:
 2. visiMissions slug
 3. programs slug
 4. facilities slug
+5. staff slug
 
 untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
