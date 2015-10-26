@@ -273,6 +273,8 @@ untuk runiah:
 6. right responsibilities slug
 
 
+
+
 untuk runiah:
 1. tinggal setting galerry dengan paperclip biasa
 2. setting galery dengan koneksi dropbox
@@ -283,5 +285,6 @@ untuk runiah:
 7. bikin absensi online
 8. coba cari barscanner
 9. padukan barscanner dgn sms gateway
+10. tambahkan facebook update status
 
 
