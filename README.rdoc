@@ -286,6 +286,7 @@ untuk runiah:
 3. download sample from facebook
 4. try to change gallery front end
 5. try to add image with assets
+6. try to add image with paperclip
 
 
 
