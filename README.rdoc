@@ -268,6 +268,8 @@ Progress hari ini minggu 24 oktober 2015
 Progress hari ini senin 25 oktober 2015
 
 Progress hari ini selasa 26 oktober 2015
+
+Progress hari ini rabu 27 oktober 2015
 untuk runiah:
 1. pages slug
 2. visiMissions slug
