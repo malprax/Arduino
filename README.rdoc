@@ -271,6 +271,7 @@ Progress hari ini selasa 26 oktober 2015
 
 Progress hari ini rabu 27 oktober 2015
 runiah progress become very unique
+
 untuk runiah:
 1. pages slug
 2. visiMissions slug
@@ -278,6 +279,9 @@ untuk runiah:
 4. facilities slug
 5. staff slug
 6. right responsibilities slug
+
+untuk runiah:
+1. gallery and albums connected
 
 
 
