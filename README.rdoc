@@ -284,6 +284,7 @@ untuk runiah:
 1. gallery and albums connected
 2. gallery show album fix
 3. download sample from facebook
+4. try to change gallery front end
 
 
 
