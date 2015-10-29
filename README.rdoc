@@ -276,6 +276,16 @@ Progress hari ini rabu 28 oktober 2015
 connect image to dropbox successfully
 load image from dropbox to rails successfully
 still working on sidekiq or delayed job for background job process
+untuk runiah:
+3. setting halaman admin
+4. setting chat fb di home
+5. settting gambar background
+6. bikin sms gateway sample
+7. bikin absensi online
+8. coba cari barscanner
+9. padukan barscanner dgn sms gateway
+10. tambahkan facebook update status
+
 
 untuk runiah:
 1. pages slug
@@ -292,18 +302,3 @@ untuk runiah:
 4. try to change gallery front end
 5. try to add image with assets
 6. try to add image with paperclip
-
-
-
-
-untuk runiah:
-1. tinggal setting galerry dengan paperclip biasa
-2. setting galery dengan koneksi dropbox
-3. setting halaman admin
-4. setting chat fb di home
-5. settting gambar background
-6. bikin sms gateway sample
-7. bikin absensi online
-8. coba cari barscanner
-9. padukan barscanner dgn sms gateway
-10. tambahkan facebook update status
