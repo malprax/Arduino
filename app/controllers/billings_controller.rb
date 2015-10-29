@@ -161,7 +161,7 @@ class BillingsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
 
-    def generate_pdf
+    def generate_pdf 
       pdf = ParkirPdf.new(@billing)
       pdf.render
     end
