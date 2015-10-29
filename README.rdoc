@@ -5,12 +5,12 @@
 #Progress Riset Parkir Cerdas
 1. Riset Komunikasi Serial Arduino Dengan Output Led, dengan bahasa Ruby
 2. Riset Komunikasi Serial Arduino Dengan Aplikasi Database dengan program Rails
-2. Riset Komunikasi Serial Arduino Dengan Output Servo Posisi(Dijadikan Portal), dan Database program Rails 
+2. Riset Komunikasi Serial Arduino Dengan Output Servo Posisi(Dijadikan Portal), dan Database program Rails
 3. Aplikasi Billing Dengan Skenario:
    1.  Pada saat bar scanner mendeteksi kartu member, maka pintu terangkat, mendeteksi tempat parkir yang sudah ditinggal pemilik sebelumnya dan tempat parkir yang masih kosong, nomor parkir terbuat selama 10 detik
    2.  Setelah itu username, waktu masuk terinput ke database
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
-   
+
 4. Pembuatan Report Biling yang mencantumkan: Jumlah Pelanggan, Total Pemasukan, dalam harian, bulanan dan sediakan tombol print out
 
 5. Buat dua authentication priority, member dan nonmember, perlu didiskusikan perbedaannya
@@ -20,8 +20,8 @@ Aplikasi Billing Dengan Skenario:
    1.  Pada saat bar scanner mendeteksi kartu member, maka pintu terangkat, mendeteksi tempat parkir yang sudah ditinggal pemilik sebelumnya dan tempat parkir yang masih kosong, nomor parkir terbuat selama 10 detik
    2.  Setelah itu username, waktu masuk terinput ke database
    3.  Pada saat mau keluar, kembali kartu member, mencek database, membuat waktu keluar, harga yang mesti dibayar berdasarkan durasi, pintu dibuka manual oleh staf dan ditutup kembali oleh staff
-   
-   
+
+
 Progres hari rabu, 19 agustus 2015:
 1. coba desain front end web dengan bootstrap
 2. coba buat sebuah tombol dengan interface web untuk mengendalikan output led
@@ -61,12 +61,12 @@ Progres hari ini kamis 27 agustus 2015
 2. coba buat rake otomatis menghapus semua event yang ada hari lalu dan menyimpan report pemasukannya
 
 Progres hari ini jumat 28 agustus 2015
-1. coba buat report pendapatan secara harian 
+1. coba buat report pendapatan secara harian
 
 Progres hari ini sabtu 29 agustus 2015
 1. coba perbaiki seluruh view
 2. coba pasang search engine
-3. coba buat report pendapatan secara harian 
+3. coba buat report pendapatan secara harian
 
 
 Progres hari ini minggu 30 agustus 2015
@@ -110,11 +110,11 @@ Progress hari ini selasa 8 september 2015
 3. coba buat tombol print nomor parkir
 4. ada bug di report ketika hendak mengedit report kita terkirim ke member
 5. coba buat nota otomatis
-6. kita coba print out berfungsi 
+6. kita coba print out berfungsi
 
 Progress hari ini rabu 9 september 2015
 1. fix buat karcis parkir
-2. coab search fungsi print out 
+2. coab search fungsi print out
 3. coba cari bug report
 4. coba buat fix semua simulasi
 
@@ -133,7 +133,7 @@ Progress hari ini sabtu 12 septemeber 2015
 
 Progress hari ini minggu 13 september 2015
 
-1.sukses membuat contoh modal 
+1.sukses membuat contoh modal
 
 Progress hari ini senin 14 september 2015
 1. coba riset modal buat stop billingnya
@@ -185,7 +185,7 @@ Progress hari ini minggu 27 september 2015
 1. fix error modals
 2. find out layout parking
 3. try fix simple_form
-4. add defaults write com.google.Chrome DisablePrintPreview -boolean true 
+4. add defaults write com.google.Chrome DisablePrintPreview -boolean true
 
 Progress hari ini senin 28 september 2015
 1. fix error in member index ajax
@@ -218,12 +218,12 @@ Progress hari ini rabu 7 oktober 2015
 1. libur
 
 Progress hari ini kamis 8 oktober 2015
-1. add new schedule 
+1. add new schedule
 2. coba buat di form billing, status berapa jumlah orang yang sedang parkir
 3. coba buat di form billing, kalu sudah penuh jangan masuk lagi parkir
 
 Progress hari ini jumat 9 oktober 2015
-1. coba redesign form layout 
+1. coba redesign form layout
 2. coba buat koneksi javascript tidak bentrok
 3. coba buat script testing advance
 4. coba buat script di *.js
@@ -255,22 +255,25 @@ Progress hari ini senin 19 oktober 2015
 
 Progress hari ini selasa 20 oktober 2015
 
-Progress hari ini rabu 20 oktober 2015
+Progress hari ini rabu 21 oktober 2015
 
-Progress hari ini kamis 21 oktober 2015
+Progress hari ini kamis 22 oktober 2015
 
-Progress hari ini jumat 22 oktober 2015
+Progress hari ini jumat 23 oktober 2015
 
-Progress hari ini sabtu 23 oktober 2015
+Progress hari ini sabtu 24 oktober 2015
 
-Progress hari ini minggu 24 oktober 2015
+Progress hari ini minggu 25 oktober 2015
 
-Progress hari ini senin 25 oktober 2015
+Progress hari ini senin 26 oktober 2015
 
-Progress hari ini selasa 26 oktober 2015
+Progress hari ini selasa 27 oktober 2015
 
-Progress hari ini rabu 27 oktober 2015
+Progress hari ini rabu 28 oktober 2015
 runiah progress become very unique
+
+Progress hari ini rabu 28 oktober 2015
+connect image to dropbox successfully
 
 untuk runiah:
 1. pages slug
@@ -302,5 +305,3 @@ untuk runiah:
 8. coba cari barscanner
 9. padukan barscanner dgn sms gateway
 10. tambahkan facebook update status
-
-
