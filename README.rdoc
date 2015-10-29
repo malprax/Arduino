@@ -275,6 +275,7 @@ runiah progress become very unique
 Progress hari ini rabu 28 oktober 2015
 connect image to dropbox successfully
 load image from dropbox to rails successfully
+still working on sidekiq or delayed job for background job process
 
 untuk runiah:
 1. pages slug
