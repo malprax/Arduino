@@ -282,6 +282,8 @@ Progress hari ini minggu 1 november 2015
 
 Progress hari ini senin 2 november 2015
 
+Progress hari ini selasa 3 november 2015
+
 connect image to dropbox successfully
 load image from dropbox to rails successfully
 still working on sidekiq or delayed job for background job process
