@@ -291,6 +291,8 @@ Progress hari ini kamis 5 november 2015
 buat driver nya taufik 
 fix repair home picture
 still working on sidekiq or delayed job for background job process
+still working on facilities
+still working on curriculums
 
 untuk runiah fix:
 1. pages slug
