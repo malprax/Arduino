@@ -293,6 +293,7 @@ fix repair home picture
 still working on sidekiq or delayed job for background job process
 still working on facilities
 still working on curriculums
+fix admin page
 
 untuk runiah fix:
 1. pages slug
