@@ -304,10 +304,11 @@ untuk runiah fix:
 10. change gallery front end fix
 11. add image with assets fix
 12. add image with paperclip-dropbox fix
+13. setting chat fb di home
 
 untuk runiah next:
 3. setting halaman admin
-4. setting chat fb di home
+
 5. settting gambar background
 6. bikin sms gateway sample
 7. bikin absensi online
