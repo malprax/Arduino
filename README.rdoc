@@ -288,10 +288,7 @@ Progress hari ini rabu 4 november 2015
 buat driver nya taufik
 
 Progress hari ini kamis 5 november 2015
-buat driver nya taufik
-
-connect image to dropbox successfully
-load image from dropbox to rails successfully
+buat driver nya taufik 
 still working on sidekiq or delayed job for background job process
 
 untuk runiah fix:
