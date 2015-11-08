@@ -288,6 +288,9 @@ Progress hari ini rabu 4 november 2015
 buat driver nya taufik
 
 Progress hari ini kamis 5 november 2015
+
+Progress hari ini jumat 6 november 2015
+Progress hari ini sabtu 7 november 2015
 buat driver nya taufik 
 fix repair home picture
 still working on sidekiq or delayed job for background job process
