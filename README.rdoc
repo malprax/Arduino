@@ -299,10 +299,7 @@ evaluasi materi yang sudah diajarkan
 buat blog nya
 
 Progress hari ini senin 9 november 2015
-buat driver nya taufik 
-fix repair home picture
 still working on sidekiq or delayed job for background job process
-still working on facilities
 still working on curriculums
 fix admin page
 
