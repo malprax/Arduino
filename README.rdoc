@@ -306,6 +306,7 @@ buat drivernya taufik
 still working on sidekiq or delayed job for background job process
 still working on curriculums
 fix admin page login
+fix user login page
 
 
 untuk runiah fix:
