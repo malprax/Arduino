@@ -299,13 +299,14 @@ evaluasi materi yang sudah diajarkan
 buat blog nya
 
 Progress hari ini senin 9 november 2015
-still working on sidekiq or delayed job for background job process
-still working on curriculums
-fix admin page
 
 Progress hari ini selasa 10 november 2015
 buat surat ke kelurahan
 buat drivernya taufik
+still working on sidekiq or delayed job for background job process
+still working on curriculums
+fix admin page login
+
 
 untuk runiah fix:
 1. pages slug
