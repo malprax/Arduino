@@ -306,6 +306,10 @@ still working on facilities
 still working on curriculums
 fix admin page
 
+Progress hari ini selasa 10 november 2015
+buat surat ke kelurahan
+
+
 untuk runiah fix:
 1. pages slug
 2. visiMissions slug
