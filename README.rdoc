@@ -308,7 +308,7 @@ fix admin page
 
 Progress hari ini selasa 10 november 2015
 buat surat ke kelurahan
-
+buat drivernya taufik
 
 untuk runiah fix:
 1. pages slug
