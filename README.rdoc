@@ -308,7 +308,7 @@ still working on curriculums
 fix admin page login
 fix user login page
 
-
+Progress hari ini rabu 11 november 2015
 untuk runiah fix:
 1. pages slug
 2. visiMissions slug
