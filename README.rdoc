@@ -310,6 +310,8 @@ fix user login page
 Progress hari ini rabu 11 november 2015
 
 Progress hari ini kamis 12 november 2015
+
+Progress hari ini jumat 13 november 2015
 untuk runiah fix:
 1. pages slug
 2. visiMissions slug
