@@ -307,6 +307,8 @@ Progress hari ini rabu 11 november 2015
 Progress hari ini kamis 12 november 2015
 
 Progress hari ini jumat 13 november 2015
+
+Progress hari ini minggu 15 november 2015
 buat surat ke kelurahan
 still working on sidekiq or delayed job for background job process
 still working on curriculums
