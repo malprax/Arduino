@@ -315,6 +315,7 @@ Progress hari ini senin 16 november 2015
 Progress hari ini selasa 17 november 2015
 
 still working on sidekiq or delayed job for background job process
+still working on curriculums
 
 untuk runiah fix:
 1. pages slug
@@ -330,11 +331,14 @@ untuk runiah fix:
 11. add image with assets fix
 12. add image with paperclip-dropbox fix
 13. setting chat fb di home
+14. settting gambar background
+15. setting halaman admin
 
 untuk runiah next:
-3. setting halaman admin
+5. setting halaman user
 6. bikin sms gateway sample
 7. bikin absensi online
 8. coba cari barscanner
 9. padukan barscanner dgn sms gateway
 10. tambahkan facebook update status
+11. 
