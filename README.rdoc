@@ -341,4 +341,4 @@ untuk runiah next:
 8. coba cari barscanner
 9. padukan barscanner dgn sms gateway
 10. tambahkan facebook update status
-11. 
+11. coba buat kelas runiah@gmail.com
