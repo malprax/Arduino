@@ -345,4 +345,3 @@ untuk runiah next:
 12. deadline sampai hari sabtu minggu ini
 13. tambahkan aplikasi modals 
 14. update materi blog
-15.tambah lagi blog buat autocad
