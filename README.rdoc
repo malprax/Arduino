@@ -342,3 +342,4 @@ untuk runiah next:
 9. padukan barscanner dgn sms gateway
 10. tambahkan facebook update status
 11. coba buat kelas runiah@gmail.com
+12. deadline sampai hari sabtu minggu ini
