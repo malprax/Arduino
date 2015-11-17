@@ -343,3 +343,4 @@ untuk runiah next:
 10. tambahkan facebook update status
 11. coba buat kelas runiah@gmail.com
 12. deadline sampai hari sabtu minggu ini
+13. tambahkan aplikasi modals 
