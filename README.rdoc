@@ -344,4 +344,5 @@ untuk runiah next:
 11. coba buat kelas runiah@gmail.com
 12. deadline sampai hari sabtu minggu ini
 13. tambahkan aplikasi modals 
+14. interface user perlu dimodifikasi
 
