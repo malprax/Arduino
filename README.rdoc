@@ -318,6 +318,8 @@ Progress hari ini rabu 18 november 2015
 
 Progress hari ini kamis 19 november 2015
 
+Progress hari ini jumat 20 november 2015
+
 still working on sidekiq or delayed job for background job process
 still working on curriculums
 
