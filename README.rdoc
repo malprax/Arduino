@@ -358,5 +358,6 @@ untuk runiah next:
 15. setting email server dengan koneksi google
 
 sikon:
-16. rusak modem d warnet coba setting ulang
+1. rusak modem d warnet coba setting ulang
+2. coba cek pake speedy rumah
 
