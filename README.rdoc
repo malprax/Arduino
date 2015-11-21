@@ -355,4 +355,5 @@ untuk runiah next:
 12. deadline sampai hari sabtu minggu ini
 13. tambahkan aplikasi modals 
 14. interface user perlu dimodifikasi
+15. setting email server dengan koneksi google
 
