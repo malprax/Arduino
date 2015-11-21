@@ -322,6 +322,7 @@ Progress hari ini jumat 20 november 2015
 
 Progress hari ini sabtu 21 november 2015
 
+
 still working on sidekiq or delayed job for background job process
 still working on curriculums
 
@@ -341,6 +342,7 @@ untuk runiah fix:
 13. setting chat fb di home
 14. settting gambar background
 15. setting halaman admin
+16. Fix making side navigation
 
 untuk runiah next:
 5. setting halaman user
