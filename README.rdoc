@@ -356,5 +356,7 @@ untuk runiah next:
 13. tambahkan aplikasi modals 
 14. interface user perlu dimodifikasi
 15. setting email server dengan koneksi google
+
+sikon:
 16. rusak modem d warnet coba setting ulang
 
