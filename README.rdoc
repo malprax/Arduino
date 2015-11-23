@@ -328,6 +328,7 @@ Progress hari ini senin 23 november 2015
 
 Progress hari ini selasa 24 november 2015
 upgrading cedar stack
+install moment js rails
 
 
 still working on sidekiq or delayed job for background job process
