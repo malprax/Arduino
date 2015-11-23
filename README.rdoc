@@ -331,6 +331,7 @@ upgrading cedar stack
 install moment js rails
 modify application.js and application.scss
 add folder rails admin
+add file moment with locales
 
 
 still working on sidekiq or delayed job for background job process
