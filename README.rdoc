@@ -330,6 +330,7 @@ Progress hari ini selasa 24 november 2015
 upgrading cedar stack
 install moment js rails
 modify application.js and application.scss
+add folder rails admin
 
 
 still working on sidekiq or delayed job for background job process
