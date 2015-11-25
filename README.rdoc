@@ -342,6 +342,8 @@ fix pull and push database
 make blog for mikrotik
 make blog for rubyonrails
 
+Progress hari ini rabu 25 november 2015
+still edit user views
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
