@@ -338,6 +338,7 @@ Progress hari ini rabu 25 november 2015
 setting postgresql
 setting camera meeting online
 coba gunakan pusher sebagai media chat
+fix pull and push database
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
