@@ -340,6 +340,7 @@ setting camera meeting online
 coba gunakan pusher sebagai media chat
 fix pull and push database
 make blog for mikrotik
+make blog for rubyonrails
 
 
 still working on sidekiq or delayed job for background job process
