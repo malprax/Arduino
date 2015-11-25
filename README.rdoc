@@ -339,6 +339,8 @@ setting postgresql
 setting camera meeting online
 coba gunakan pusher sebagai media chat
 fix pull and push database
+make blog for mikrotik
+
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
