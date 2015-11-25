@@ -344,6 +344,7 @@ make blog for rubyonrails
 
 Progress hari ini rabu 25 november 2015
 still edit user views
+still edit all views
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
