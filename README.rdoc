@@ -358,6 +358,8 @@ posting blog
 try fixing webmail runiah
 posting blog again
 try to load faster
+logo di background putih
+buat formulir pendaftaran dan simulasinya dipresentasekan
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
