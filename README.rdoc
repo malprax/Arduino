@@ -342,7 +342,7 @@ fix pull and push database
 make blog for mikrotik
 make blog for rubyonrails
 
-Progress hari ini rabu 25 november 2015
+Progress hari ini kamis 26 november 2015
 still edit user views
 still edit all views
 make website connect database
