@@ -370,6 +370,14 @@ try fixing webmail runiah
 posting blog again
 buat formulir pendaftaran dan simulasinya dipresentasekan
 
+Progress hari ini minggu 29 november 2015
+error modal
+still edit stylesheet
+give modal js
+posting blog
+try fixing webmail runiah
+buat formulir pendaftaran dan simulasinya dipresentasekan
+
 
 still working on sidekiq or delayed job for background job process
 still working on curriculums
