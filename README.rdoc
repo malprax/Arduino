@@ -372,6 +372,7 @@ buat formulir pendaftaran dan simulasinya dipresentasekan
 
 Progress hari ini minggu 29 november 2015
 error modal
+error fix modal only left delete
 still edit stylesheet
 give modal js
 posting blog
