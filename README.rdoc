@@ -379,8 +379,9 @@ posting blog
 try fixing webmail runiah
 buat formulir pendaftaran dan simulasinya dipresentasekan
 
-Progress hari ini senin 1 Desember 2015
+Progress hari ini senin 30 November 2015
 error modal in pages fix
+try fix all user_content
 still edit stylesheet
 give modal js
 posting blog
