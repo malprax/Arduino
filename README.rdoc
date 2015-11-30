@@ -392,6 +392,14 @@ in user_profile give analityc bar
 try custom routes for user_content
 
 
+Fresh Idea:
+Details
+
+Looking to integrate Rails Online Calendar Scheduling/ Online reservation system within our current Rails web application.  This is will be a Calendar Scheduling system that will be for multiple offices and for multiple people that are in each of the offices.  Please provide which Gem you will be willing to integrate and the comparisons between each and how long it will take the integrate into our current website.
+
+Users need to be able to simply submit an appointment with their email and/or phone number and choose the locations we have and with specifics office members they want to see or any which can be randomly assigned.  The office members can see day to day who their appointments are with through the dashboard.
+
+
 
 
 still working on sidekiq or delayed job for background job process
