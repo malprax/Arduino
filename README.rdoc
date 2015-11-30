@@ -394,6 +394,7 @@ edit content for cucciculum
 making image in our staff work
 edit index_user_profile
 edit user login style
+edit admin login style
 
 
 Fresh Idea:
