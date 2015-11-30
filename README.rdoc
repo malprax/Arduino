@@ -391,6 +391,7 @@ find sms gateway for rails
 in user_profile give analityc bar
 try custom routes for user_content
 edit content for cucciculum
+making image in our staff work
 
 
 Fresh Idea:
