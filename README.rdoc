@@ -389,6 +389,7 @@ buat konsep make scheduling appointment
 remove delete button in user_content
 find sms gateway for rails
 in user_profile give analityc bar
+try custom routes for user_content
 
 
 
