@@ -403,6 +403,9 @@ fix routes user_content
 fix edit user_content_programs
 fix edit user right and responsibilities
 
+Progress hari ini rabu 2 Desember 2015
+fix edit admin title
+
 
 Fresh Idea:
 Details
