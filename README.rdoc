@@ -401,6 +401,7 @@ Progress hari ini selasa 1 Desember 2015
 add modals to programs
 fix routes user_content
 fix edit user_content_programs
+fix edit user right and responsibilities
 
 
 Fresh Idea:
