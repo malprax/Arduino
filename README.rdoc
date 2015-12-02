@@ -407,6 +407,8 @@ Progress hari ini rabu 2 Desember 2015
 fix edit admin title
 fix staff page
 staff depent on id not friendly_id
+fix admins error
+fix facilities modals
 
 
 Fresh Idea:
