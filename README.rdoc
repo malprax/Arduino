@@ -412,6 +412,7 @@ fix facilities modals
 try push to digital ocean
 try to make form registration
 try to make agenda and news
+fix timer carousel no need refresh
 
 
 Fresh Idea:
