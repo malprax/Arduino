@@ -405,6 +405,8 @@ fix edit user right and responsibilities
 
 Progress hari ini rabu 2 Desember 2015
 fix edit admin title
+fix staff page
+
 
 
 Fresh Idea:
