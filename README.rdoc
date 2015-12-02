@@ -411,6 +411,7 @@ fix admins error
 fix facilities modals
 try push to digital ocean
 try to make form registration
+try to make agenda and news
 
 
 Fresh Idea:
