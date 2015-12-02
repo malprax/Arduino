@@ -409,6 +409,7 @@ fix staff page
 staff depent on id not friendly_id
 fix admins error
 fix facilities modals
+try push to digital ocean
 
 
 Fresh Idea:
