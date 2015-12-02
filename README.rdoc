@@ -410,6 +410,7 @@ staff depent on id not friendly_id
 fix admins error
 fix facilities modals
 try push to digital ocean
+try to make form registration
 
 
 Fresh Idea:
