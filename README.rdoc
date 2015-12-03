@@ -416,6 +416,7 @@ fix timer carousel no need refresh
 
 Progress hari ini rabu 2 Desember 2015
 fix make bootstrap simple_form
+pr dari p idris
 
 Fresh Idea:
 Details
