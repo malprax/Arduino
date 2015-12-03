@@ -418,6 +418,7 @@ Progress hari ini rabu 2 Desember 2015
 fix make bootstrap simple_form
 pr dari p idris
 buat jquery light box halaman home
+buat email seperti google atau cinfirmasi dulu yang sudah ada
 
 
 Fresh Idea:
