@@ -414,7 +414,7 @@ try to make form registration
 try to make agenda and news
 fix timer carousel no need refresh
 
-Progress hari ini rabu 2 Desember 2015
+Progress hari ini kamis 2 Desember 2015
 fix make bootstrap simple_form
 pr dari p idris
 buat jquery light box halaman home
@@ -422,6 +422,14 @@ buat email seperti google atau konfirmasi dulu yang sudah ada
 buat curriculums modal
 buat galerry modals
 
+Progress hari ini jumat 3 Desember 2015
+fix make bootstrap simple_form
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
 
 
 Fresh Idea:
