@@ -431,6 +431,7 @@ buat curriculums modal
 buat galerry modals
 still error spin.js
 make facebook posting show on website as gallery
+switch curriculum to gallery
 
 
 Fresh Idea:
