@@ -432,6 +432,7 @@ buat galerry modals
 still error spin.js
 make facebook posting show on website as gallery
 switch curriculum to gallery
+make proposal for next al azhar fix step 1
 
 
 Fresh Idea:
