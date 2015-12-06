@@ -467,6 +467,7 @@ buat presentase supaya lebih mudah menjelaskan
 buat pendaftaran online
 buat jadwal mata pelajaran
 buat absensi
+learn different module_helper in application helper and helper_method in application_controller
 
 Fresh Idea:
 Details
