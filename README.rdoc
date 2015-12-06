@@ -451,6 +451,23 @@ buat pendaftaran online
 buat jadwal mata pelajaran
 buat absensi
 
+Progress hari ini minggu 5 Desember 2015
+fix make bootstrap simple_form
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+buat pendaftaran online
+buat jadwal mata pelajaran
+buat absensi
+
 Fresh Idea:
 Details
 
