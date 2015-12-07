@@ -469,6 +469,26 @@ buat jadwal mata pelajaran
 buat absensi
 learn different module_helper in application helper and helper_method in application_controller
 
+Progress hari ini senin 6 Desember 2015
+fix make bootstrap simple_form
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+buat pendaftaran online
+buat jadwal mata pelajaran
+buat absensi
+learn different module_helper in application helper and helper_method in application_controller
+fix ssl dengan cloudfire 
+
+
 Fresh Idea:
 Details
 
