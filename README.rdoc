@@ -486,7 +486,9 @@ buat pendaftaran online
 buat jadwal mata pelajaran
 buat absensi
 learn different module_helper in application helper and helper_method in application_controller
-fix ssl dengan cloudfire 
+fix ssl dengan cloudfire
+modify find facility id in campus
+add authenticated user except show in all controller 
 
 
 Fresh Idea:
