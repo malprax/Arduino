@@ -452,7 +452,7 @@ buat jadwal mata pelajaran
 buat absensi
 
 Progress hari ini minggu 5 Desember 2015
-fix make bootstrap simple_form
+
 pr dari p idris
 buat jquery light box halaman home
 buat email seperti google atau konfirmasi dulu yang sudah ada
@@ -470,7 +470,6 @@ buat absensi
 learn different module_helper in application helper and helper_method in application_controller
 
 Progress hari ini senin 6 Desember 2015
-fix make bootstrap simple_form
 pr dari p idris
 buat jquery light box halaman home
 buat email seperti google atau konfirmasi dulu yang sudah ada
@@ -486,10 +485,28 @@ buat pendaftaran online
 buat jadwal mata pelajaran
 buat absensi
 learn different module_helper in application helper and helper_method in application_controller
-fix ssl dengan cloudfire
 modify find facility id in campus
 add authenticated user except show in all controller
-modified authenticated in gallery 
+
+Progress hari ini senin 6 Desember 2015
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+buat pendaftaran online
+buat jadwal mata pelajaran
+buat absensi
+learn different module_helper in application helper and helper_method in application_controller
+modify find facility id in campus
+add authenticated user except show in all controller
+pointing forward mailserver google
 
 
 Fresh Idea:
@@ -522,6 +539,18 @@ untuk runiah fix:
 14. settting gambar background
 15. setting halaman admin
 16. Fix making side navigation
+17. fix make bootstrap simple_form
+18. fix ssl dengan cloudfire
+19. fix modified authenticated in gallery 
+20. fix edit admin title
+21. fix staff page
+22. fix admins error
+23. fix facilities modals
+24. fix timer carousel no need refresh
+25. fix edit user_content_programs
+26. fix edit user right and responsibilities
+
+
 
 untuk runiah next:
 5. setting halaman user
