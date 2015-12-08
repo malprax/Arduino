@@ -513,6 +513,7 @@ make classrooms
 make teachers
 make subjects
 make years
+make schedule of subjects
 
 
 Fresh Idea:
