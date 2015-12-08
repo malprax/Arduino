@@ -517,7 +517,7 @@ make schedule of subjects
 make price_lists
 make note or price_lists
 make registrations new students
-make note_of_price_lists
+
 
 
 Fresh Idea:
