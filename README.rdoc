@@ -512,6 +512,7 @@ make time_schedules
 make classrooms
 make teachers
 make subjects
+make years
 
 
 Fresh Idea:
