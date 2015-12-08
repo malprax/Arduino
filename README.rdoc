@@ -515,6 +515,7 @@ make subjects
 make years
 make schedule of subjects
 make price_lists
+make note or price_lists
 
 
 Fresh Idea:
