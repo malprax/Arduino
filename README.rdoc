@@ -506,7 +506,9 @@ buat absensi
 learn different module_helper in application helper and helper_method in application_controller
 modify find facility id in campus
 add authenticated user except show in all controller
-pointing forward mailserver google
+try pointing forward mailserver google
+remove cache in all user cache
+make time_schedules
 
 
 Fresh Idea:
