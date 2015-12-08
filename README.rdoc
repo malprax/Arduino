@@ -511,6 +511,7 @@ remove cache in all user cache
 make time_schedules
 make classrooms
 make teachers
+make subjects
 
 
 Fresh Idea:
