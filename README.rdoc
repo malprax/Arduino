@@ -488,7 +488,7 @@ learn different module_helper in application helper and helper_method in applica
 modify find facility id in campus
 add authenticated user except show in all controller
 
-Progress hari ini senin 6 Desember 2015
+Progress hari ini selasa 7 Desember 2015
 pr dari p idris
 buat jquery light box halaman home
 buat email seperti google atau konfirmasi dulu yang sudah ada
@@ -509,6 +509,27 @@ add authenticated user except show in all controller
 try pointing forward mailserver google
 remove cache in all user cache
 
+Progress hari ini rabu 9 Desember 2015
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+buat pendaftaran online
+buat jadwal mata pelajaran
+buat absensi
+learn different module_helper in application helper and helper_method in application_controller
+modify find facility id in campus
+add authenticated user except show in all controller
+try pointing forward mailserver google
+remove cache in all user cache
+edit registration form
 
 
 Fresh Idea:
