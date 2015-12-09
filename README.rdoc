@@ -530,6 +530,7 @@ add authenticated user except show in all controller
 try pointing forward mailserver google
 remove cache in all user cache
 edit registration form
+add datepicker
 
 
 Fresh Idea:
