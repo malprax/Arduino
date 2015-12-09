@@ -508,15 +508,6 @@ modify find facility id in campus
 add authenticated user except show in all controller
 try pointing forward mailserver google
 remove cache in all user cache
-make time_schedules
-make classrooms
-make teachers
-make subjects
-make years
-make schedule of subjects
-make price_lists
-make note or price_lists
-make registrations new students
 
 
 
@@ -560,6 +551,16 @@ untuk runiah fix:
 24. fix timer carousel no need refresh
 25. fix edit user_content_programs
 26. fix edit user right and responsibilities
+27. make time_schedules
+28. make classrooms
+29. make teachers
+30. make subjects
+31. make years
+32. make schedule of subjects
+33. make price_lists
+34. make note or price_lists
+35. make registrations new students
+
 
 
 
