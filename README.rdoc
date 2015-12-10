@@ -555,7 +555,7 @@ remove cache in all user cache
 edit registration form
 add datepicker
 error datepicker
-
+modal registers fix 50%
 
 
 Fresh Idea:
