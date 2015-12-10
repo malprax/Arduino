@@ -556,6 +556,7 @@ edit registration form
 add datepicker
 error datepicker
 modal registers fix 50%
+modal pricelists
 
 
 Fresh Idea:
