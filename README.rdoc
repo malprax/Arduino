@@ -583,6 +583,7 @@ add datepicker
 error datepicker
 modal registers fix 50%
 modal pricelists
+remove turbolinks
 
 scenario as admin add part 2
 modal note_of_pricelist
