@@ -556,8 +556,35 @@ edit registration form
 add datepicker
 error datepicker
 modal registers fix 50%
+modal pricelists fix 50%
+
+Progress hari ini jumat 11 Desember 2015
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+buat pendaftaran online
+buat jadwal mata pelajaran
+buat absensi
+learn different module_helper in application helper and helper_method in application_controller
+modify find facility id in campus
+add authenticated user except show in all controller
+try pointing forward mailserver google
+remove cache in all user cache
+edit registration form
+add datepicker
+error datepicker
+modal registers fix 50%
 modal pricelists
 
+scenario as admin add part 2
 
 Fresh Idea:
 Details
