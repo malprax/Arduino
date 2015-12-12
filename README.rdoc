@@ -606,6 +606,7 @@ learn different module_helper in application helper and helper_method in applica
 add scaffold students
 modal students
 add scaffold classrooms
+modal classroom
 
 scenario as admin add part 2
 modal note_of_pricelist
