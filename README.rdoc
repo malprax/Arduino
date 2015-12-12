@@ -609,6 +609,7 @@ add scaffold classrooms
 modal classroom
 pr dari pak idris: hapus login depan
 buat proposal secepatnya ke al azhar
+rampungkan pendaftaran online 
 
 scenario as admin add part 2
 modal note_of_pricelist
