@@ -611,8 +611,31 @@ pr dari pak idris: hapus login depan
 buat proposal secepatnya ke al azhar
 rampungkan pendaftaran online 
 
+
 scenario as admin add part 2
 modal note_of_pricelist
+
+
+Progress hari ini minggu 13 Desember 2015
+pr dari p idris
+buat jquery light box halaman home
+buat email seperti google atau konfirmasi dulu yang sudah ada
+buat curriculums modal
+buat galerry modals
+still error spin.js
+make facebook posting show on website as gallery
+switch curriculum to gallery
+make proposal for next al azhar fix step 1
+edit page campus
+buat presentase supaya lebih mudah menjelaskan
+learn different module_helper in application helper and helper_method in application_controller
+add scaffold students
+modal students
+add scaffold classrooms
+modal classroom
+pr dari pak idris: hapus login depan
+buat proposal secepatnya ke al azhar
+rampungkan pendaftaran online 
 
 Fresh Idea:
 Details
