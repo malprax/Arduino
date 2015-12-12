@@ -607,6 +607,8 @@ add scaffold students
 modal students
 add scaffold classrooms
 modal classroom
+pr dari pak idris: hapus login depan
+
 
 scenario as admin add part 2
 modal note_of_pricelist
