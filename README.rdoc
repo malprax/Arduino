@@ -642,6 +642,7 @@ add subject model to schedule
 add time model to schedule
 add teacher model to schedule subject
 fix edit schedule subject show
+fix edit shcedule subject index
 
 Fresh Idea:
 Details
