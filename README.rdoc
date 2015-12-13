@@ -641,6 +641,7 @@ fix error schedule
 add subject model to schedule
 add time model to schedule
 add teacher model to schedule subject
+fix edit schedule subject show
 
 Fresh Idea:
 Details
