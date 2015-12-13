@@ -638,6 +638,7 @@ buat proposal secepatnya ke al azhar
 rampungkan pendaftaran online 
 edit schedule
 fix error schedule
+add subject model to schedule
 
 Fresh Idea:
 Details
