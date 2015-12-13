@@ -637,6 +637,7 @@ pr dari pak idris: hapus login depan
 buat proposal secepatnya ke al azhar
 rampungkan pendaftaran online 
 edit schedule
+fix error schedule
 
 Fresh Idea:
 Details
