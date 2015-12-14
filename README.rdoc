@@ -645,7 +645,7 @@ fix edit schedule subject show
 fix edit shcedule subject index
 
 Progress hari ini senin 14 desember 2015
-
+Try to fix simple form
 
 Fresh Idea:
 Details
