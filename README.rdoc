@@ -653,7 +653,11 @@ Orang tua dapat mengetahui jumlah biaya yang telah dibayarkan secara terperinci 
 Orang tua dapat mengetahui nilai nilai ujian anak nya, secara langsung, baik itu nilai harian, mid dan semester
 Orang tua dapat turut aktif memberikan kritikan dan saran membangun demi kemajuan sekolah
 melalui social media sekolah seperti facebook, gmail dan lain lain
+
+Orang tua dapat memilih kegiatan kegitan ekstrakurikuler yang bagus untuk anakda
 Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan di sekolah dan agak telat pulangnya melalu sms dan bila perlu secara real time melihat langsung kegiatan yang dilakukan disekolah
+
+Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
 
 Fresh Idea:
 Details
