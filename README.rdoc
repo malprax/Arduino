@@ -647,6 +647,7 @@ fix edit shcedule subject index
 Progress hari ini senin 14 desember 2015
 Try to fix simple form
 Have 5 advantages for parents
+Orang tua dapat mengetahui jumlah kehadiran anaknya
 
 Fresh Idea:
 Details
