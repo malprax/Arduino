@@ -647,7 +647,7 @@ fix edit shcedule subject index
 Progress hari ini senin 14 desember 2015
 Try to fix simple form
 Have 5 advantages for parents
-Orang tua dapat mengetahui jumlah kehadiran anaknya
+Orang tua dapat mengetahui jumlah kehadiran anaknya, jika anaknya tidak masuk tanpa alasan apapun langsung sistem mengirim sms ke ponsel orang tua untuk segera melakukan kroscek mengapa anakda tidak masuk tanpa izin
 Orang tua dapat melihat langsung proses belajar mengajar dalam kelas melalui ipcamera
 Orang tua dapat mengetahui jumlah biaya yang telah dibayarkan secara terperinci selama anaknya sekolah
 Orang tua dapat mengetahui nilai nilai ujian anak nya, secara langsung, baik itu nilai harian, mid dan semester
