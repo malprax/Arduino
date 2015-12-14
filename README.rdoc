@@ -644,6 +644,9 @@ add teacher model to schedule subject
 fix edit schedule subject show
 fix edit shcedule subject index
 
+Progress hari ini senin 14 desember 2015
+
+
 Fresh Idea:
 Details
 
