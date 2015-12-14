@@ -650,7 +650,7 @@ Have 5 advantages for parents
 Orang tua dapat mengetahui jumlah kehadiran anaknya
 Orang tua dapat melihat langsung proses belajar mengajar dalam kelas melalui ipcamera
 Orang tua dapat mengetahui jumlah biaya yang telah dibayarkan secara terperinci selama anaknya sekolah
-
+Orang tua dapat mengetahui nilai nilai ujian anak nya, secara langsung, baik itu nilai harian, mid dan semester
 Fresh Idea:
 Details
 
