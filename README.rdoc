@@ -676,6 +676,7 @@ Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan d
 Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
 
 Update blog tekniter
+Update blog Rails
 
 Fresh Idea:
 Details
