@@ -678,6 +678,7 @@ Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem
 Update blog tekniter
 Update blog Rails
 Update blog mikrotik
+Update blog AutoCAD
 
 Fresh Idea:
 Details
