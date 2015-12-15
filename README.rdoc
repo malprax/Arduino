@@ -697,6 +697,8 @@ Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan d
 Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
 mau diperbaiki validasi error nya runiah untuk tiap modal
 mau diperbaiki hapus dan edit semuanya
+modify classroom
+
 Fresh Idea:
 Details
 
