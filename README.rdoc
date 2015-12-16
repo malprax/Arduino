@@ -714,10 +714,7 @@ Orang tua dapat memilih kegiatan kegitan ekstrakurikuler yang bagus untuk anakda
 Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan di sekolah dan agak telat pulangnya melalu sms dan bila perlu secara real time melihat langsung kegiatan yang dilakukan disekolah
 
 Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
-mau diperbaiki validasi error nya runiah untuk tiap modal
-mau diperbaiki hapus dan edit semuanya
-modify classroom
-modify classroom to schedule of subjects
+perbaiki relasi classroom and subject
 
 Fresh Idea:
 Details
