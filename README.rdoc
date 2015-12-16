@@ -681,7 +681,7 @@ Update blog mikrotik
 Update blog AutoCAD
 
 
-Progress hari ini selasa 15 desember 2015
+Progress hari ini rabu 15 desember 2015
 Try to fix simple form
 Have 5 advantages for parents
 Orang tua dapat mengetahui jumlah kehadiran anaknya, jika anaknya tidak masuk tanpa alasan apapun langsung sistem mengirim sms ke ponsel orang tua untuk segera melakukan kroscek mengapa anakda tidak masuk tanpa izin
@@ -699,6 +699,26 @@ mau diperbaiki validasi error nya runiah untuk tiap modal
 mau diperbaiki hapus dan edit semuanya
 modify classroom
 modify classroom to schedule of subjects
+
+Progress hari ini kamis 17 desember 2015
+Try to fix simple form
+Have 5 advantages for parents
+Orang tua dapat mengetahui jumlah kehadiran anaknya, jika anaknya tidak masuk tanpa alasan apapun langsung sistem mengirim sms ke ponsel orang tua untuk segera melakukan kroscek mengapa anakda tidak masuk tanpa izin
+Orang tua dapat melihat langsung proses belajar mengajar dalam kelas melalui ipcamera
+Orang tua dapat mengetahui jumlah biaya yang telah dibayarkan secara terperinci selama anaknya sekolah
+Orang tua dapat mengetahui nilai nilai ujian anak nya, secara langsung, baik itu nilai harian, mid dan semester
+Orang tua dapat turut aktif memberikan kritikan dan saran membangun demi kemajuan sekolah
+melalui social media sekolah seperti facebook, gmail dan lain lain
+
+Orang tua dapat memilih kegiatan kegitan ekstrakurikuler yang bagus untuk anakda
+Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan di sekolah dan agak telat pulangnya melalu sms dan bila perlu secara real time melihat langsung kegiatan yang dilakukan disekolah
+
+Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
+mau diperbaiki validasi error nya runiah untuk tiap modal
+mau diperbaiki hapus dan edit semuanya
+modify classroom
+modify classroom to schedule of subjects
+
 Fresh Idea:
 Details
 
