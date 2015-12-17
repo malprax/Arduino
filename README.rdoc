@@ -721,6 +721,10 @@ go to find some bug again in edit, update, and destroy for classroom and schedul
 bagaimana kalau pilihan menu mata pelajarannnya otomatis tidak memunculkan semua karena ada kategori sd, tk dan play grup
 fix try to edit and delete schedule in classroom
 
+
+Progress hari ini Jumat 18 desember 2015
+Make Gallery admin views
+
 Fresh Idea:
 Details
 
@@ -791,4 +795,24 @@ sikon:
 1. rusak modem d warnet coba setting ulang
 2. coba cek pake speedy rumah
 3. coba cek besok pagi
+
+Have 5 advantages for parents
+Orang tua dapat mengetahui jumlah kehadiran anaknya, jika anaknya tidak masuk tanpa alasan apapun langsung sistem mengirim sms ke ponsel orang tua untuk segera melakukan kroscek mengapa anakda tidak masuk tanpa izin
+Orang tua dapat melihat langsung proses belajar mengajar dalam kelas melalui ipcamera
+Orang tua dapat mengetahui jumlah biaya yang telah dibayarkan secara terperinci selama anaknya sekolah
+Orang tua dapat mengetahui nilai nilai ujian anak nya, secara langsung, baik itu nilai harian, mid dan semester
+Orang tua dapat turut aktif memberikan kritikan dan saran membangun demi kemajuan sekolah
+melalui social media sekolah seperti facebook, gmail dan lain lain
+
+Orang tua dapat memilih kegiatan kegitan ekstrakurikuler yang bagus untuk anakda
+Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan di sekolah dan agak telat pulangnya melalu sms dan bila perlu secara real time melihat langsung kegiatan yang dilakukan disekolah
+
+Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
+perbaiki relasi classroom and subject
+
+
+
+
+ 
+ 
 
