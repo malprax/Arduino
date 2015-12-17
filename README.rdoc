@@ -716,7 +716,7 @@ Orang tua dapat mengetahui secara langsung apabila anaknya sedang ada kegiatan d
 Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem informasi 
 perbaiki relasi classroom and subject
 perbaiki arel no bind
-
+fix error arel no bind ternyata ada teachers nda pake attribute
 Fresh Idea:
 Details
 
