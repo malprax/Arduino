@@ -717,6 +717,7 @@ Orang tua dapat langsung mengetahui info info terbaru sekolah melalui sms sistem
 perbaiki relasi classroom and subject
 perbaiki arel no bind
 fix error arel no bind ternyata ada teachers nda pake attribute
+go to find some bug again in edit, update, and destroy for classroom and schedule
 Fresh Idea:
 Details
 
