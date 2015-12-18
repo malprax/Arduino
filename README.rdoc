@@ -727,6 +727,7 @@ Make Gallery admin views
 add gallery modal
 sudah buat proposal
 buat anggarannya terperinci
+besok baru lanjut
 
 Fresh Idea:
 Details
