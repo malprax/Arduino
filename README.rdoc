@@ -724,6 +724,7 @@ fix try to edit and delete schedule in classroom
 
 Progress hari ini Jumat 18 desember 2015
 Make Gallery admin views
+add gallery modal
 
 Fresh Idea:
 Details
