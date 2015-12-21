@@ -753,6 +753,7 @@ point besar kita di upwork
 tdd
 cloudserver
 payment gateway
+sharetribe
 
 
 Fresh Idea:
