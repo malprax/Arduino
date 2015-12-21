@@ -752,7 +752,7 @@ cob cari ide dulu
 point besar kita di upwork
 tdd
 cloudserver
-
+payment gateway
 
 
 Fresh Idea:
