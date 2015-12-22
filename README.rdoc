@@ -739,9 +739,9 @@ buat anggarannya terperinci
 ke daya
 belajar react dulu
 
-Progress hari ini Minggu 20 desember 2015
+Progress hari ini Senin 20 desember 2015
 buat anggarannya terperinci
-pemeriksaan blog mahasiswa
+pemeriksaan blog mahasiswa Teknik Mesin 1
 1. akmalneo.blogspot.com : materi kuliah dan keadaan dikampung baru supaya menarik wisatawan, akmal ahmad
 2. hamzahhaeruddin.blogspot.com : materi sepakbola terutama manchester united, meperkenalkan tim manchester united, hamzahhaeruddin
 3. andimuhammadreza12.blogspot.com : materi kemungkinan, kisah budaya di wajo sengkang, tujuannya melestarikan budaya dan memperkenalkan wajo kepada dunia
@@ -755,6 +755,13 @@ cloudserver
 payment gateway
 sharetribe
 reactjs
+
+Progress hari ini in Selasa 21 desember 2015
+pemeriksaan blog mahasiswa Teknik Mesin 2
+1. haerulamri.heck.in, tujuannya mengisi waktu luang, materinya terdapat download anime, aplikasi, game, dan masih banyak tips n trick, terutama untuk nokia N70 yang memiliki software symbian
+
+minggu depan selain membuat blog 
+
 
 
 Fresh Idea:
