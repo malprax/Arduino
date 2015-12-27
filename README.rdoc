@@ -801,7 +801,9 @@ Progress hari ini Minggu 27 desember 2015
 1. absensi online on progress
 2. pelajari langkah langkahnya
 3. kalu bisa coba liat cara buat schedule di calendar
-4. pelajari cara buat table cari article
+4. pelajari cara buat table cari absen
+5. buat aplikasi secara langsung berdasarkan contoh yang didapat
+
 
 
 
