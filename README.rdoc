@@ -819,6 +819,7 @@ proyek irman
 10. lab teknologi dan informatika
 11. lab gambar teknik
 12. lab bahasa
+13. ambil file scan mama punya
 
 
 
