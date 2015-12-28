@@ -812,7 +812,8 @@ Progress hari ini Senin 28 desember 2015
 5. buat aplikasi secara langsung berdasarkan contoh yang didapat
 
 proyek irman
-1. lab informatika
+6. lab informatika
+7. lab robotika
 
 
 
