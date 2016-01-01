@@ -845,6 +845,7 @@ Progress hari ini Kamis 31 desember 2015
 1. Coba Buat Tombol Approve Di Calon Siswa
 2. Fis error Tombol Approve setelah diganti patch menjadi put
 3. Try to make pdf form 
+4. Try to make attendance again
    
 
 Fresh Idea:
