@@ -846,6 +846,7 @@ Progress hari ini Kamis 31 desember 2015
 2. Fis error Tombol Approve setelah diganti patch menjadi put
 3. Try to make pdf form 
 4. Try to make attendance again
+5. Try to make server do
    
 
 Fresh Idea:
