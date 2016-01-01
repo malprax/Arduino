@@ -843,6 +843,7 @@ Progress hari ini Kamis 31 desember 2015
 
 Progress hari ini Kamis 31 desember 2015
 1. Coba Buat Tombol Approve Di Calon Siswa
+2. Fis error Tombol Approve setelah diganti patch menjadi put
    
 
 Fresh Idea:
