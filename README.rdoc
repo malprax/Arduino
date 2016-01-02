@@ -849,11 +849,7 @@ Progress hari ini Jumat 1 januari 2015
 5. Try to make server do
 
 Progress hari ini Sabtu 2 januari 2015
-1. Coba Buat Tombol Approve Di Calon Siswa
-2. Fis error Tombol Approve setelah diganti patch menjadi put
-3. Try to make pdf form 
-4. Try to make attendance again
-5. Try to make server do
+1. Fix radio button
    
 
 Fresh Idea:
