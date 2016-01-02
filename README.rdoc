@@ -853,6 +853,7 @@ Progress hari ini Sabtu 2 januari 2015
 2. Fix remote form with jquery radio button
 3. fix datepicker
 4. ready to make pdf
+5. ready to make mailer
    
 
 Fresh Idea:
