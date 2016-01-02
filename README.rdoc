@@ -851,6 +851,7 @@ Progress hari ini Jumat 1 januari 2015
 Progress hari ini Sabtu 2 januari 2015
 1. Fix radio button
 2. Fix remote form with jquery radio button
+3. fix datepicker
    
 
 Fresh Idea:
