@@ -861,6 +861,13 @@ Progress hari ini Minggu 3 januari 2015
 3. fix add token for every user
 4. add sendgrid to registration
 5. try to make it works
+
+Progress hari ini Minggu 3 januari 2015
+1. Find Error Mailer
+2. make pdf
+3. fix add token for every user
+4. add sendgrid to registration
+5. try to make it works
    
 
 Fresh Idea:
