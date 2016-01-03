@@ -857,6 +857,7 @@ Progress hari ini Sabtu 2 januari 2015
 
 Progress hari ini Minggu 3 januari 2015
 1. Fix error hapus di registrasion
+2. make pdf
    
 
 Fresh Idea:
