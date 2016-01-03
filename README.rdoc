@@ -854,6 +854,9 @@ Progress hari ini Sabtu 2 januari 2015
 3. fix datepicker
 4. ready to make pdf
 5. ready to make mailer
+
+Progress hari ini Minggu 3 januari 2015
+1. Fix error hapus di registrasion
    
 
 Fresh Idea:
