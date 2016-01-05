@@ -886,6 +886,7 @@ Progress hari ini Selasa 5 januari 2015
 4. Yes Fix error Mailer
 5. tinggal cari cara supaya bisa ada link formulir dalam email
 6. sukses buat link kembali ke formulir
+7. perbaiki tabel shos registration student
    
 
 Fresh Idea:
