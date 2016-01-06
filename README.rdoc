@@ -893,6 +893,7 @@ Progress hari ini Rabu 6 januari 2015
 2. fix bug for registration approve
 3. Konfirmasi pekerjaan antena wifi
 4. Konfirmasi pekerjaan ke mas mario
+5. Konfirmasi pekerjaan mesjid
    
 
 Fresh Idea:
