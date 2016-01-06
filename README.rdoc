@@ -891,6 +891,7 @@ Progress hari ini Selasa 5 januari 2015
 Progress hari ini Rabu 6 januari 2015
 1. Try to find another buyer for al azhar
 2. fix bug for registration approve
+3. Konfirmasi pekerjaan antena wifi
    
 
 Fresh Idea:
