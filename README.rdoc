@@ -903,6 +903,7 @@ Progress hari ini Jumat 8 januari 2016
 1. Try to find client
 2. try to get twilio
 3. try to find node js tutorial
+4. try to make spanduk
 
    
 
