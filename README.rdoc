@@ -940,6 +940,7 @@ Tidak masuk semua diganti hari kamis
 
 Progress hari ini Rabu 13 januari 2016
 1. Pelajari Geolocation
+2. Pelajari Rspec
 
 Fresh Idea:
 Details
