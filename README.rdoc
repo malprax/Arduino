@@ -942,6 +942,7 @@ Progress hari ini Rabu 13 januari 2016
 1. Pelajari Geolocation
 2. Pelajari Rspec
 3. Pelajari Selenium
+4. Pelajari Twilio
 
 Fresh Idea:
 Details
