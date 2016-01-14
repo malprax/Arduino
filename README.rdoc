@@ -947,6 +947,7 @@ Progress hari ini Rabu 13 januari 2016
 
 Progress hari ini Kamis 14 januari 2016
 1. Proposal Fix Ke Malino
+2. Learn Express, Node, Angular, Mongo
 
 Fresh Idea:
 Details
