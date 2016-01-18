@@ -977,6 +977,7 @@ Progress hari ini Minggu 17 januari 2016
 Progress hari ini Senin 18 januari 2016
 1. trellis desk masih error di install
 2. coba project dari Kantor Sekertariat DPRD Bone
+3. coba buat anggarannya
 
 
 Fresh Idea:
