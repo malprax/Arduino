@@ -984,6 +984,7 @@ Progress hari ini Senin 18 januari 2016
 Progress hari ini Selasa 19 januari 2016
 1. Sudah email balik penawaran ke kantor sekertariat DPRD Bone
 2. Coba buat program dari RR4
+3. sudah bisa install chruby
 
 
 Fresh Idea:
