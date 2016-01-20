@@ -986,6 +986,9 @@ Progress hari ini Selasa 19 januari 2016
 2. Coba buat program dari RR4
 3. sudah bisa install chruby
 
+Progress hari ini Rabu 20 januari 2016
+1. Try to make mashup twitter in runiah_school
+
 
 Fresh Idea:
 Details
